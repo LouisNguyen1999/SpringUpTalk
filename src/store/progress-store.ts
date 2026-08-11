@@ -6,11 +6,10 @@ import { masteryFor, scheduleNextReview } from '../engine/review-scheduler';
 import { isConversationCompleted, isTopicCompleted } from '../engine/progress';
 
 const TODAY = () => new Date().toISOString().slice(0, 10);
-export const CURRENT_PROGRESS_VERSION = 5;
+export const CURRENT_PROGRESS_VERSION = 6;
 export const CONVERSATION_MASTERY_BONUS = 10;
 
 export const defaultSettings: UserSettings = {
-  heartsEnabled: true,
   soundEnabled: true,
   animationsEnabled: true,
   showDifficulty: true,
@@ -23,7 +22,6 @@ export const defaultProgress: UserProgress = {
   todayXp: 0,
   activityDate: TODAY(),
   streak: 0,
-  hearts: 5,
   currentLevel: 'A1',
   completedTopics: [],
   completedLessons: [],
@@ -60,8 +58,18 @@ function mergeVocabularyEntries(entries: VocabularyProgress[]): VocabularyProgre
 }
 
 export function migrateProgress(value: unknown, version: number): UserProgress {
-  const persisted = value && typeof value === 'object' ? (value as Partial<UserProgress>) : {};
-  const base = { ...defaultProgress, ...persisted, settings: { ...defaultSettings, ...persisted.settings } };
+  type LegacyProgress = Partial<UserProgress> & {
+    hearts?: number;
+    settings?: Partial<UserSettings> & { heartsEnabled?: boolean };
+  };
+  const persisted = value && typeof value === 'object' ? (value as LegacyProgress) : {};
+  const base: UserProgress & { hearts?: number; settings: UserSettings & { heartsEnabled?: boolean } } = {
+    ...defaultProgress,
+    ...persisted,
+    settings: { ...defaultSettings, ...persisted.settings },
+  };
+  delete base.hearts;
+  delete base.settings.heartsEnabled;
   if (version < 2) {
     base.todayXp = persisted.activityDate === TODAY() ? (persisted.todayXp ?? 0) : 0;
     base.activityDate = TODAY();
@@ -220,7 +228,6 @@ export const useProgressStore = create<ProgressStore>()(
             xp: state.xp + payload.xp,
             todayXp,
             streak: !goalReachedBefore && goalReachedNow ? state.streak + 1 : state.streak,
-            hearts: isWrong && state.settings.heartsEnabled ? Math.max(0, state.hearts - 1) : state.hearts,
             sentenceProgress,
             mistakes,
           };
@@ -265,7 +272,6 @@ export const useProgressStore = create<ProgressStore>()(
             conversationProgress,
             completedLessons: conversationCompleted ? Array.from(new Set([...current.completedLessons, payload.conversationId])) : current.completedLessons,
             completedTopics: topicCompleted ? Array.from(new Set([...current.completedTopics, payload.topicId])) : current.completedTopics,
-            hearts: roleWasNew ? Math.min(5, state.hearts + 1) : state.hearts,
           };
         });
         return {

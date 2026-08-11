@@ -171,7 +171,6 @@ export interface UserProgress {
   todayXp: number;
   activityDate: string;
   streak: number;
-  hearts: number;
   currentLevel: Difficulty;
   completedTopics: string[];
   completedLessons: string[];
@@ -186,7 +185,6 @@ export interface UserProgress {
 }
 
 export interface UserSettings {
-  heartsEnabled: boolean;
   soundEnabled: boolean;
   animationsEnabled: boolean;
   showDifficulty: boolean;

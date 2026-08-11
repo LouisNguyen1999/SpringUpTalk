@@ -29,4 +29,4 @@ describe('calendar review scheduler', () => {
   });
 });
 
-describe('persistence migration', () => it('fills new settings without dropping XP', () => { const migrated=migrateProgress({xp:42,settings:{heartsEnabled:false}},1); expect(migrated.xp).toBe(42); expect(migrated.settings.heartsEnabled).toBe(false); expect(migrated.version).toBe(CURRENT_PROGRESS_VERSION); }));
+describe('persistence migration', () => it('fills new settings, removes legacy hearts, and keeps XP', () => { const migrated=migrateProgress({xp:42,hearts:2,settings:{heartsEnabled:true}},5); expect(migrated.xp).toBe(42); expect('hearts' in migrated).toBe(false); expect('heartsEnabled' in migrated.settings).toBe(false); expect(migrated.version).toBe(CURRENT_PROGRESS_VERSION); }));

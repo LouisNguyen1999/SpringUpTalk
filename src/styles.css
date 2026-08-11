@@ -18,6 +18,7 @@
 @media(max-width:900px){.vocab-grid{grid-template-columns:repeat(2,1fr)}.mistake-groups{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:570px){.vocab-grid{grid-template-columns:1fr}.review-answers{grid-template-columns:1fr}.review-answers>svg{transform:rotate(90deg)}.review-card footer,.danger-zone{align-items:stretch;flex-direction:column;gap:14px}.choice-grid{grid-template-columns:1fr 1fr}}
 .empty-review{display:grid;gap:6px;color:var(--muted)}.empty-review b{color:var(--green-dark)}.weak-vocab-list{display:flex;flex-wrap:wrap;gap:8px}
+.unlimited-practice{cursor:default}.unlimited-practice strong{font-size:28px;line-height:1;color:var(--green-dark)}
 
 /* Two-sided progress and responsive hardening */
 .app-shell,.lesson-layout,.role-page,.summary-page,.lesson-error{min-height:100vh;min-height:100dvh}

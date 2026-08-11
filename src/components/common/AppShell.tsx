@@ -11,7 +11,7 @@ const nav = [
 ];
 
 export function AppShell() {
-  const { streak, xp, hearts, settings } = useProgressStore();
+  const { streak, xp } = useProgressStore();
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -33,7 +33,7 @@ export function AppShell() {
           <div className="stat-chips" aria-label="Tiến độ">
             <span title="Chuỗi ngày học">🔥 <b>{streak}</b></span>
             <span title="Tổng điểm kinh nghiệm">⚡ <b>{xp}</b></span>
-            {settings.heartsEnabled && <span title="Số tim">❤️ <b>{hearts}</b></span>}
+            <span title="Lượt làm không giới hạn">❤️ <b aria-label="Vô hạn">∞</b></span>
           </div>
         </header>
         <main id="main-content"><Outlet /></main>

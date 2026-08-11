@@ -16,7 +16,7 @@ Streak vẫn phụ thuộc daily XP goal. Vì role A/B lưu riêng, người h�
 
 ## V4 → V5 migration
 
-Migration luôn giữ XP, today XP, streak, hearts, sentence progress/mastery, mistakes, vocabulary, achievements, favorites, daily goal và settings.
+Migration giữ XP, today XP, streak, sentence progress/mastery, mistakes, vocabulary, achievements, favorites, daily goal và settings. Khi dữ liệu tiếp tục được nâng lên V6, các trường tim cũ được loại bỏ vì lượt luyện hiện luôn vô hạn.
 
 V4 chỉ có `completedLessons` và không lưu role trực tiếp. V5 không giả định ID đó đồng nghĩa cả hai vai đã hoàn thành. Với mỗi conversation cũ:
 

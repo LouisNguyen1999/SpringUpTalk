@@ -113,7 +113,7 @@ describe('V4 to V5 migration', () => {
       settings:{ ...defaultProgress.settings, soundEnabled:false },
     };
     const migrated = migrateProgress(old,4);
-    expect(migrated).toMatchObject({ version:5, xp:480, todayXp:20, streak:7 });
+    expect(migrated).toMatchObject({ version:CURRENT_PROGRESS_VERSION, xp:480, todayXp:20, streak:7 });
     expect(migrated.vocabulary).toHaveLength(1);
     expect(migrated.mistakes).toHaveLength(1);
     expect(migrated.sentenceProgress['unrelated-turn']?.mastery).toBe('mastered');

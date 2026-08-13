@@ -7,6 +7,9 @@ const TopicsPage = lazy(() => import('../pages/TopicsPage'));
 const TopicPage = lazy(() => import('../pages/TopicPage'));
 const LessonPage = lazy(() => import('../pages/LessonPage'));
 const VocabularyPage = lazy(() => import('../pages/VocabularyPage'));
+const VocabularyDetailPage = lazy(() => import('../pages/VocabularyDetailPage'));
+const VocabularyPracticePage = lazy(() => import('../pages/VocabularyPracticePage'));
+const AddCustomVocabularyPage = lazy(() => import('../pages/AddCustomVocabularyPage'));
 const MistakesPage = lazy(() => import('../pages/MistakesPage'));
 const SettingsPage = lazy(() => import('../pages/SettingsPage'));
 
@@ -23,10 +26,13 @@ export function App() {
           <Route path="topics" element={<TopicsPage />} />
           <Route path="topics/:topicId" element={<TopicPage />} />
           <Route path="vocabulary" element={<VocabularyPage />} />
+          <Route path="vocabulary/custom" element={<AddCustomVocabularyPage />} />
+          <Route path="vocabulary/:vocabularyId" element={<VocabularyDetailPage />} />
           <Route path="mistakes" element={<MistakesPage />} />
           <Route path="settings" element={<SettingsPage />} />
         </Route>
         <Route path="lesson/:topicId/:conversationId" element={<LessonPage />} />
+        <Route path="vocabulary/:vocabularyId/practice" element={<VocabularyPracticePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Suspense>

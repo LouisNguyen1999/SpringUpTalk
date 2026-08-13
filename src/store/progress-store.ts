@@ -1,12 +1,23 @@
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import type { ConversationProgress, Difficulty, EvaluationResult, LearningRole, UserProgress, UserSettings, VocabularyItem, VocabularyProgress } from '../types/domain';
-import { normalizeVocabularyKey } from '../utils/search';
+import type {
+  ConversationProgress,
+  Difficulty,
+  EvaluationResult,
+  LearningRole,
+  UserProgress,
+  UserSettings,
+  VocabularyEntry,
+  VocabularyItem,
+  VocabularyPracticeItem,
+  VocabularyProgress,
+} from '../types/domain';
+import { normalizeVocabularyIdentityKey } from '../utils/search';
 import { masteryFor, scheduleNextReview } from '../engine/review-scheduler';
 import { isConversationCompleted, isTopicCompleted } from '../engine/progress';
 
 const TODAY = () => new Date().toISOString().slice(0, 10);
-export const CURRENT_PROGRESS_VERSION = 6;
+export const CURRENT_PROGRESS_VERSION = 8;
 export const CONVERSATION_MASTERY_BONUS = 10;
 
 export const defaultSettings: UserSettings = {
@@ -29,6 +40,9 @@ export const defaultProgress: UserProgress = {
   sentenceProgress: {},
   mistakes: [],
   vocabulary: [],
+  customVocabulary: [],
+  customVocabularyPractice: [],
+  disabledVocabularyPracticeIds: [],
   achievements: [],
   favorites: [],
   dailyGoal: 20,
@@ -38,10 +52,24 @@ export const defaultProgress: UserProgress = {
 function mergeVocabularyEntries(entries: VocabularyProgress[]): VocabularyProgress[] {
   const merged = new Map<string, VocabularyProgress>();
   for (const entry of entries) {
-    const key = normalizeVocabularyKey(entry.word);
+    const key = normalizeVocabularyIdentityKey(entry.word ?? entry.id.replace(/^vocab:/, ''));
     const existing = merged.get(key);
     if (!existing) {
-      merged.set(key, { ...entry, id: `vocab:${key}` });
+      merged.set(key, {
+        id: `vocab:${key}`,
+        sourceTopic: entry.sourceTopic,
+        timesSeen: entry.timesSeen,
+        timesCorrect: entry.timesCorrect,
+        mastery: entry.mastery,
+        favorite: entry.favorite,
+        practiceCount: entry.practiceCount,
+        firstTryCorrectCount: entry.firstTryCorrectCount,
+        targetUsageCorrectCount: entry.targetUsageCorrectCount,
+        incorrectCount: entry.incorrectCount,
+        consecutiveCorrect: entry.consecutiveCorrect,
+        lastPracticedAt: entry.lastPracticedAt,
+        nextReviewAt: entry.nextReviewAt,
+      });
       continue;
     }
     const timesSeen = existing.timesSeen + entry.timesSeen;
@@ -63,7 +91,10 @@ export function migrateProgress(value: unknown, version: number): UserProgress {
     settings?: Partial<UserSettings> & { heartsEnabled?: boolean };
   };
   const persisted = value && typeof value === 'object' ? (value as LegacyProgress) : {};
-  const base: UserProgress & { hearts?: number; settings: UserSettings & { heartsEnabled?: boolean } } = {
+  const base: UserProgress & {
+    hearts?: number;
+    settings: UserSettings & { heartsEnabled?: boolean };
+  } = {
     ...defaultProgress,
     ...persisted,
     settings: { ...defaultSettings, ...persisted.settings },
@@ -76,49 +107,69 @@ export function migrateProgress(value: unknown, version: number): UserProgress {
   }
   if (version < 3) base.vocabulary = mergeVocabularyEntries(base.vocabulary);
   if (version < 4) {
-    base.sentenceProgress = Object.fromEntries(Object.entries(base.sentenceProgress).map(([turnId, progress]) => {
-      const incorrectCount = progress.incorrectCount ?? Math.max(0, progress.attempts - progress.correct);
-      const consecutiveCorrect = progress.consecutiveCorrect ?? (progress.correct > 0 ? 1 : 0);
-      return [turnId, {
-        ...progress,
-        incorrectCount,
-        firstTryCorrect: progress.firstTryCorrect ?? 0,
-        consecutiveCorrect,
-        mastery: progress.mastery ?? masteryFor(progress.correct, consecutiveCorrect),
-        nextReviewAt: progress.nextReviewAt ?? progress.lastSeenAt,
-      }];
-    }));
+    base.sentenceProgress = Object.fromEntries(
+      Object.entries(base.sentenceProgress).map(([turnId, progress]) => {
+        const incorrectCount =
+          progress.incorrectCount ?? Math.max(0, progress.attempts - progress.correct);
+        const consecutiveCorrect = progress.consecutiveCorrect ?? (progress.correct > 0 ? 1 : 0);
+        return [
+          turnId,
+          {
+            ...progress,
+            incorrectCount,
+            firstTryCorrect: progress.firstTryCorrect ?? 0,
+            consecutiveCorrect,
+            mastery: progress.mastery ?? masteryFor(progress.correct, consecutiveCorrect),
+            nextReviewAt: progress.nextReviewAt ?? progress.lastSeenAt,
+          },
+        ];
+      }),
+    );
   }
   if (version < 5) {
     const migrated: Record<string, ConversationProgress> = { ...(base.conversationProgress ?? {}) };
     for (const conversationId of base.completedLessons ?? []) {
       if (migrated[conversationId]) continue;
-      const practiced = Object.entries(base.sentenceProgress).filter(([turnId]) => turnId.startsWith(`${conversationId}-t`));
-      const completedAt = (role: LearningRole) => practiced
-        .filter(([turnId]) => {
-          const number = Number(turnId.match(/-t(\d+)$/)?.[1]);
-          return Number.isInteger(number) && (role === 'A' ? number % 2 === 1 : number % 2 === 0);
-        })
-        .map(([, progress]) => progress.lastSeenAt)
-        .sort()
-        .at(-1);
+      const practiced = Object.entries(base.sentenceProgress).filter(([turnId]) =>
+        turnId.startsWith(`${conversationId}-t`),
+      );
+      const completedAt = (role: LearningRole) =>
+        practiced
+          .filter(([turnId]) => {
+            const number = Number(turnId.match(/-t(\d+)$/)?.[1]);
+            return Number.isInteger(number) && (role === 'A' ? number % 2 === 1 : number % 2 === 0);
+          })
+          .map(([, progress]) => progress.lastSeenAt)
+          .sort()
+          .at(-1);
       const topicFromStableId = conversationId.match(/^(.*)-c\d+$/)?.[1];
-      const topicId = topicFromStableId
-        ?? base.mistakes.find((item) => item.conversationId === conversationId)?.topicId
-        ?? '';
+      const topicId =
+        topicFromStableId ??
+        base.mistakes.find((item) => item.conversationId === conversationId)?.topicId ??
+        '';
       migrated[conversationId] = {
         conversationId,
         topicId,
         roles: {
-          A:{ attempts:0, completedAt:completedAt('A') },
-          B:{ attempts:0, completedAt:completedAt('B') },
+          A: { attempts: 0, completedAt: completedAt('A') },
+          B: { attempts: 0, completedAt: completedAt('B') },
         },
       };
     }
     base.conversationProgress = migrated;
-    base.completedLessons = Object.values(migrated).filter(isConversationCompleted).map((item) => item.conversationId);
+    base.completedLessons = Object.values(migrated)
+      .filter(isConversationCompleted)
+      .map((item) => item.conversationId);
     // Legacy topic completion represented one unknown role, so it cannot safely unlock a topic in V5.
     base.completedTopics = [];
+  }
+  if (version < 7) {
+    base.vocabulary = mergeVocabularyEntries(base.vocabulary ?? []);
+    base.customVocabulary = base.customVocabulary ?? [];
+    base.customVocabularyPractice = base.customVocabularyPractice ?? [];
+  }
+  if (version < 8) {
+    base.disabledVocabularyPracticeIds = base.disabledVocabularyPracticeIds ?? [];
   }
   return { ...base, version: CURRENT_PROGRESS_VERSION };
 }
@@ -162,6 +213,20 @@ interface ProgressActions {
   toggleFavoriteTopic: (topicId: string) => void;
   toggleVocabularyFavorite: (id: string) => void;
   markVocabularySeen: (items: VocabularyItem[], topicId: string, correct: boolean) => void;
+  addVocabulary: (id: string, sourceTopic?: string) => void;
+  addCustomVocabulary: (entry: VocabularyEntry) => void;
+  addCustomVocabularyPractice: (item: VocabularyPracticeItem) => void;
+  deleteCustomVocabulary: (id: string) => void;
+  removeVocabulary: (id: string) => void;
+  deleteVocabularyPractice: (id: string) => void;
+  toggleVocabularyPracticeDisabled: (id: string) => void;
+  recordVocabularyPractice: (payload: {
+    item: VocabularyPracticeItem;
+    evaluation: EvaluationResult;
+    targetUsed: boolean;
+    firstTry: boolean;
+    shownAnswer: boolean;
+  }) => void;
   resetProgress: () => void;
   setLevel: (level: Difficulty) => void;
 }
@@ -183,7 +248,8 @@ export const useProgressStore = create<ProgressStore>()(
           const daily = dailyState(state);
           const previousSentence = state.sentenceProgress[payload.turnId];
           const now = new Date();
-          const successful = payload.result.status === 'correct' || payload.result.status === 'acceptable';
+          const successful =
+            payload.result.status === 'correct' || payload.result.status === 'acceptable';
           const schedule = scheduleNextReview(previousSentence, successful, now);
           const sentenceProgress = {
             ...state.sentenceProgress,
@@ -191,7 +257,8 @@ export const useProgressStore = create<ProgressStore>()(
               attempts: (previousSentence?.attempts ?? 0) + 1,
               correct: (previousSentence?.correct ?? 0) + (successful ? 1 : 0),
               incorrectCount: (previousSentence?.incorrectCount ?? 0) + (successful ? 0 : 1),
-              firstTryCorrect: (previousSentence?.firstTryCorrect ?? 0) + (successful && payload.firstTry ? 1 : 0),
+              firstTryCorrect:
+                (previousSentence?.firstTryCorrect ?? 0) + (successful && payload.firstTry ? 1 : 0),
               lastSeenAt: now.toISOString(),
               lastCorrectAt: successful ? now.toISOString() : previousSentence?.lastCorrectAt,
               ...schedule,
@@ -203,7 +270,9 @@ export const useProgressStore = create<ProgressStore>()(
           const goalReachedNow = todayXp >= state.dailyGoal;
           const mistakes = isWrong
             ? (() => {
-                const existingIndex = state.mistakes.findIndex((item) => item.turnId === payload.turnId);
+                const existingIndex = state.mistakes.findIndex(
+                  (item) => item.turnId === payload.turnId,
+                );
                 const next = [...state.mistakes];
                 const record = {
                   id: `${payload.turnId}-${Date.now()}`,
@@ -216,7 +285,8 @@ export const useProgressStore = create<ProgressStore>()(
                   canonicalAnswer: payload.result.canonicalAnswer,
                   types: payload.result.mistakes.map((item) => item.type),
                   createdAt: now.toISOString(),
-                  reviewCount: existingIndex >= 0 ? (state.mistakes[existingIndex]?.reviewCount ?? 0) + 1 : 0,
+                  reviewCount:
+                    existingIndex >= 0 ? (state.mistakes[existingIndex]?.reviewCount ?? 0) + 1 : 0,
                   nextReviewAt: schedule.nextReviewAt,
                 };
                 if (existingIndex >= 0) next.splice(existingIndex, 1);
@@ -238,27 +308,36 @@ export const useProgressStore = create<ProgressStore>()(
         const roleWasNew = !previous?.roles[payload.role].completedAt;
         const conversationWasComplete = isConversationCompleted(previous);
         const now = new Date().toISOString();
-        const roleProgress = previous?.roles[payload.role] ?? { attempts:0 };
+        const roleProgress = previous?.roles[payload.role] ?? { attempts: 0 };
         const updatedConversation: ConversationProgress = {
-          conversationId:payload.conversationId,
-          topicId:payload.topicId,
-          roles:{
-            A:previous?.roles.A ?? { attempts:0 },
-            B:previous?.roles.B ?? { attempts:0 },
-            [payload.role]:{
+          conversationId: payload.conversationId,
+          topicId: payload.topicId,
+          roles: {
+            A: previous?.roles.A ?? { attempts: 0 },
+            B: previous?.roles.B ?? { attempts: 0 },
+            [payload.role]: {
               ...roleProgress,
-              attempts:roleProgress.attempts + 1,
-              completedAt:roleProgress.completedAt ?? now,
-              accuracy:payload.accuracy,
-              xpEarned:(roleProgress.xpEarned ?? 0) + payload.sessionXp,
+              attempts: roleProgress.attempts + 1,
+              completedAt: roleProgress.completedAt ?? now,
+              accuracy: payload.accuracy,
+              xpEarned: (roleProgress.xpEarned ?? 0) + payload.sessionXp,
             },
           },
         };
-        const conversationProgress = { ...state.conversationProgress, [payload.conversationId]:updatedConversation };
+        const conversationProgress = {
+          ...state.conversationProgress,
+          [payload.conversationId]: updatedConversation,
+        };
         const conversationCompleted = isConversationCompleted(updatedConversation);
         const conversationWasNew = conversationCompleted && !conversationWasComplete;
-        const completionXp = (roleWasNew ? payload.roleBonusXp : 0) + (conversationWasNew ? CONVERSATION_MASTERY_BONUS : 0);
-        const topicCompleted = isTopicCompleted(conversationProgress, payload.topicId, payload.topicConversationIds);
+        const completionXp =
+          (roleWasNew ? payload.roleBonusXp : 0) +
+          (conversationWasNew ? CONVERSATION_MASTERY_BONUS : 0);
+        const topicCompleted = isTopicCompleted(
+          conversationProgress,
+          payload.topicId,
+          payload.topicConversationIds,
+        );
         set((current) => {
           const daily = dailyState(state);
           const todayXp = daily.todayXp + completionXp;
@@ -270,8 +349,12 @@ export const useProgressStore = create<ProgressStore>()(
             todayXp,
             streak: !goalReachedBefore && goalReachedNow ? state.streak + 1 : state.streak,
             conversationProgress,
-            completedLessons: conversationCompleted ? Array.from(new Set([...current.completedLessons, payload.conversationId])) : current.completedLessons,
-            completedTopics: topicCompleted ? Array.from(new Set([...current.completedTopics, payload.topicId])) : current.completedTopics,
+            completedLessons: conversationCompleted
+              ? Array.from(new Set([...current.completedLessons, payload.conversationId]))
+              : current.completedLessons,
+            completedTopics: topicCompleted
+              ? Array.from(new Set([...current.completedTopics, payload.topicId]))
+              : current.completedTopics,
           };
         });
         return {
@@ -280,29 +363,234 @@ export const useProgressStore = create<ProgressStore>()(
           conversationWasNew,
           topicCompleted,
           completionXp,
-          rolesCompleted:Number(Boolean(updatedConversation.roles.A.completedAt)) + Number(Boolean(updatedConversation.roles.B.completedAt)),
+          rolesCompleted:
+            Number(Boolean(updatedConversation.roles.A.completedAt)) +
+            Number(Boolean(updatedConversation.roles.B.completedAt)),
         };
       },
       setDailyGoal: (dailyGoal) => set({ dailyGoal }),
-      updateSettings: (settings) => set((state) => ({ settings: { ...state.settings, ...settings } })),
+      updateSettings: (settings) =>
+        set((state) => ({ settings: { ...state.settings, ...settings } })),
       toggleFavoriteTopic: (topicId) =>
-        set((state) => ({ favorites: state.favorites.includes(topicId) ? state.favorites.filter((id) => id !== topicId) : [...state.favorites, topicId] })),
-      toggleVocabularyFavorite: (id) => set((state) => ({ vocabulary: state.vocabulary.map((item) => item.id === id ? { ...item, favorite: !item.favorite } : item) })),
+        set((state) => ({
+          favorites: state.favorites.includes(topicId)
+            ? state.favorites.filter((id) => id !== topicId)
+            : [...state.favorites, topicId],
+        })),
+      toggleVocabularyFavorite: (id) =>
+        set((state) => ({
+          vocabulary: state.vocabulary.some((item) => item.id === id)
+            ? state.vocabulary.map((item) =>
+                item.id === id ? { ...item, favorite: !item.favorite } : item,
+              )
+            : [
+                ...state.vocabulary,
+                {
+                  id,
+                  sourceTopic: 'vocabulary-practice',
+                  timesSeen: 0,
+                  timesCorrect: 0,
+                  mastery: 'new',
+                  favorite: true,
+                },
+              ],
+        })),
+      addVocabulary: (id, sourceTopic = 'vocabulary-practice') =>
+        set((state) =>
+          state.vocabulary.some((item) => item.id === id)
+            ? state
+            : {
+                vocabulary: [
+                  ...state.vocabulary,
+                  {
+                    id,
+                    sourceTopic,
+                    timesSeen: 0,
+                    timesCorrect: 0,
+                    practiceCount: 0,
+                    firstTryCorrectCount: 0,
+                    targetUsageCorrectCount: 0,
+                    incorrectCount: 0,
+                    consecutiveCorrect: 0,
+                    mastery: 'new',
+                    favorite: false,
+                  },
+                ],
+              },
+        ),
+      addCustomVocabulary: (entry) =>
+        set((state) => ({
+          customVocabulary: [
+            ...state.customVocabulary.filter((item) => item.id !== entry.id),
+            entry,
+          ],
+        })),
+      addCustomVocabularyPractice: (item) =>
+        set((state) => ({
+          customVocabularyPractice: [
+            ...state.customVocabularyPractice.filter((existing) => existing.id !== item.id),
+            item,
+          ],
+          disabledVocabularyPracticeIds: state.disabledVocabularyPracticeIds.filter(
+            (id) => id !== item.id,
+          ),
+        })),
+      deleteCustomVocabulary: (id) =>
+        set((state) => {
+          const practiceIds = new Set(
+            state.customVocabularyPractice
+              .filter((item) => item.vocabularyId === id)
+              .map((item) => item.id),
+          );
+          return {
+            customVocabulary: state.customVocabulary.filter((item) => item.id !== id),
+            customVocabularyPractice: state.customVocabularyPractice.filter(
+              (item) => item.vocabularyId !== id,
+            ),
+            disabledVocabularyPracticeIds: state.disabledVocabularyPracticeIds.filter(
+              (practiceId) => !practiceIds.has(practiceId),
+            ),
+            vocabulary: state.vocabulary.filter((item) => item.id !== id),
+            mistakes: state.mistakes.filter((item) => item.vocabularyId !== id),
+            sentenceProgress: Object.fromEntries(
+              Object.entries(state.sentenceProgress).filter(
+                ([practiceId]) => !practiceIds.has(practiceId),
+              ),
+            ),
+          };
+        }),
+      removeVocabulary: (id) =>
+        set((state) => ({
+          vocabulary: state.vocabulary.filter((item) => item.id !== id),
+          mistakes: state.mistakes.filter((item) => item.vocabularyId !== id),
+        })),
+      deleteVocabularyPractice: (id) =>
+        set((state) => ({
+          customVocabularyPractice: state.customVocabularyPractice.filter((item) => item.id !== id),
+          disabledVocabularyPracticeIds: state.disabledVocabularyPracticeIds.filter(
+            (practiceId) => practiceId !== id,
+          ),
+          mistakes: state.mistakes.filter((item) => item.turnId !== id),
+          sentenceProgress: Object.fromEntries(
+            Object.entries(state.sentenceProgress).filter(([practiceId]) => practiceId !== id),
+          ),
+        })),
+      toggleVocabularyPracticeDisabled: (id) =>
+        set((state) => ({
+          disabledVocabularyPracticeIds: state.disabledVocabularyPracticeIds.includes(id)
+            ? state.disabledVocabularyPracticeIds.filter((practiceId) => practiceId !== id)
+            : [...state.disabledVocabularyPracticeIds, id],
+        })),
+      recordVocabularyPractice: ({ item, evaluation, targetUsed, firstTry, shownAnswer }) =>
+        set((state) => {
+          const now = new Date();
+          const successful = evaluation.status === 'correct' || evaluation.status === 'acceptable';
+          const productionSuccess = successful && targetUsed && !shownAnswer;
+          const existing = state.vocabulary.find((entry) => entry.id === item.vocabularyId);
+          const targetCorrect =
+            (existing?.targetUsageCorrectCount ?? 0) + (productionSuccess ? 1 : 0);
+          const consecutive = productionSuccess ? (existing?.consecutiveCorrect ?? 0) + 1 : 0;
+          const mastery = productionSuccess
+            ? masteryFor(targetCorrect, consecutive)
+            : targetCorrect > 0
+              ? 'learning'
+              : 'new';
+          const priorSentence = state.sentenceProgress[item.id];
+          const schedule = scheduleNextReview(priorSentence, productionSuccess, now);
+          const progress: VocabularyProgress = {
+            id: item.vocabularyId,
+            sourceTopic: item.sourceTopicId ?? existing?.sourceTopic ?? 'vocabulary-practice',
+            timesSeen: (existing?.timesSeen ?? 0) + 1,
+            timesCorrect: (existing?.timesCorrect ?? 0) + (successful ? 1 : 0),
+            practiceCount: (existing?.practiceCount ?? 0) + 1,
+            firstTryCorrectCount:
+              (existing?.firstTryCorrectCount ?? 0) + (productionSuccess && firstTry ? 1 : 0),
+            targetUsageCorrectCount: targetCorrect,
+            incorrectCount: (existing?.incorrectCount ?? 0) + (successful ? 0 : 1),
+            consecutiveCorrect: consecutive,
+            lastPracticedAt: now.toISOString(),
+            nextReviewAt: schedule.nextReviewAt,
+            mastery,
+            favorite: existing?.favorite ?? false,
+          };
+          const sentenceProgress = {
+            ...state.sentenceProgress,
+            [item.id]: {
+              attempts: (priorSentence?.attempts ?? 0) + 1,
+              correct: (priorSentence?.correct ?? 0) + (productionSuccess ? 1 : 0),
+              incorrectCount: (priorSentence?.incorrectCount ?? 0) + (productionSuccess ? 0 : 1),
+              firstTryCorrect:
+                (priorSentence?.firstTryCorrect ?? 0) + (productionSuccess && firstTry ? 1 : 0),
+              lastSeenAt: now.toISOString(),
+              lastCorrectAt: productionSuccess ? now.toISOString() : priorSentence?.lastCorrectAt,
+              ...schedule,
+            },
+          };
+          const vocabulary = [
+            ...state.vocabulary.filter((entry) => entry.id !== item.vocabularyId),
+            progress,
+          ];
+          const mistakes = !successful
+            ? [
+                {
+                  id: `${item.id}-${Date.now()}`,
+                  turnId: item.id,
+                  topicId: item.sourceTopicId ?? 'vocabulary',
+                  conversationId: item.sourceConversationId ?? item.vocabularyId,
+                  vocabularyId: item.vocabularyId,
+                  vietnamese: item.vietnamese,
+                  userAnswer: evaluation.userAnswer,
+                  canonicalAnswer: item.canonicalAnswer,
+                  types: evaluation.mistakes.length
+                    ? evaluation.mistakes.map((mistake) => mistake.type)
+                    : ['vocabulary' as const],
+                  createdAt: now.toISOString(),
+                  reviewCount: 0,
+                  nextReviewAt: schedule.nextReviewAt,
+                },
+                ...state.mistakes.filter((mistake) => mistake.turnId !== item.id),
+              ].slice(0, 500)
+            : state.mistakes;
+          return {
+            vocabulary,
+            sentenceProgress,
+            mistakes,
+            xp: state.xp + (productionSuccess ? 5 : successful ? 2 : 0),
+            todayXp: state.todayXp + (productionSuccess ? 5 : successful ? 2 : 0),
+          };
+        }),
       markVocabularySeen: (items, topicId, correct) =>
         set((state) => {
           const vocabulary = [...state.vocabulary];
           for (const item of items) {
-            const key = normalizeVocabularyKey(item.word);
+            const key = normalizeVocabularyIdentityKey(item.word);
             const id = `vocab:${key}`;
-            const index = vocabulary.findIndex((entry) => normalizeVocabularyKey(entry.word) === key);
+            const index = vocabulary.findIndex(
+              (entry) =>
+                entry.id === id ||
+                normalizeVocabularyIdentityKey(entry.word ?? entry.id.replace(/^vocab:/, '')) ===
+                  key,
+            );
             if (index >= 0) {
               const old = vocabulary[index];
               if (!old) continue;
               const timesSeen = old.timesSeen + 1;
               const timesCorrect = old.timesCorrect + (correct ? 1 : 0);
-              vocabulary[index] = { ...old, timesSeen, timesCorrect, mastery: timesCorrect >= 5 ? 'mastered' : 'learning' };
+              vocabulary[index] = {
+                ...old,
+                timesSeen,
+                timesCorrect,
+                mastery: timesCorrect >= 5 ? 'mastered' : 'learning',
+              };
             } else {
-              vocabulary.push({ ...item, id, sourceTopic: topicId, timesSeen: 1, timesCorrect: correct ? 1 : 0, mastery: 'new', favorite: false });
+              vocabulary.push({
+                id,
+                sourceTopic: topicId,
+                timesSeen: 1,
+                timesCorrect: correct ? 1 : 0,
+                mastery: 'new',
+                favorite: false,
+              });
             }
           }
           return { vocabulary };
@@ -315,7 +603,10 @@ export const useProgressStore = create<ProgressStore>()(
       version: CURRENT_PROGRESS_VERSION,
       storage: createJSONStorage(() => localStorage),
       migrate: migrateProgress,
-      partialize: (state) => Object.fromEntries(Object.entries(state).filter(([, value]) => typeof value !== 'function')) as UserProgress,
+      partialize: (state) =>
+        Object.fromEntries(
+          Object.entries(state).filter(([, value]) => typeof value !== 'function'),
+        ) as UserProgress,
     },
   ),
 );

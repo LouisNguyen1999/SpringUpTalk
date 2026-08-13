@@ -30,6 +30,8 @@ export default defineConfig({
           '**/assets/home-social-*.js',
           '**/assets/services-travel-*.js',
           '**/assets/technology-*.js',
+          // Vocabulary detail/practice shards stay lazy and enter the runtime cache after use.
+          '**/assets/*.generated-*.js',
         ],
         runtimeCaching: [{
           urlPattern: ({ request, url }) => request.destination === 'script' && url.pathname.includes('/assets/'),

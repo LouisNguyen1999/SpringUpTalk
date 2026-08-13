@@ -2,23 +2,78 @@ export type Difficulty = 'A1' | 'A2' | 'B1' | 'B2';
 export type Speaker = 'A' | 'B';
 export type LearningRole = Speaker;
 export type CommunicativeIntent =
-  | 'greeting' | 'introducing' | 'asking-information' | 'clarifying' | 'confirming'
-  | 'requesting' | 'suggesting' | 'inviting' | 'accepting' | 'refusing'
-  | 'negotiating' | 'apologizing' | 'complaining' | 'explaining' | 'reporting'
-  | 'troubleshooting' | 'comparing' | 'persuading' | 'giving-advice'
-  | 'giving-instructions' | 'expressing-concern' | 'reassuring'
-  | 'disagreeing-politely' | 'handling-misunderstanding' | 'asking-follow-up'
-  | 'changing-plans' | 'resolving-conflict' | 'summarizing' | 'making-decisions'
-  | 'planning' | 'polite-offers' | 'giving-feedback';
+  | 'greeting'
+  | 'introducing'
+  | 'asking-information'
+  | 'clarifying'
+  | 'confirming'
+  | 'requesting'
+  | 'suggesting'
+  | 'inviting'
+  | 'accepting'
+  | 'refusing'
+  | 'negotiating'
+  | 'apologizing'
+  | 'complaining'
+  | 'explaining'
+  | 'reporting'
+  | 'troubleshooting'
+  | 'comparing'
+  | 'persuading'
+  | 'giving-advice'
+  | 'giving-instructions'
+  | 'expressing-concern'
+  | 'reassuring'
+  | 'disagreeing-politely'
+  | 'handling-misunderstanding'
+  | 'asking-follow-up'
+  | 'changing-plans'
+  | 'resolving-conflict'
+  | 'summarizing'
+  | 'making-decisions'
+  | 'planning'
+  | 'polite-offers'
+  | 'giving-feedback';
 export type ConversationRelationship =
-  | 'close-friend' | 'partner' | 'family' | 'coworker' | 'manager' | 'client'
-  | 'customer' | 'service-staff' | 'stranger' | 'teacher' | 'student'
-  | 'doctor' | 'patient' | 'tenant' | 'landlord' | 'resident' | 'building-security'
-  | 'technician' | 'delivery-staff' | 'employee' | 'stakeholder' | 'hr'
-  | 'senior-colleague' | 'junior-colleague' | 'receptionist' | 'pharmacist'
-  | 'bank-staff' | 'merchant' | 'advisor' | 'support-staff' | 'hotel-staff'
-  | 'airline-staff' | 'immigration-officer' | 'postal-staff' | 'stylist'
-  | 'council-staff' | 'neighbor' | 'volunteer' | 'security-staff';
+  | 'close-friend'
+  | 'partner'
+  | 'family'
+  | 'coworker'
+  | 'manager'
+  | 'client'
+  | 'customer'
+  | 'service-staff'
+  | 'stranger'
+  | 'teacher'
+  | 'student'
+  | 'doctor'
+  | 'patient'
+  | 'tenant'
+  | 'landlord'
+  | 'resident'
+  | 'building-security'
+  | 'technician'
+  | 'delivery-staff'
+  | 'employee'
+  | 'stakeholder'
+  | 'hr'
+  | 'senior-colleague'
+  | 'junior-colleague'
+  | 'receptionist'
+  | 'pharmacist'
+  | 'bank-staff'
+  | 'merchant'
+  | 'advisor'
+  | 'support-staff'
+  | 'hotel-staff'
+  | 'airline-staff'
+  | 'immigration-officer'
+  | 'postal-staff'
+  | 'stylist'
+  | 'council-staff'
+  | 'neighbor'
+  | 'volunteer'
+  | 'security-staff';
 export type MistakeType =
   | 'grammar'
   | 'vocabulary'
@@ -45,6 +100,105 @@ export interface VocabularyItem {
   exampleVi?: string;
 }
 
+export type VocabularyType =
+  | 'word'
+  | 'noun'
+  | 'verb'
+  | 'adjective'
+  | 'adverb'
+  | 'pronoun'
+  | 'preposition'
+  | 'phrasal-verb'
+  | 'idiom'
+  | 'phrase'
+  | 'expression'
+  | 'collocation';
+
+export interface VocabularyMeaning {
+  id: string;
+  partOfSpeech?: string;
+  meaning: string;
+  explanationVietnamese?: string;
+}
+
+export interface VocabularyExample {
+  id: string;
+  english: string;
+  vietnamese: string;
+  context?: string;
+  sourceTopicId?: string;
+  sourceConversationId?: string;
+  sourceReferences?: VocabularySourceReference[];
+}
+
+export interface VocabularySourceReference {
+  provider: string;
+  url: string;
+  license?: string;
+  retrievedAt: string;
+}
+
+export interface VocabularyEntry {
+  id: string;
+  term: string;
+  normalizedTerm: string;
+  type: VocabularyType;
+  partOfSpeech?: string;
+  ipa?: string;
+  meanings: VocabularyMeaning[];
+  definitionEnglish?: string;
+  explanationVietnamese?: string;
+  collocations: string[];
+  phrases: string[];
+  wordFamily: string[];
+  synonyms: string[];
+  antonyms: string[];
+  examples: VocabularyExample[];
+  cefr?: Difficulty;
+  tags: string[];
+  sourceTopicIds: string[];
+  custom?: boolean;
+  sourceReferences?: VocabularySourceReference[];
+  lookupUpdatedAt?: string;
+}
+
+export interface VocabularySummary {
+  id: string;
+  term: string;
+  normalizedTerm: string;
+  shortMeaning: string;
+  cefr?: Difficulty;
+  type: VocabularyType;
+  partOfSpeech?: string;
+  tags: string[];
+  practiceCount: number;
+  shard: number;
+}
+
+export interface VocabularyPracticeItem {
+  id: string;
+  vocabularyId: string;
+  senseId?: string;
+  vietnamese: string;
+  canonicalAnswer: string;
+  acceptedAnswers: string[];
+  naturalAlternatives: string[];
+  targetExpressions: string[];
+  grammarFocus: string[];
+  hint?: string;
+  explanation?: string;
+  context?: string;
+  level: Difficulty;
+  sourceTopicId?: string;
+  sourceConversationId?: string;
+  semanticConstraints?: SemanticConstraints;
+  commonMistakes?: CommonMistake[];
+  custom?: boolean;
+  generated?: boolean;
+  edited?: boolean;
+  sourceReferences?: VocabularySourceReference[];
+}
+
 export interface CommonMistake {
   pattern: string;
   type: MistakeType;
@@ -58,7 +212,14 @@ export interface SemanticConstraints {
   intent?: string;
   requiredConcepts?: string[][];
   forbiddenConcepts?: string[];
-  tenseExpectation?: 'present-simple-question' | 'past-simple' | 'past-simple-question' | 'present-perfect' | 'present-perfect-duration' | 'first-conditional' | 'third-conditional';
+  tenseExpectation?:
+    | 'present-simple-question'
+    | 'past-simple'
+    | 'past-simple-question'
+    | 'present-perfect'
+    | 'present-perfect-duration'
+    | 'first-conditional'
+    | 'third-conditional';
   polarity?: AnswerPolarity;
   criticalValues?: string[][];
   criticalTokens?: string[][];
@@ -154,16 +315,30 @@ export interface MistakeRecord {
   createdAt: string;
   reviewCount: number;
   nextReviewAt?: string;
+  vocabularyId?: string;
 }
 
 export type Mastery = 'new' | 'learning' | 'familiar' | 'strong' | 'mastered';
-export interface VocabularyProgress extends VocabularyItem {
+export interface VocabularyProgress {
   id: string;
   sourceTopic: string;
   timesSeen: number;
   timesCorrect: number;
+  practiceCount?: number;
+  firstTryCorrectCount?: number;
+  targetUsageCorrectCount?: number;
+  incorrectCount?: number;
+  consecutiveCorrect?: number;
+  lastPracticedAt?: string;
+  nextReviewAt?: string;
   mastery: Mastery;
   favorite: boolean;
+  /** Legacy V1–V6 fields; migration removes these from static entries. */
+  word?: string;
+  meaning?: string;
+  ipa?: string;
+  example?: string;
+  exampleVi?: string;
 }
 
 export interface SentenceProgress {
@@ -204,6 +379,9 @@ export interface UserProgress {
   sentenceProgress: Record<string, SentenceProgress>;
   mistakes: MistakeRecord[];
   vocabulary: VocabularyProgress[];
+  customVocabulary: VocabularyEntry[];
+  customVocabularyPractice: VocabularyPracticeItem[];
+  disabledVocabularyPracticeIds: string[];
   achievements: string[];
   favorites: string[];
   dailyGoal: number;

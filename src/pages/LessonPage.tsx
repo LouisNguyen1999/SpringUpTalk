@@ -1,6 +1,6 @@
 import { ArrowLeft, MessageCircle, UserRound } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { AnswerInput } from '../components/conversation/AnswerInput';
 import { ConversationBubble } from '../components/conversation/ConversationBubble';
@@ -41,6 +41,7 @@ export default function LessonPage() {
   const [stats, setStats] = useState<LessonStats>(emptyStats);
   const [shownAnswer, setShownAnswer] = useState(false);
   const [completionOutcome, setCompletionOutcome] = useState<RoleCompletionOutcome>();
+  const messagesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let active = true;
@@ -64,6 +65,25 @@ export default function LessonPage() {
   const currentTurn = conversation?.turns[currentIndex];
   const learnerPosition = currentTurn ? learnerTurns.findIndex((turn) => turn.id === currentTurn.id) : -1;
   const savedProgress = conversationId ? conversationProgress[conversationId] : undefined;
+
+  useLayoutEffect(() => {
+    const messages = messagesRef.current;
+    if (!messages || !role || complete) return;
+
+    const keepLatestTurnVisible = () => {
+      messages.scrollTop = messages.scrollHeight;
+    };
+
+    keepLatestTurnVisible();
+    const frame = window.requestAnimationFrame(keepLatestTurnVisible);
+    const observer =
+      typeof ResizeObserver === 'undefined' ? undefined : new ResizeObserver(keepLatestTurnVisible);
+    observer?.observe(messages);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      observer?.disconnect();
+    };
+  }, [complete, currentIndex, hintLevel, result, role, typing]);
 
   function start(selectedRole: LearningRole) {
     if (!conversation) return;
@@ -125,5 +145,5 @@ export default function LessonPage() {
   const hintText = currentTurn ? hintLevel === 1 ? `Từ khóa: ${currentTurn.hint || currentTurn.requiredKeywords?.join(' / ')}` : hintLevel === 2 ? `Cấu trúc: ${currentTurn.grammarPoints?.join(' · ')}` : hintLevel === 3 ? `Chữ cái đầu: ${firstLetterHint(currentTurn.canonicalAnswer)}` : '' : '';
   const visibleTurns = conversation.turns.slice(0, currentIndex + 1);
 
-  return <main className="lesson-layout"><header className="lesson-top"><Link to={`/topics/${topic.id}`} aria-label="Thoát bài học"><ArrowLeft /></Link><div><b>{conversation.title}</b><span>Bạn là Person {role}</span></div><div className="lesson-progress"><ProgressBar value={Math.max(0, learnerPosition)} max={learnerTurns.length} /><span>{Math.max(1, learnerPosition + 1)}/{learnerTurns.length}</span></div></header><div className="lesson-body"><aside className="context-panel"><span className="partner-avatar">{conversation.partner.avatar}</span><h2>{conversation.partner.name}</h2><span className="online">● Online</span><div><small>TÌNH HUỐNG</small><p>{conversation.situation}</p></div><div><small>MỤC TIÊU</small><p>{conversation.goal}</p></div><div><small>CỤM TỪ HỮU ÍCH</small>{topic.grammar.map((item) => <span className="tag" key={item}>{item}</span>)}</div></aside><section className="chat-workspace"><div className="chat-header"><div className="partner-avatar small">{conversation.partner.avatar}</div><div><b>{conversation.partner.name}</b><span>đang trò chuyện với bạn</span></div></div><div className="messages" aria-live="polite">{visibleTurns.map((turn) => <ConversationBubble key={turn.id} turn={turn} role={role} active={turn.id === currentTurn?.id} english={turn.speaker !== role ? turn.canonicalAnswer : answered[turn.id]} />)}{typing && <div className="typing"><span /><span /><span /> {conversation.partner.name} đang nhập…</div>}</div>{currentTurn && !typing && <div className="composer"><AnimatePresence>{hintText && <motion.div className="hint-box" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }}>💡 {hintText}</motion.div>}</AnimatePresence>{!result && <AnswerInput value={answer} onChange={setAnswer} onSubmit={submit} onHint={() => setHintLevel((level) => Math.min(3, level + 1) as 0|1|2|3)} onShowAnswer={showAnswer} hintLevel={hintLevel} />}{result && <FeedbackPanel result={result} xp={earnedXp} shownAnswer={shownAnswer} canRetry={result.status === 'incorrect' && attempt < 3 && !shownAnswer} onRetry={retry} onNext={result.status === 'incorrect' && !shownAnswer ? showAnswer : next} />}</div>}</section></div></main>;
+  return <main className="lesson-layout"><header className="lesson-top"><Link to={`/topics/${topic.id}`} aria-label="Thoát bài học"><ArrowLeft /></Link><div><b>{conversation.title}</b><span>Bạn là Person {role}</span></div><div className="lesson-progress"><ProgressBar value={Math.max(0, learnerPosition)} max={learnerTurns.length} /><span>{Math.max(1, learnerPosition + 1)}/{learnerTurns.length}</span></div></header><div className="lesson-body"><aside className="context-panel"><span className="partner-avatar">{conversation.partner.avatar}</span><h2>{conversation.partner.name}</h2><span className="online">● Online</span><div><small>TÌNH HUỐNG</small><p>{conversation.situation}</p></div><div><small>MỤC TIÊU</small><p>{conversation.goal}</p></div><div><small>CỤM TỪ HỮU ÍCH</small>{topic.grammar.map((item) => <span className="tag" key={item}>{item}</span>)}</div></aside><section className="chat-workspace"><div className="chat-header"><div className="partner-avatar small">{conversation.partner.avatar}</div><div><b>{conversation.partner.name}</b><span>đang trò chuyện với bạn</span></div></div><div className="messages" ref={messagesRef} aria-live="polite">{visibleTurns.map((turn) => <ConversationBubble key={turn.id} turn={turn} role={role} active={turn.id === currentTurn?.id} english={turn.speaker !== role ? turn.canonicalAnswer : answered[turn.id]} />)}{typing && <div className="typing"><span /><span /><span /> {conversation.partner.name} đang nhập…</div>}</div>{currentTurn && !typing && <div className="composer"><AnimatePresence>{hintText && <motion.div className="hint-box" initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }}>💡 {hintText}</motion.div>}</AnimatePresence>{!result && <AnswerInput value={answer} onChange={setAnswer} onSubmit={submit} onHint={() => setHintLevel((level) => Math.min(3, level + 1) as 0|1|2|3)} onShowAnswer={showAnswer} hintLevel={hintLevel} />}{result && <FeedbackPanel result={result} xp={earnedXp} shownAnswer={shownAnswer} canRetry={result.status === 'incorrect' && attempt < 3 && !shownAnswer} onRetry={retry} onNext={result.status === 'incorrect' && !shownAnswer ? showAnswer : next} />}</div>}</section></div></main>;
 }

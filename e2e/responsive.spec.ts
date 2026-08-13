@@ -16,10 +16,21 @@ async function expectNoHorizontalOverflow(page: Page) {
   expect(dimensions.scroll,`scrollWidth ${dimensions.scroll} > clientWidth ${dimensions.client}`).toBeLessThanOrEqual(dimensions.client + 1);
 }
 
+async function expectLatestMessageVisible(page: Page) {
+  await expect.poll(async () => page.locator('.messages').evaluate((messages) => {
+    const latest = messages.querySelector('.message-row.active, .typing');
+    if (!latest) return false;
+    const viewport = messages.getBoundingClientRect();
+    const message = latest.getBoundingClientRect();
+    const isAtBottom = messages.scrollHeight - messages.clientHeight - messages.scrollTop <= 2;
+    return isAtBottom && message.bottom <= viewport.bottom + 1 && message.bottom > viewport.top;
+  })).toBe(true);
+}
+
 for (const viewport of matrix) {
   test(`critical layouts have no page overflow at ${viewport.width}x${viewport.height}`, async ({ page }) => {
     await page.setViewportSize(viewport);
-    for (const path of ['/', '/topics', '/lesson/meeting-a-friend/meeting-a-friend-c1', '/lesson/giving-difficult-feedback/giving-difficult-feedback-c1']) {
+    for (const path of ['/', '/topics', '/vocabulary', '/vocabulary/vocab%3Adeadline', '/vocabulary/vocab%3Adeadline/practice', '/lesson/meeting-a-friend/meeting-a-friend-c1', '/lesson/giving-difficult-feedback/giving-difficult-feedback-c1']) {
       await page.goto(path);
       await expect(page.locator('#root')).toBeVisible();
       await expectNoHorizontalOverflow(page);
@@ -56,6 +67,23 @@ test('mobile navigation, grids, role selector, input and feedback use mobile lay
   await expect(page.getByRole('button',{ name:/Tiếp tục/ })).toBeVisible();
   await expect(page.locator('.bottom-nav')).toHaveCount(0);
   await expectNoHorizontalOverflow(page);
+});
+
+test('conversation automatically keeps the newest turn visible', async ({ page }) => {
+  await page.setViewportSize({ width:320,height:568 });
+  await page.goto('/lesson/meeting-a-friend/meeting-a-friend-c1');
+  await page.getByRole('button',{ name:/Bạn là Person B/ }).click();
+  await expect(page.getByLabel('Câu trả lời bằng tiếng Anh')).toBeVisible();
+  await expectLatestMessageVisible(page);
+
+  await page.getByLabel('Câu trả lời bằng tiếng Anh').fill('Yes. Do you want to get some coffee?');
+  await page.getByRole('button',{ name:/Kiểm tra/ }).click();
+  await expect(page.getByText('Chính xác!')).toBeVisible();
+  await expectLatestMessageVisible(page);
+  await page.getByRole('button',{ name:/Tiếp tục/ }).click();
+  await expect(page.getByText('Được đấy. Bạn muốn đi lúc mấy giờ?')).toBeVisible();
+  await expect(page.getByLabel('Câu trả lời bằng tiếng Anh')).toBeVisible();
+  await expectLatestMessageVisible(page);
 });
 
 test('long B2 feedback and accepted alternatives wrap on a 320px lesson', async ({ page }) => {

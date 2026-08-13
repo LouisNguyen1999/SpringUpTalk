@@ -27,3 +27,12 @@ export function searchIndexMatches(normalizedValue: string, normalizedQuery: str
 export function normalizeVocabularyKey(value: string): string {
   return normalizeSearchText(value).replace(/\s+/g, '');
 }
+
+/**
+ * Stable vocabulary identity. `timeout` and the phrasal verb `time out` are the
+ * one known pair that compact to the same search key but must remain separate.
+ */
+export function normalizeVocabularyIdentityKey(value: string): string {
+  const normalized = normalizeSearchText(value);
+  return normalized === 'time out' ? 'time-out' : normalized.replace(/\s+/g, '');
+}

@@ -13,9 +13,9 @@ export const batchECoreTopics = [
       ['Bây giờ có dấu tích màu xanh.','There is a green tick now.','Tốt, giao dịch đã được chấp nhận.','Good. The transaction has been approved.',['approved transaction','giao dịch được chấp nhận']],
     ]],
     ['A Snack Gets Stuck','Món ăn bị mắc','Gói bánh không rơi xuống sau khi mua.','Báo lỗi mà không rung máy.',[
-      ['Gói bánh của mình bị mắc rồi.','My snack is stuck.','Đừng lắc máy vì có thể nguy hiểm.','Do not shake the machine because it may be dangerous.',['get stuck','bị mắc']],
-      ['Mình nên làm gì?','What should I do?','Hãy gọi số hỗ trợ trên nhãn này.','Call the support number on this label.',['support label','nhãn hỗ trợ']],
-      ['Mình cần đọc mã nào cho họ?','Which code should I give them?','Đọc số máy ở góc dưới bên trái.','Give them the machine number in the bottom-left corner.',['machine number','số máy']],
+      ['Gói bánh của mình bị mắc bên trong máy rồi.','My snack is stuck inside the machine.','Đừng lắc máy vì có thể nguy hiểm.','Do not shake the machine because it may be dangerous.',['get stuck','bị mắc']],
+      ['Mình nên làm gì để nhờ hỗ trợ an toàn?','What should I do to get help safely?','Hãy gọi số hỗ trợ trên nhãn này.','Call the support number on this label.',['support label','nhãn hỗ trợ']],
+      ['Mình cần đọc mã nào cho nhân viên hỗ trợ?','Which code should I give the support team?','Đọc số máy ở góc dưới bên trái.','Give them the machine number in the bottom-left corner.',['machine number','số máy']],
     ]],
   ]}),
   t({id:'visiting-a-bookshop',title:'Visiting a Bookshop',titleVi:'Đi nhà sách',category:'Shopping',icon:'📚',level:'A1',description:'Tìm khu sách, hỏi giá và thanh toán.',grammar:['where-questions','there-is-are','present-simple'],scenarios:[

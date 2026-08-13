@@ -128,9 +128,9 @@ export const batchHLifeTopics = [
       ['Trong lúc chờ sửa, có thể đặt biển tạm không?','Can a temporary warning be placed while we wait?','Đội hiện trường sẽ đánh giá khi họ kiểm tra cột.','The field team will assess that when they inspect the pole.',['temporary warning','cảnh báo tạm']],
     ]],
     ['Following the Report','Theo dõi báo cáo','Một tuần sau đèn chưa sửa.','Dùng mã hồ sơ và xin trạng thái.',[
-      ['Mã báo cáo của tôi là L-9021.','My report reference is L-9021.','Tôi thấy đội đã kiểm tra vào thứ Ba.','I can see that a team inspected it on Tuesday.',['report reference','mã báo cáo']],
-      ['Họ phát hiện vấn đề gì?','What problem did they find?','Bộ phận điều khiển cần thay và đang chờ linh kiện.','The control unit needs replacement, and they are waiting for a part.',['replacement part','linh kiện thay']],
-      ['Có ngày sửa dự kiến không?','Is there an estimated repair date?','Công việc được lên lịch trước cuối thứ Sáu.','The work is scheduled before the end of Friday.',['estimated repair','ngày sửa dự kiến']],
+      ['Tôi gọi để theo dõi báo cáo có mã L-9021.','I am following up on report reference L-9021.','Tôi thấy đội đã kiểm tra vào thứ Ba.','I can see that a team inspected it on Tuesday.',['report reference','mã báo cáo']],
+      ['Đội kiểm tra đã phát hiện vấn đề gì?','What problem did the inspection team find?','Bộ phận điều khiển cần thay và đang chờ linh kiện.','The control unit needs replacement, and they are waiting for a part.',['replacement part','linh kiện thay']],
+      ['Đội đã đưa ra ngày sửa dự kiến chưa?','Has the team provided an estimated repair date?','Công việc được lên lịch trước cuối thứ Sáu.','The work is scheduled before the end of Friday.',['estimated repair','ngày sửa dự kiến']],
     ]],
   ]}),
   t({id:'working-with-a-language-tutor',title:'Working with a Language Tutor',titleVi:'Học cùng gia sư ngôn ngữ',category:'Education',icon:'🗣️',level:'A2',description:'Đặt mục tiêu, chuẩn bị buổi học và dùng phản hồi.',grammar:['present-perfect','learning-language','future-forms'],scenarios:[

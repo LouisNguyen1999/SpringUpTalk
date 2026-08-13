@@ -5,7 +5,7 @@ import { ProgressBar } from '../components/common/ProgressBar';
 import { topicManifest } from '../data/content-repository';
 import { useProgressStore } from '../store/progress-store';
 import type { Difficulty } from '../types/domain';
-import { normalizeSearchText, searchTextMatches } from '../utils/search';
+import { normalizeSearchText, searchIndexMatches } from '../utils/search';
 import { topicRoleCounts } from '../engine/progress';
 
 export default function TopicsPage() {
@@ -20,9 +20,8 @@ export default function TopicsPage() {
   const filtered = useMemo(() => {
     const query = normalizeSearchText(search);
     return topicManifest.filter((topic) => {
-      const haystack = normalizeSearchText([topic.title, topic.titleVi, topic.category, ...topic.grammar, ...topic.vocabularyTags].join(' '));
       const progress = topicRoleCounts(conversationProgress,topic.id,topic.conversationCount);
-      return (!query || searchTextMatches(haystack, query)) && (level === 'all' || topic.level === level) && (category === 'all' || topic.category === category) && (status === 'all' || status === progress.state || (status === 'favorite' && favorites.includes(topic.id)));
+      return searchIndexMatches(topic.searchText,query) && (level === 'all' || topic.level === level) && (category === 'all' || topic.category === category) && (status === 'all' || status === progress.state || (status === 'favorite' && favorites.includes(topic.id)));
     });
   }, [category, conversationProgress, favorites, level, search, status]);
   const visibleTopics = filtered.slice(0,visibleCount);

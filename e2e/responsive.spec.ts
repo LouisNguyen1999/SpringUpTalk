@@ -3,7 +3,7 @@ import { expect, test, type Page } from '@playwright/test';
 const matrix = [
   { width:320,height:568 }, { width:360,height:800 }, { width:375,height:667 },
   { width:390,height:844 }, { width:412,height:915 }, { width:430,height:932 },
-  { width:768,height:1024 }, { width:820,height:1180 }, { width:1024,height:768 },
+  { width:600,height:960 }, { width:768,height:1024 }, { width:820,height:1180 }, { width:1024,height:768 },
   { width:1366,height:768 }, { width:1440,height:900 }, { width:1920,height:1080 },
   { width:844,height:390 },
 ] as const;
@@ -16,16 +16,16 @@ async function expectNoHorizontalOverflow(page: Page) {
   expect(dimensions.scroll,`scrollWidth ${dimensions.scroll} > clientWidth ${dimensions.client}`).toBeLessThanOrEqual(dimensions.client + 1);
 }
 
-test('critical layouts have no page overflow across the required viewport matrix', async ({ page }) => {
-  for (const viewport of matrix) {
+for (const viewport of matrix) {
+  test(`critical layouts have no page overflow at ${viewport.width}x${viewport.height}`, async ({ page }) => {
     await page.setViewportSize(viewport);
-    for (const path of ['/', '/topics', '/lesson/meeting-a-friend/meeting-a-friend-c1']) {
+    for (const path of ['/', '/topics', '/lesson/meeting-a-friend/meeting-a-friend-c1', '/lesson/giving-difficult-feedback/giving-difficult-feedback-c1']) {
       await page.goto(path);
-      await page.waitForLoadState('networkidle');
+      await expect(page.locator('#root')).toBeVisible();
       await expectNoHorizontalOverflow(page);
     }
-  }
-});
+  });
+}
 
 test('mobile navigation, grids, role selector, input and feedback use mobile layouts', async ({ page }) => {
   await page.setViewportSize({ width:375,height:812 });
@@ -58,6 +58,17 @@ test('mobile navigation, grids, role selector, input and feedback use mobile lay
   await expectNoHorizontalOverflow(page);
 });
 
+test('long B2 feedback and accepted alternatives wrap on a 320px lesson', async ({ page }) => {
+  await page.setViewportSize({ width:320,height:568 });
+  await page.goto('/lesson/giving-difficult-feedback/giving-difficult-feedback-c1');
+  await page.getByRole('button',{ name:/Bạn là Person A/ }).click();
+  await page.getByLabel('Câu trả lời bằng tiếng Anh').fill('Could we talk through private feedback intended to improve teamwork?');
+  await page.getByRole('button',{ name:/Kiểm tra/ }).click();
+  await expect(page.getByText('Chính xác!')).toBeVisible();
+  await expect(page.getByText('Can we go over private feedback intended to improve teamwork together?')).toBeVisible();
+  await expectNoHorizontalOverflow(page);
+});
+
 test('tablet and desktop switch navigation and topic columns at layout breakpoints', async ({ page }) => {
   await page.setViewportSize({ width:768,height:1024 });
   await page.goto('/topics');
@@ -79,7 +90,7 @@ test('all critical application pages remain within a 320px viewport', async ({ p
   await page.setViewportSize({ width:320,height:568 });
   for (const path of ['/', '/topics', '/topics/meeting-a-friend', '/vocabulary', '/mistakes', '/settings', '/lesson/meeting-a-friend/meeting-a-friend-c1']) {
     await page.goto(path);
-    await page.waitForLoadState('networkidle');
+    await expect(page.locator('#root')).toBeVisible();
     await expectNoHorizontalOverflow(page);
   }
 });

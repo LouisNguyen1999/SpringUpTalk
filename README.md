@@ -46,14 +46,14 @@ src/
 scripts/validate-content.ts
 ```
 
-Dữ liệu học nằm trong `src/data/conversations`, `src/data/depth` và `src/data/scale`. Dataset hiện có **250 topic, 813 conversation, 5.372 lượt và 2.459 vocabulary/collocation duy nhất** thuộc 19 category; danh mục tổng hợp nằm trong [CONTENT_INDEX.md](CONTENT_INDEX.md). UI chỉ import manifest nhẹ; `contentRepository` tải dynamic chunk theo category khi người học mở topic.
+Dữ liệu học nằm trong `src/data/conversations`, `src/data/depth` và `src/data/scale`. Số liệu authoritative của checkpoint hiện tại được tạo tự động trong [CONTENT_INDEX.md](CONTENT_INDEX.md). UI chỉ import manifest nhẹ có search index dựng sẵn; `contentRepository` tải dynamic chunk khi người học mở topic.
 
 ## Thêm nội dung
 
-Dùng `npm run content:new -- <topic-id>` để tạo khung hoặc biên soạn bằng `TopicSeed`/`scaleTopic`; ưu tiên 3–5 conversation với 6–12 lượt. Sau khi đăng ký category chunk, chạy `npm run content:manifest`, `npm run content:lint` và `npm run validate:content`. Mỗi canonical answer phải nằm trong `acceptedAnswers`. Xem [CONTENT_GUIDE.md](CONTENT_GUIDE.md), [DATA_SCHEMA.md](DATA_SCHEMA.md) và [CONTENT_QA.md](CONTENT_QA.md).
+Dùng `npm run content:new-topic -- --help` để tạo khung có TODO bắt buộc review hoặc biên soạn bằng `TopicSeed`/`scaleTopic`; ưu tiên 3–5 conversation với 6–12 lượt. Sau khi đăng ký chunk, chạy `npm run content:manifest`, `npm run content:index`, `npm run content:lint` và `npm run validate:content`. Mỗi canonical answer phải nằm trong `acceptedAnswers`. Xem [CONTENT_GUIDE.md](CONTENT_GUIDE.md), [DATA_SCHEMA.md](DATA_SCHEMA.md) và [CONTENT_QA.md](CONTENT_QA.md).
 
 ## Chấm câu và lưu dữ liệu
 
-Quy trình chấm được mô tả trong [ANSWER_EVALUATION.md](ANSWER_EVALUATION.md). Một conversation chỉ hoàn thành khi cả Person A và Person B đã hoàn thành; role progress được lưu độc lập và replay không nhận lại completion bonus. Review dài hạn dùng các mốc ngay lập tức/1/3/7/14 ngày theo mastery. Progress dùng Zustand persist vào legacy key `lingotalk-progress` trong localStorage để người dùng hiện tại không mất dữ liệu; schema đang ở V5. Xem [TWO_SIDED_PROGRESS.md](TWO_SIDED_PROGRESS.md). Không có dữ liệu nào được gửi ra ngoài.
+Quy trình chấm được mô tả trong [ANSWER_EVALUATION.md](ANSWER_EVALUATION.md). Một conversation chỉ hoàn thành khi cả Person A và Person B đã hoàn thành; role progress được lưu độc lập và replay không nhận lại completion bonus. Review dài hạn dùng các mốc ngay lập tức/1/3/7/14 ngày theo mastery. Progress dùng Zustand persist vào legacy key `lingotalk-progress` trong localStorage để người dùng hiện tại không mất dữ liệu; schema đang ở V6 và lượt luyện luôn vô hạn. Xem [TWO_SIDED_PROGRESS.md](TWO_SIDED_PROGRESS.md). Không có dữ liệu nào được gửi ra ngoài.
 
 Kiến trúc, test và hướng mở rộng nằm trong [ARCHITECTURE.md](ARCHITECTURE.md), [TESTING.md](TESTING.md), và [ROADMAP.md](ROADMAP.md).

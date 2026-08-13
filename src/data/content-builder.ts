@@ -1,4 +1,4 @@
-import type { CommonMistake, Conversation, ConversationTurn, Difficulty, SemanticConstraints, Topic, VocabularyItem } from '../types/domain';
+import type { CommonMistake, CommunicativeIntent, Conversation, ConversationRelationship, ConversationTurn, Difficulty, SemanticConstraints, Topic, VocabularyItem } from '../types/domain';
 
 export interface LineMeta {
   accepted?: string[];
@@ -10,6 +10,7 @@ export interface LineMeta {
   explanation?: string;
   hint?: string;
   semanticConstraints?: SemanticConstraints;
+  acceptedAnswerAudit?: ConversationTurn['acceptedAnswerAudit'];
 }
 
 export type Line = readonly [speaker: 'A' | 'B', vietnamese: string, english: string, meta?: LineMeta];
@@ -62,6 +63,7 @@ function makeTurn(seed: TopicSeed, conversationIndex: number, index: number, lin
     explanation: meta?.explanation ?? seed.defaultExplanation ?? 'Câu mẫu ưu tiên cách diễn đạt tự nhiên, đúng ngữ cảnh hội thoại và đúng thì.',
     hint: meta?.hint ?? (requiredKeywords.join(' / ') || 'Cụm đáp lời ngắn theo ngữ cảnh'),
     semanticConstraints: meta?.semanticConstraints,
+    acceptedAnswerAudit: meta?.acceptedAnswerAudit,
     difficulty: seed.level,
   };
 }
@@ -71,6 +73,8 @@ export interface ConversationSeed {
   titleVi: string;
   situation: string;
   goal: string;
+  intent?: CommunicativeIntent;
+  relationship?: ConversationRelationship;
   lines: readonly Line[];
 }
 
@@ -95,6 +99,8 @@ export function buildTopic(seed: TopicSeed): Topic {
     titleVi: conversation.titleVi,
     situation: conversation.situation,
     goal: conversation.goal,
+    intent: conversation.intent,
+    relationship: conversation.relationship,
     partner: { name: conversationIndex === 0 ? 'Linh' : 'Minh', avatar: conversationIndex === 0 ? 'L' : 'M' },
     turns: conversation.lines.map((line, index) => makeTurn(seed, conversationIndex, index, line)),
   }));

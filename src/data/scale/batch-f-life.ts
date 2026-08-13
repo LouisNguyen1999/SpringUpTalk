@@ -144,9 +144,9 @@ export const batchFLifeTopics = [
       ['Tôi có nhận chứng nhận sau khi hoàn thành không?','Will I receive a certificate after completing it?','Có, chứng nhận có hiệu lực trong ba năm.','Yes. The certificate is valid for three years.',['valid certificate','chứng nhận có hiệu lực']],
     ]],
     ['Practising CPR','Thực hành hồi sức','Giảng viên hướng dẫn trên mô hình.','Thực hành nhịp và vị trí tay đúng.',[
-      ['Tay mình nên đặt ở đâu?','Where should I place my hands?','Đặt gót bàn tay vào giữa ngực mô hình.','Place the heel of your hand in the centre of the manikin’s chest.',['hand position','vị trí tay']],
-      ['Mình ấn với tốc độ nào?','How quickly should I press?','Giữ nhịp khoảng một trăm đến một trăm hai mươi lần mỗi phút.','Maintain a rate of about one hundred to one hundred and twenty compressions per minute.',['compression rate','nhịp ép tim']],
-      ['Mình đang thấy vai bị mỏi.','My shoulders are becoming tired.','Giữ cánh tay thẳng và dùng trọng lượng cơ thể.','Keep your arms straight and use your body weight.',['chest compression','ép ngực']],
+      ['Mình nên đặt tay chính xác ở đâu trên mô hình?','Where exactly should I place my hands on the manikin?','Đặt gót bàn tay vào giữa ngực mô hình.','Place the heel of your hand in the centre of the manikin’s chest.',['hand position','vị trí tay']],
+      ['Trong bài tập này mình nên ấn nhanh thế nào?','How quickly should I press during this exercise?','Giữ nhịp khoảng một trăm đến một trăm hai mươi lần mỗi phút.','Maintain a rate of about one hundred to one hundred and twenty compressions per minute.',['compression rate','nhịp ép tim']],
+      ['Vai mình đang mỏi khi cố giữ nhịp này.','My shoulders are becoming tired while I keep this rhythm.','Giữ cánh tay thẳng và dùng trọng lượng cơ thể.','Keep your arms straight and use your body weight.',['chest compression','ép ngực']],
     ]],
     ['Knowing When to Call','Biết lúc cần gọi trợ giúp','Lớp thảo luận giới hạn của người sơ cứu.','Ưu tiên an toàn và gọi dịch vụ chuyên môn.',[
       ['Mình nên kiểm tra nguy hiểm trước khi đến gần phải không?','Should I check for danger before approaching?','Đúng, bạn không thể giúp nếu chính mình gặp nguy hiểm.','Yes. You cannot help if you also become endangered.',['scene safety','an toàn hiện trường']],

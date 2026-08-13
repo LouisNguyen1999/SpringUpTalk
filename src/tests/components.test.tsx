@@ -9,6 +9,13 @@ describe('AnswerInput', () => it('labels the required translation direction', ()
 
 describe('FeedbackPanel', () => it('renders a correction and retry action', () => { render(<FeedbackPanel xp={0} canRetry result={{status:'incorrect',score:50,userAnswer:'How you go?',canonicalAnswer:'How do you go?',mistakes:[],explanation:['Cần trợ động từ do.'],suggestions:[],naturalAlternatives:[]}} onNext={vi.fn()} onRetry={vi.fn()} />); expect(screen.getByText('Chưa đúng lắm')).toBeInTheDocument(); expect(screen.getByText('Thử lại')).toBeInTheDocument(); expect(screen.getByText('Cần trợ động từ do.')).toBeInTheDocument(); }));
 
+describe('FeedbackPanel alternatives', () => it('shows the first alternative and collapses the remainder', () => {
+  render(<FeedbackPanel xp={10} canRetry={false} result={{status:'correct',score:100,userAnswer:'Could you help?',canonicalAnswer:'Could you help?',mistakes:[],explanation:['Đúng ý.'],suggestions:[],naturalAlternatives:['Can you help?','Would you help?','Could you assist me?']}} onNext={vi.fn()} onRetry={vi.fn()} />);
+  expect(screen.getByText('Can you help?')).toBeInTheDocument();
+  expect(screen.getByText('Xem thêm 2 cách nói')).toBeInTheDocument();
+  expect(screen.getByText('Would you help?').closest('details')).not.toHaveAttribute('open');
+}));
+
 describe('LessonSummary', () => it('shows role completion without claiming conversation completion', () => {
   render(<MemoryRouter><LessonSummary stats={{total:3,correctFirstTry:2,grammarMistakes:1,vocabularyMistakes:0,scoreTotal:270,xpEarned:45,wordsLearned:3}} topicId="topic-1" conversationId="conversation-1" role="A" progress={{conversationId:'conversation-1',topicId:'topic-1',roles:{A:{attempts:1,completedAt:'2026-08-10T00:00:00.000Z'},B:{attempts:0}}}} outcome={{roleWasNew:true,conversationCompleted:false,conversationWasNew:false,topicCompleted:false,completionXp:20,rolesCompleted:1}} onRestart={vi.fn()} onPracticeOther={vi.fn()} /></MemoryRouter>);
   expect(screen.getByText('Role A completed')).toBeInTheDocument();

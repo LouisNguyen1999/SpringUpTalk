@@ -3,7 +3,7 @@ import { evaluateAnswer } from '../engine/answer-evaluator';
 import { evaluatorGoldenSet } from './fixtures/evaluator-golden-set';
 
 describe('Evaluator V2 golden set', () => {
-  it('contains 100 curated cases', () => expect(evaluatorGoldenSet).toHaveLength(100));
+  it('contains 300 curated cases', () => expect(evaluatorGoldenSet).toHaveLength(300));
   it.each(evaluatorGoldenSet)('$id: $reason', ({turn,userAnswer,expectedStatus}) => {
     expect(evaluateAnswer(userAnswer,turn).status).toBe(expectedStatus);
   });

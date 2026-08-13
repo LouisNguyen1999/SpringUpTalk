@@ -11,12 +11,15 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "test:e2e:pwa": "playwright test e2e/offline.spec.ts --config=playwright.pwa.config.ts",
     "test:watch": "vitest",
     "validate:content": "node --import tsx scripts/validate-content.ts",
     "content:report": "node --import tsx scripts/content-report.ts",
     "content:manifest": "node --import tsx scripts/generate-content-manifest.ts",
     "content:lint": "node --import tsx scripts/content-lint.ts",
-    "content:new": "node --import tsx scripts/new-topic.ts"
+    "content:new": "node --import tsx scripts/new-topic.ts",
+    "content:new-topic": "node --import tsx scripts/new-topic.ts",
+    "content:index": "node --import tsx scripts/generate-content-index.ts"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

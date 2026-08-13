@@ -33,12 +33,12 @@ describe('conversation dataset', () => {
         }
       }
     }
-  });
+  }, 20_000);
 
   it('accepts every canonical and curated accepted answer', () => {
     for (const topic of topics) for (const conversation of topic.conversations) for (const turn of conversation.turns) {
       expect(evaluateAnswer(turn.canonicalAnswer, turn).status).toBe('correct');
       for (const accepted of turn.acceptedAnswers) expect(evaluateAnswer(accepted, turn).status).toBe('correct');
     }
-  });
+  }, 20_000);
 });

@@ -18,6 +18,12 @@ export function searchTextMatches(value: string, query: string): boolean {
     || normalizedValue.replaceAll(' ', '').includes(normalizedQuery.replaceAll(' ', ''));
 }
 
+export function searchIndexMatches(normalizedValue: string, normalizedQuery: string): boolean {
+  if (!normalizedQuery) return true;
+  return normalizedValue.includes(normalizedQuery)
+    || normalizedValue.replaceAll(' ', '').includes(normalizedQuery.replaceAll(' ', ''));
+}
+
 export function normalizeVocabularyKey(value: string): string {
   return normalizeSearchText(value).replace(/\s+/g, '');
 }

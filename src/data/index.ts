@@ -27,9 +27,29 @@ import { batchGCoreTopics } from './scale/batch-g-core';
 import { batchGLifeTopics } from './scale/batch-g-life';
 import { batchHCoreTopics } from './scale/batch-h-core';
 import { batchHLifeTopics } from './scale/batch-h-life';
+import { batchATransportHomeTopics } from './scale/batch-a-transport-home';
+import { batchAHomeWorkTopics } from './scale/batch-a-home-work';
+import { batchAWorkAdvancedTopics } from './scale/batch-a-work-advanced';
+import { batchAMoneyServicesTopics } from './scale/batch-a-money-services';
+import { batchAFamilyHealthTechTopics } from './scale/batch-a-family-health-tech';
+import { batchATechFoodLeisureTopics } from './scale/batch-a-tech-food-leisure';
+import { batchADailyEducationTravelTopics } from './scale/batch-a-daily-education-travel';
+import { batchBExpansionHealthMoneyTopics } from './scale/batch-b-expansion-health-money';
+import { batchBExpansionEducationTechnologyTopics } from './scale/batch-b-expansion-education-technology';
+import { batchBExpansionTravelServicesTopics } from './scale/batch-b-expansion-travel-services';
+import { batchBExpansionFamilyCommunityTopics } from './scale/batch-b-expansion-family-community';
+import { batchCCommunicationPublicTopics } from './scale/batch-c-communication-public';
+import { batchCEventsFitnessTopics } from './scale/batch-c-events-fitness';
+import { batchCProfessionalTopics } from './scale/batch-c-professional';
+import { batchCTravelEmergencyTopics } from './scale/batch-c-travel-emergency';
+import { hardenAcceptedAnswers } from './accepted-answer-hardening';
+import { batchD1EverydayServicesTopics } from './scale/batch-d1-everyday-services';
+import { batchD2HomeMoneyTopics } from './scale/batch-d2-home-money';
+import { batchD3SupportDiplomacyTopics } from './scale/batch-d3-support-diplomacy';
+import { batchD4TravelCommunityTopics } from './scale/batch-d4-travel-community';
 import type { Topic, TopicManifestItem } from '../types/domain';
 
-const baseTopics = [...dailyLifeTopics, ...expandedDailyLifeTopics, ...foodDrinkTopics, ...transportationTopics, ...shoppingTopics, ...workTopics, ...socialLifeTopics, ...homeSocialTopics, ...servicesTravelTopics, ...technologyTopics, ...batchBCoreTopics, ...batchBLifeTopics, ...batchCCoreTopics, ...batchCLifeTopics, ...batchDCoreTopics, ...batchDLifeTopics, ...batchECoreTopics, ...batchELifeTopics, ...batchFCoreTopics, ...batchFLifeTopics, ...batchGCoreTopics, ...batchGLifeTopics, ...batchHCoreTopics, ...batchHLifeTopics];
+const baseTopics = [...dailyLifeTopics, ...expandedDailyLifeTopics, ...foodDrinkTopics, ...transportationTopics, ...shoppingTopics, ...workTopics, ...socialLifeTopics, ...homeSocialTopics, ...servicesTravelTopics, ...technologyTopics, ...batchBCoreTopics, ...batchBLifeTopics, ...batchCCoreTopics, ...batchCLifeTopics, ...batchDCoreTopics, ...batchDLifeTopics, ...batchECoreTopics, ...batchELifeTopics, ...batchFCoreTopics, ...batchFLifeTopics, ...batchGCoreTopics, ...batchGLifeTopics, ...batchHCoreTopics, ...batchHLifeTopics, ...batchATransportHomeTopics, ...batchAHomeWorkTopics, ...batchAWorkAdvancedTopics, ...batchAMoneyServicesTopics, ...batchAFamilyHealthTechTopics, ...batchATechFoodLeisureTopics, ...batchADailyEducationTravelTopics, ...batchBExpansionHealthMoneyTopics, ...batchBExpansionEducationTechnologyTopics, ...batchBExpansionTravelServicesTopics, ...batchBExpansionFamilyCommunityTopics, ...batchCCommunicationPublicTopics, ...batchCEventsFitnessTopics, ...batchCProfessionalTopics, ...batchCTravelEmergencyTopics, ...batchD1EverydayServicesTopics, ...batchD2HomeMoneyTopics, ...batchD3SupportDiplomacyTopics, ...batchD4TravelCommunityTopics];
 const depthAdditions = {
   ...dailyFoodDepth,
   ...transportShoppingDepth,
@@ -41,7 +61,7 @@ const topicLoaders: Record<string, () => Promise<Topic | undefined>> = Object.fr
   baseTopics.map((topic) => [topic.id, async () => topics.find((item) => item.id === topic.id)]),
 );
 
-export const topics: Topic[] = applyConversationAdditions(baseTopics, depthAdditions);
+export const topics: Topic[] = hardenAcceptedAnswers(applyConversationAdditions(baseTopics, depthAdditions));
 export const topicManifest: TopicManifestItem[] = topics.map(({ conversations, ...topic }) => ({
   ...topic,
   conversationCount: conversations.length,

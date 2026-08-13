@@ -1,5 +1,6 @@
 import { buildTopic, type TopicSeed } from '../content-builder';
 import { depthConversation, type Exchange } from '../depth/depth-builder';
+import type { CommunicativeIntent, ConversationRelationship } from '../../types/domain';
 
 export type Scenario = readonly [
   title: string,
@@ -7,6 +8,8 @@ export type Scenario = readonly [
   situation: string,
   goal: string,
   exchanges: readonly Exchange[],
+  intent?: CommunicativeIntent,
+  relationship?: ConversationRelationship,
 ];
 
 type ScaleTopicSeed = Omit<TopicSeed, 'conversations'> & {

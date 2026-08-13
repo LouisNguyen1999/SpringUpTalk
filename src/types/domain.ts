@@ -1,6 +1,24 @@
 export type Difficulty = 'A1' | 'A2' | 'B1' | 'B2';
 export type Speaker = 'A' | 'B';
 export type LearningRole = Speaker;
+export type CommunicativeIntent =
+  | 'greeting' | 'introducing' | 'asking-information' | 'clarifying' | 'confirming'
+  | 'requesting' | 'suggesting' | 'inviting' | 'accepting' | 'refusing'
+  | 'negotiating' | 'apologizing' | 'complaining' | 'explaining' | 'reporting'
+  | 'troubleshooting' | 'comparing' | 'persuading' | 'giving-advice'
+  | 'giving-instructions' | 'expressing-concern' | 'reassuring'
+  | 'disagreeing-politely' | 'handling-misunderstanding' | 'asking-follow-up'
+  | 'changing-plans' | 'resolving-conflict' | 'summarizing' | 'making-decisions'
+  | 'planning' | 'polite-offers' | 'giving-feedback';
+export type ConversationRelationship =
+  | 'close-friend' | 'partner' | 'family' | 'coworker' | 'manager' | 'client'
+  | 'customer' | 'service-staff' | 'stranger' | 'teacher' | 'student'
+  | 'doctor' | 'patient' | 'tenant' | 'landlord' | 'resident' | 'building-security'
+  | 'technician' | 'delivery-staff' | 'employee' | 'stakeholder' | 'hr'
+  | 'senior-colleague' | 'junior-colleague' | 'receptionist' | 'pharmacist'
+  | 'bank-staff' | 'merchant' | 'advisor' | 'support-staff' | 'hotel-staff'
+  | 'airline-staff' | 'immigration-officer' | 'postal-staff' | 'stylist'
+  | 'council-staff' | 'neighbor' | 'volunteer' | 'security-staff';
 export type MistakeType =
   | 'grammar'
   | 'vocabulary'
@@ -61,6 +79,12 @@ export interface ConversationTurn {
   explanation?: string;
   hint?: string;
   semanticConstraints?: SemanticConstraints;
+  acceptedAnswerAudit?: {
+    batch: 'D0';
+    status: 'expanded' | 'justified-fixed' | 'already-flexible';
+    reason: string;
+    baselineCanonicalOnly?: boolean;
+  };
   difficulty: Difficulty;
 }
 
@@ -70,6 +94,8 @@ export interface Conversation {
   titleVi: string;
   situation: string;
   goal: string;
+  intent?: CommunicativeIntent;
+  relationship?: ConversationRelationship;
   partner: { name: string; avatar: string };
   turns: ConversationTurn[];
 }

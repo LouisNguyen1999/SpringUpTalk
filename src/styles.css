@@ -56,6 +56,9 @@
   .topbar{padding-top:env(safe-area-inset-top);height:calc(62px + env(safe-area-inset-top))}
 }
 
+/* Keep one natural alternative visible on small screens and disclose the rest on demand. */
+.natural-answer>div{min-width:0;flex:1}.natural-answer details{margin-top:7px}.natural-answer summary{cursor:pointer;width:max-content;max-width:100%;font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}.natural-answer details p{margin-top:7px}
+
 @media(max-width:800px){
   .lesson-top{height:76px;padding-top:env(safe-area-inset-top);height:calc(76px + env(safe-area-inset-top))}
   .lesson-body{height:calc(100vh - 76px - env(safe-area-inset-top));height:calc(100dvh - 76px - env(safe-area-inset-top));padding:18px 12px 12px}

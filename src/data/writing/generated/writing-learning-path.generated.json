@@ -1,0 +1,7855 @@
+[
+  {
+    "topicId": "writing:breakfast-at-home",
+    "unitId": "writing-unit-01",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.5
+  },
+  {
+    "topicId": "writing:shopping-at-a-pet-store",
+    "unitId": "writing-unit-01",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.5
+  },
+  {
+    "topicId": "writing:feeding-a-pet",
+    "unitId": "writing-unit-01",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:calling-a-delivery-driver",
+    "unitId": "writing-unit-01",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:making-a-bank-transfer",
+    "unitId": "writing-unit-01",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:packing-a-school-bag",
+    "unitId": "writing-unit-01",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:using-a-bike-share",
+    "unitId": "writing-unit-01",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:using-a-photo-booth",
+    "unitId": "writing-unit-01",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:recovering-after-a-missed-class",
+    "unitId": "writing-unit-01",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:checking-in-with-building-security",
+    "unitId": "writing-unit-01",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:joining-an-online-class",
+    "unitId": "writing-unit-01",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.6
+  },
+  {
+    "topicId": "writing:making-a-fruit-smoothie",
+    "unitId": "writing-unit-01",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:riding-a-motorbike",
+    "unitId": "writing-unit-01",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:using-a-printer:using-a-printer-c3",
+    "unitId": "writing-unit-01",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.3
+  },
+  {
+    "topicId": "writing:using-a-printer:using-a-printer-c1",
+    "unitId": "writing-unit-01",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.4
+  },
+  {
+    "topicId": "writing:going-to-work",
+    "unitId": "writing-unit-01",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.9
+  },
+  {
+    "topicId": "writing:resetting-a-forgotten-pin",
+    "unitId": "writing-unit-01",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 19.2
+  },
+  {
+    "topicId": "writing:talking-about-school-day",
+    "unitId": "writing-unit-02",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:talking-about-the-weather",
+    "unitId": "writing-unit-02",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:using-a-ticket-machine",
+    "unitId": "writing-unit-02",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:waiting-at-a-bus-stop",
+    "unitId": "writing-unit-02",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:cleaning-the-windows",
+    "unitId": "writing-unit-02",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:coming-home",
+    "unitId": "writing-unit-02",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:eating-at-a-food-court",
+    "unitId": "writing-unit-02",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:reading-a-metro-map",
+    "unitId": "writing-unit-02",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:visiting-a-bookshop",
+    "unitId": "writing-unit-02",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:morning-routine",
+    "unitId": "writing-unit-02",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.7
+  },
+  {
+    "topicId": "writing:at-an-ice-cream-shop",
+    "unitId": "writing-unit-02",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:buying-stationery",
+    "unitId": "writing-unit-02",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:collecting-a-parcel-locker",
+    "unitId": "writing-unit-02",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:using-a-printer:using-a-printer-c2",
+    "unitId": "writing-unit-02",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.6
+  },
+  {
+    "topicId": "writing:using-a-public-restroom",
+    "unitId": "writing-unit-02",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 19.2
+  },
+  {
+    "topicId": "writing:using-an-elevator",
+    "unitId": "writing-unit-02",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 19.2
+  },
+  {
+    "topicId": "writing:wrapping-a-present",
+    "unitId": "writing-unit-03",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:taking-a-ferry",
+    "unitId": "writing-unit-03",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:visiting-a-fishing-pond",
+    "unitId": "writing-unit-03",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:returning-a-parcel",
+    "unitId": "writing-unit-03",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 17.8
+  },
+  {
+    "topicId": "writing:arranging-laundry-pickup",
+    "unitId": "writing-unit-03",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:booking-an-admin-appointment",
+    "unitId": "writing-unit-03",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:making-a-grocery-list",
+    "unitId": "writing-unit-03",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:meeting-a-friend",
+    "unitId": "writing-unit-03",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:renting-a-room",
+    "unitId": "writing-unit-03",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:shopping-at-a-florist",
+    "unitId": "writing-unit-03",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:visiting-a-farm",
+    "unitId": "writing-unit-03",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:at-the-playground",
+    "unitId": "writing-unit-03",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:buying-movie-snacks",
+    "unitId": "writing-unit-03",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c4",
+    "unitId": "writing-unit-03",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 19
+  },
+  {
+    "topicId": "writing:visiting-an-aquarium",
+    "unitId": "writing-unit-03",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 19.2
+  },
+  {
+    "topicId": "writing:borrowing-an-umbrella",
+    "unitId": "writing-unit-03",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 19.3
+  },
+  {
+    "topicId": "writing:joining-a-public-queue",
+    "unitId": "writing-unit-04",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:visiting-a-clinic",
+    "unitId": "writing-unit-04",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:visiting-a-play-centre",
+    "unitId": "writing-unit-04",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 17.9
+  },
+  {
+    "topicId": "writing:checking-a-qr-payment",
+    "unitId": "writing-unit-04",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-blocker"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:planting-kitchen-herbs",
+    "unitId": "writing-unit-04",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:sorting-home-recycling",
+    "unitId": "writing-unit-04",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:booking-a-grab",
+    "unitId": "writing-unit-04",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:choosing-breakfast-cereal",
+    "unitId": "writing-unit-04",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:collecting-a-prescription",
+    "unitId": "writing-unit-04",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:ordering-a-local-breakfast",
+    "unitId": "writing-unit-04",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:visiting-a-botanical-garden",
+    "unitId": "writing-unit-04",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:booking-an-intercity-bus",
+    "unitId": "writing-unit-04",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:taking-care-of-a-pet",
+    "unitId": "writing-unit-04",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c2",
+    "unitId": "writing-unit-04",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.7
+  },
+  {
+    "topicId": "writing:at-a-shoe-repair-shop",
+    "unitId": "writing-unit-04",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 19.3
+  },
+  {
+    "topicId": "writing:buying-fruit-at-a-market",
+    "unitId": "writing-unit-04",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 19.3
+  },
+  {
+    "topicId": "writing:birthday-party",
+    "unitId": "writing-unit-05",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:buying-banh-mi",
+    "unitId": "writing-unit-05",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:doing-the-laundry",
+    "unitId": "writing-unit-05",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:enrolling-in-an-evening-class",
+    "unitId": "writing-unit-05",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:visiting-relatives",
+    "unitId": "writing-unit-05",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:joining-a-local-gym",
+    "unitId": "writing-unit-05",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:helping-parents-use-video-calls",
+    "unitId": "writing-unit-05",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:returning-a-borrowed-household-item",
+    "unitId": "writing-unit-05",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:renting-a-motorbike-abroad",
+    "unitId": "writing-unit-05",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.1
+  },
+  {
+    "topicId": "writing:greeting-a-neighbor",
+    "unitId": "writing-unit-05",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:at-the-bank",
+    "unitId": "writing-unit-05",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:calling-parents-after-work",
+    "unitId": "writing-unit-05",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:planning-weekend-errands",
+    "unitId": "writing-unit-05",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c3",
+    "unitId": "writing-unit-05",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.7
+  },
+  {
+    "topicId": "writing:replacing-an-access-card",
+    "unitId": "writing-unit-05",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 19.4
+  },
+  {
+    "topicId": "writing:using-a-vending-machine",
+    "unitId": "writing-unit-05",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 19.4
+  },
+  {
+    "topicId": "writing:asking-at-a-public-office",
+    "unitId": "writing-unit-06",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18
+  },
+  {
+    "topicId": "writing:sending-a-greeting-card",
+    "unitId": "writing-unit-06",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.2
+  },
+  {
+    "topicId": "writing:ordering-pho",
+    "unitId": "writing-unit-06",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.3
+  },
+  {
+    "topicId": "writing:at-the-supermarket",
+    "unitId": "writing-unit-06",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.3
+  },
+  {
+    "topicId": "writing:making-a-basic-phone-call",
+    "unitId": "writing-unit-06",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.3
+  },
+  {
+    "topicId": "writing:hotel-check-in",
+    "unitId": "writing-unit-06",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "apologize-explain"
+    ],
+    "difficultyScore": 18.6
+  },
+  {
+    "topicId": "writing:preparing-for-a-routine-checkup",
+    "unitId": "writing-unit-06",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 18.6
+  },
+  {
+    "topicId": "writing:meeting-a-new-classmate",
+    "unitId": "writing-unit-06",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 18.7
+  },
+  {
+    "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c1",
+    "unitId": "writing-unit-06",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 18.7
+  },
+  {
+    "topicId": "writing:at-a-car-wash",
+    "unitId": "writing-unit-06",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 19
+  },
+  {
+    "topicId": "writing:introducing-your-family",
+    "unitId": "writing-unit-06",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 19
+  },
+  {
+    "topicId": "writing:visiting-a-zoo",
+    "unitId": "writing-unit-06",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 19.1
+  },
+  {
+    "topicId": "writing:using-a-public-library",
+    "unitId": "writing-unit-06",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 19.3
+  },
+  {
+    "topicId": "writing:correcting-a-delivery-address",
+    "unitId": "writing-unit-06",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 19.5
+  },
+  {
+    "topicId": "writing:buying-cinema-tickets",
+    "unitId": "writing-unit-06",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 19.6
+  },
+  {
+    "topicId": "writing:lunch-break",
+    "unitId": "writing-unit-07",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 41.6
+  },
+  {
+    "topicId": "writing:correcting-an-account-number",
+    "unitId": "writing-unit-07",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 41.7
+  },
+  {
+    "topicId": "writing:planning-a-hiking-day",
+    "unitId": "writing-unit-07",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 41.8
+  },
+  {
+    "topicId": "writing:attending-a-potluck",
+    "unitId": "writing-unit-07",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 41.8
+  },
+  {
+    "topicId": "writing:preparing-for-a-vaccination",
+    "unitId": "writing-unit-07",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 41.8
+  },
+  {
+    "topicId": "writing:traffic-jam",
+    "unitId": "writing-unit-07",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 41.8
+  },
+  {
+    "topicId": "writing:sharing-family-chores",
+    "unitId": "writing-unit-07",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:adopting-a-rescue-cat",
+    "unitId": "writing-unit-07",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:asking-for-directions",
+    "unitId": "writing-unit-07",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "apologize-explain"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:exchanging-currency",
+    "unitId": "writing-unit-07",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:planning-a-movie-night",
+    "unitId": "writing-unit-07",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:visiting-a-museum",
+    "unitId": "writing-unit-07",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:helping-a-new-neighbor-settle-in",
+    "unitId": "writing-unit-07",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:filing-expense-receipts:filing-expense-receipts-c1",
+    "unitId": "writing-unit-07",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:filing-expense-receipts:filing-expense-receipts-c2",
+    "unitId": "writing-unit-07",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:selecting-an-ergonomic-chair:selecting-an-ergonomic-chair-c1",
+    "unitId": "writing-unit-07",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:using-a-coworking-space:using-a-coworking-space-c1",
+    "unitId": "writing-unit-07",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:setting-up-a-home-router:setting-up-a-home-router-c3",
+    "unitId": "writing-unit-07",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 42.9
+  },
+  {
+    "topicId": "writing:reporting-lost-property",
+    "unitId": "writing-unit-07",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:parent-teacher-meeting",
+    "unitId": "writing-unit-07",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:organizing-a-wardrobe",
+    "unitId": "writing-unit-07",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:changing-a-train-ticket",
+    "unitId": "writing-unit-07",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:booking-a-guided-tour",
+    "unitId": "writing-unit-07",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:wifi-problem:wifi-problem-c1",
+    "unitId": "writing-unit-07",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.1
+  },
+  {
+    "topicId": "writing:filing-expense-receipts:filing-expense-receipts-c3",
+    "unitId": "writing-unit-07",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 44.4
+  },
+  {
+    "topicId": "writing:registering-a-mobile-sim",
+    "unitId": "writing-unit-08",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:arranging-an-airport-pickup",
+    "unitId": "writing-unit-08",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-blocker"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:managing-household-food-waste",
+    "unitId": "writing-unit-08",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:taking-a-pottery-class",
+    "unitId": "writing-unit-08",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:changing-a-pickup-point",
+    "unitId": "writing-unit-08",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-blocker"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:comparing-bank-accounts",
+    "unitId": "writing-unit-08",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:talking-to-the-landlord",
+    "unitId": "writing-unit-08",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "incident-update"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:booking-a-doctor-appointment",
+    "unitId": "writing-unit-08",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:joining-a-gym",
+    "unitId": "writing-unit-08",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:planning-a-beach-day",
+    "unitId": "writing-unit-08",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:preparing-a-community-garden",
+    "unitId": "writing-unit-08",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:preparing-for-a-power-cut",
+    "unitId": "writing-unit-08",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:clarifying-teacher-feedback",
+    "unitId": "writing-unit-08",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42
+  },
+  {
+    "topicId": "writing:choosing-a-laptop-accessory:choosing-a-laptop-accessory-c1",
+    "unitId": "writing-unit-08",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:choosing-a-mobile-plan:choosing-a-mobile-plan-c1",
+    "unitId": "writing-unit-08",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:setting-up-a-home-router:setting-up-a-home-router-c1",
+    "unitId": "writing-unit-08",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.8
+  },
+  {
+    "topicId": "writing:morning-standup:morning-standup-c1",
+    "unitId": "writing-unit-08",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue",
+      "explain-blocker"
+    ],
+    "difficultyScore": 42.9
+  },
+  {
+    "topicId": "writing:reporting-an-atm-retained-card",
+    "unitId": "writing-unit-08",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:cooking-dinner",
+    "unitId": "writing-unit-08",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 43.5
+  },
+  {
+    "topicId": "writing:reporting-a-broken-streetlight",
+    "unitId": "writing-unit-08",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.5
+  },
+  {
+    "topicId": "writing:morning-standup:morning-standup-c2",
+    "unitId": "writing-unit-08",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-blocker"
+    ],
+    "difficultyScore": 44.5
+  },
+  {
+    "topicId": "writing:wifi-problem:wifi-problem-c2",
+    "unitId": "writing-unit-08",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44.5
+  },
+  {
+    "topicId": "writing:bubble-tea",
+    "unitId": "writing-unit-09",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:caring-for-houseplants",
+    "unitId": "writing-unit-09",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:planning-a-trip-home",
+    "unitId": "writing-unit-09",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:preparing-a-class-presentation",
+    "unitId": "writing-unit-09",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:joining-a-community-club",
+    "unitId": "writing-unit-09",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:organizing-a-neighborhood-event",
+    "unitId": "writing-unit-09",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:planning-a-park-picnic",
+    "unitId": "writing-unit-09",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:working-on-a-school-project",
+    "unitId": "writing-unit-09",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:changing-a-hotel-reservation",
+    "unitId": "writing-unit-09",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.1
+  },
+  {
+    "topicId": "writing:handling-a-minor-sports-injury",
+    "unitId": "writing-unit-09",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:opening-a-bank-account",
+    "unitId": "writing-unit-09",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:travelling-by-train",
+    "unitId": "writing-unit-09",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-action-taken",
+      "explain-result",
+      "apologize-explain"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:changing-a-transfer-limit",
+    "unitId": "writing-unit-09",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.5
+  },
+  {
+    "topicId": "writing:arranging-a-home-cleaner",
+    "unitId": "writing-unit-09",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "apologize-explain"
+    ],
+    "difficultyScore": 42.5
+  },
+  {
+    "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c1",
+    "unitId": "writing-unit-09",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.7
+  },
+  {
+    "topicId": "writing:choosing-a-laptop-accessory:choosing-a-laptop-accessory-c2",
+    "unitId": "writing-unit-09",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43
+  },
+  {
+    "topicId": "writing:using-a-coworking-space:using-a-coworking-space-c3",
+    "unitId": "writing-unit-09",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 43
+  },
+  {
+    "topicId": "writing:selecting-an-ergonomic-chair:selecting-an-ergonomic-chair-c2",
+    "unitId": "writing-unit-09",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43
+  },
+  {
+    "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c2",
+    "unitId": "writing-unit-09",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:buying-secondhand-furniture",
+    "unitId": "writing-unit-09",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.5
+  },
+  {
+    "topicId": "writing:using-the-post-office",
+    "unitId": "writing-unit-09",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 43.5
+  },
+  {
+    "topicId": "writing:planning-a-camping-trip",
+    "unitId": "writing-unit-09",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.6
+  },
+  {
+    "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c1",
+    "unitId": "writing-unit-09",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44.5
+  },
+  {
+    "topicId": "writing:airport-check-in",
+    "unitId": "writing-unit-10",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:buying-clothes",
+    "unitId": "writing-unit-10",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:hosting-a-game-night",
+    "unitId": "writing-unit-10",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:hosting-an-exchange-student",
+    "unitId": "writing-unit-10",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:preparing-for-tet",
+    "unitId": "writing-unit-10",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:renewing-a-library-card",
+    "unitId": "writing-unit-10",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:splitting-a-restaurant-bill",
+    "unitId": "writing-unit-10",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:visiting-an-optician",
+    "unitId": "writing-unit-10",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:organizing-a-family-celebration",
+    "unitId": "writing-unit-10",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:sending-an-international-package",
+    "unitId": "writing-unit-10",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:choosing-an-insurance-excess",
+    "unitId": "writing-unit-10",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:joining-a-parent-group",
+    "unitId": "writing-unit-10",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:managing-household-subscriptions",
+    "unitId": "writing-unit-10",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c4",
+    "unitId": "writing-unit-10",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:selecting-an-ergonomic-chair:selecting-an-ergonomic-chair-c3",
+    "unitId": "writing-unit-10",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:setting-up-a-home-router:setting-up-a-home-router-c2",
+    "unitId": "writing-unit-10",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c3",
+    "unitId": "writing-unit-10",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:motorbike-flat-tire",
+    "unitId": "writing-unit-10",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.6
+  },
+  {
+    "topicId": "writing:cancelling-plans",
+    "unitId": "writing-unit-10",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "apologize-explain"
+    ],
+    "difficultyScore": 43.8
+  },
+  {
+    "topicId": "writing:receiving-a-delivery",
+    "unitId": "writing-unit-10",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.8
+  },
+  {
+    "topicId": "writing:asking-for-help-at-work:asking-for-help-at-work-c2",
+    "unitId": "writing-unit-10",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.6
+  },
+  {
+    "topicId": "writing:wifi-problem:wifi-problem-c3",
+    "unitId": "writing-unit-10",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-blocker"
+    ],
+    "difficultyScore": 44.6
+  },
+  {
+    "topicId": "writing:arranging-a-pet-sitter",
+    "unitId": "writing-unit-11",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:driver-cannot-find-location",
+    "unitId": "writing-unit-11",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.2
+  },
+  {
+    "topicId": "writing:questioning-a-utility-bill",
+    "unitId": "writing-unit-11",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:requesting-a-medical-certificate",
+    "unitId": "writing-unit-11",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:adjusting-a-workout-plan",
+    "unitId": "writing-unit-11",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:asking-a-pharmacist-for-advice",
+    "unitId": "writing-unit-11",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:joining-a-swimming-class",
+    "unitId": "writing-unit-11",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:planning-a-family-budget",
+    "unitId": "writing-unit-11",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:answering-immigration-questions",
+    "unitId": "writing-unit-11",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 42.3
+  },
+  {
+    "topicId": "writing:planning-a-family-reunion",
+    "unitId": "writing-unit-11",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.4
+  },
+  {
+    "topicId": "writing:at-the-pharmacy",
+    "unitId": "writing-unit-11",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.4
+  },
+  {
+    "topicId": "writing:attending-a-first-aid-course",
+    "unitId": "writing-unit-11",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 42.5
+  },
+  {
+    "topicId": "writing:working-with-a-language-tutor",
+    "unitId": "writing-unit-11",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.5
+  },
+  {
+    "topicId": "writing:handling-a-shared-schedule",
+    "unitId": "writing-unit-11",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.5
+  },
+  {
+    "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c2",
+    "unitId": "writing-unit-11",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 43.2
+  },
+  {
+    "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c4",
+    "unitId": "writing-unit-11",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.2
+  },
+  {
+    "topicId": "writing:preparing-for-a-driving-test",
+    "unitId": "writing-unit-11",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 43.9
+  },
+  {
+    "topicId": "writing:reporting-a-broken-elevator",
+    "unitId": "writing-unit-11",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.9
+  },
+  {
+    "topicId": "writing:using-a-coworking-space:using-a-coworking-space-c2",
+    "unitId": "writing-unit-11",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.1
+  },
+  {
+    "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c3",
+    "unitId": "writing-unit-11",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44.1
+  },
+  {
+    "topicId": "writing:reporting-damaged-baggage",
+    "unitId": "writing-unit-11",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 44.1
+  },
+  {
+    "topicId": "writing:choosing-a-mobile-plan:choosing-a-mobile-plan-c2",
+    "unitId": "writing-unit-11",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44.2
+  },
+  {
+    "topicId": "writing:morning-standup:morning-standup-c3",
+    "unitId": "writing-unit-11",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-blocker"
+    ],
+    "difficultyScore": 44.7
+  },
+  {
+    "topicId": "writing:recovering-an-online-account:recovering-an-online-account-c1",
+    "unitId": "writing-unit-11",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.7
+  },
+  {
+    "topicId": "writing:joining-a-dance-class",
+    "unitId": "writing-unit-12",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 41.9
+  },
+  {
+    "topicId": "writing:handling-a-declined-card-payment",
+    "unitId": "writing-unit-12",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 42.6
+  },
+  {
+    "topicId": "writing:joining-a-cooking-workshop",
+    "unitId": "writing-unit-12",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.1
+  },
+  {
+    "topicId": "writing:convenience-store",
+    "unitId": "writing-unit-12",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.2
+  },
+  {
+    "topicId": "writing:starting-an-exercise-routine",
+    "unitId": "writing-unit-12",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.2
+  },
+  {
+    "topicId": "writing:planning-tet-travel",
+    "unitId": "writing-unit-12",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 43.2
+  },
+  {
+    "topicId": "writing:going-to-the-dentist",
+    "unitId": "writing-unit-12",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.3
+  },
+  {
+    "topicId": "writing:coffee-shop-orders",
+    "unitId": "writing-unit-12",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan"
+    ],
+    "difficultyScore": 43.3
+  },
+  {
+    "topicId": "writing:booking-a-sports-court",
+    "unitId": "writing-unit-12",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:arranging-childcare",
+    "unitId": "writing-unit-12",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 43.4
+  },
+  {
+    "topicId": "writing:preparing-for-a-mountain-trip",
+    "unitId": "writing-unit-12",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 43.6
+  },
+  {
+    "topicId": "writing:handling-a-delayed-flight",
+    "unitId": "writing-unit-12",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44
+  },
+  {
+    "topicId": "writing:asking-for-help-at-work:asking-for-help-at-work-c1",
+    "unitId": "writing-unit-12",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.3
+  },
+  {
+    "topicId": "writing:choosing-a-laptop-accessory:choosing-a-laptop-accessory-c3",
+    "unitId": "writing-unit-12",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44.3
+  },
+  {
+    "topicId": "writing:cooking-with-family",
+    "unitId": "writing-unit-12",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 44.4
+  },
+  {
+    "topicId": "writing:asking-for-help-at-work:asking-for-help-at-work-c3",
+    "unitId": "writing-unit-12",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.4
+  },
+  {
+    "topicId": "writing:selling-a-used-bicycle",
+    "unitId": "writing-unit-12",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 44.5
+  },
+  {
+    "topicId": "writing:rescheduling-a-clinic-appointment",
+    "unitId": "writing-unit-12",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 44.7
+  },
+  {
+    "topicId": "writing:recovering-an-online-account:recovering-an-online-account-c2",
+    "unitId": "writing-unit-12",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 44.8
+  },
+  {
+    "topicId": "writing:asking-about-a-rental-deposit",
+    "unitId": "writing-unit-12",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 44.9
+  },
+  {
+    "topicId": "writing:choosing-a-mobile-plan:choosing-a-mobile-plan-c3",
+    "unitId": "writing-unit-12",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result"
+    ],
+    "difficultyScore": 45.5
+  },
+  {
+    "topicId": "writing:coordinating-a-group-assignment",
+    "unitId": "writing-unit-13",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 70.1
+  },
+  {
+    "topicId": "writing:discussing-exam-results",
+    "unitId": "writing-unit-13",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.2
+  },
+  {
+    "topicId": "writing:planning-a-da-lat-trip",
+    "unitId": "writing-unit-13",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.3
+  },
+  {
+    "topicId": "writing:discussing-food-allergies",
+    "unitId": "writing-unit-13",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.4
+  },
+  {
+    "topicId": "writing:requesting-a-data-correction",
+    "unitId": "writing-unit-13",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 70.4
+  },
+  {
+    "topicId": "writing:volunteering-at-an-event",
+    "unitId": "writing-unit-13",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 70.4
+  },
+  {
+    "topicId": "writing:flooded-road-detour",
+    "unitId": "writing-unit-13",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 70.5
+  },
+  {
+    "topicId": "writing:understanding-bank-fees",
+    "unitId": "writing-unit-13",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.5
+  },
+  {
+    "topicId": "writing:tracing-a-pending-transaction",
+    "unitId": "writing-unit-13",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.6
+  },
+  {
+    "topicId": "writing:asking-for-leave:asking-for-leave-c1",
+    "unitId": "writing-unit-13",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.2
+  },
+  {
+    "topicId": "writing:discussing-a-phone-repair-quote",
+    "unitId": "writing-unit-13",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.4
+  },
+  {
+    "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c2",
+    "unitId": "writing-unit-13",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.4
+  },
+  {
+    "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c2",
+    "unitId": "writing-unit-13",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.5
+  },
+  {
+    "topicId": "writing:asking-for-leave:asking-for-leave-c2",
+    "unitId": "writing-unit-13",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.5
+  },
+  {
+    "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c1",
+    "unitId": "writing-unit-13",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 71.5
+  },
+  {
+    "topicId": "writing:broken-air-conditioner",
+    "unitId": "writing-unit-13",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:building-a-remote-work-routine:building-a-remote-work-routine-c2",
+    "unitId": "writing-unit-13",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:negotiating-project-scope:negotiating-project-scope-c1",
+    "unitId": "writing-unit-13",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:recovering-a-compromised-account:recovering-a-compromised-account-c2",
+    "unitId": "writing-unit-13",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:mentoring-a-junior-colleague:mentoring-a-junior-colleague-c3",
+    "unitId": "writing-unit-13",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c1",
+    "unitId": "writing-unit-13",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:restaurant-order",
+    "unitId": "writing-unit-13",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "apologize-explain"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:lost-parking-ticket",
+    "unitId": "writing-unit-13",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:building-healthy-habits",
+    "unitId": "writing-unit-13",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:reporting-a-bug:reporting-a-bug-c2",
+    "unitId": "writing-unit-13",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72.6
+  },
+  {
+    "topicId": "writing:reporting-a-bug:reporting-a-bug-c1",
+    "unitId": "writing-unit-13",
+    "order": 26,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.7
+  },
+  {
+    "topicId": "writing:facilitating-a-retrospective:facilitating-a-retrospective-c3",
+    "unitId": "writing-unit-13",
+    "order": 27,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 73.1
+  },
+  {
+    "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c3",
+    "unitId": "writing-unit-13",
+    "order": 28,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 73.1
+  },
+  {
+    "topicId": "writing:reporting-a-bug:reporting-a-bug-c4",
+    "unitId": "writing-unit-13",
+    "order": 29,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.2
+  },
+  {
+    "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c3",
+    "unitId": "writing-unit-13",
+    "order": 30,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 73.7
+  },
+  {
+    "topicId": "writing:moving-to-a-new-apartment",
+    "unitId": "writing-unit-14",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.6
+  },
+  {
+    "topicId": "writing:organizing-a-study-group",
+    "unitId": "writing-unit-14",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.6
+  },
+  {
+    "topicId": "writing:discussing-elder-care",
+    "unitId": "writing-unit-14",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.7
+  },
+  {
+    "topicId": "writing:sharing-family-care-responsibilities",
+    "unitId": "writing-unit-14",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.7
+  },
+  {
+    "topicId": "writing:handling-a-room-not-ready",
+    "unitId": "writing-unit-14",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.7
+  },
+  {
+    "topicId": "writing:discussing-household-expenses",
+    "unitId": "writing-unit-14",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.7
+  },
+  {
+    "topicId": "writing:explaining-local-waste-rules",
+    "unitId": "writing-unit-14",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.7
+  },
+  {
+    "topicId": "writing:discussing-injury-limitations",
+    "unitId": "writing-unit-14",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.8
+  },
+  {
+    "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c3",
+    "unitId": "writing-unit-14",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.6
+  },
+  {
+    "topicId": "writing:mentoring-a-junior-colleague:mentoring-a-junior-colleague-c2",
+    "unitId": "writing-unit-14",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:negotiating-a-freelance-brief:negotiating-a-freelance-brief-c1",
+    "unitId": "writing-unit-14",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:staying-safe-online:staying-safe-online-c1",
+    "unitId": "writing-unit-14",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:deadline-discussion:deadline-discussion-c1",
+    "unitId": "writing-unit-14",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:recovering-a-compromised-account:recovering-a-compromised-account-c3",
+    "unitId": "writing-unit-14",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:deadline-discussion:deadline-discussion-c3",
+    "unitId": "writing-unit-14",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c3",
+    "unitId": "writing-unit-14",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:discussing-salary-expectations:discussing-salary-expectations-c3",
+    "unitId": "writing-unit-14",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:cancelling-a-repair-appointment",
+    "unitId": "writing-unit-14",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:supporting-teen-exam-stress",
+    "unitId": "writing-unit-14",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.1
+  },
+  {
+    "topicId": "writing:correcting-a-bad-haircut",
+    "unitId": "writing-unit-14",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.1
+  },
+  {
+    "topicId": "writing:reporting-lost-luggage",
+    "unitId": "writing-unit-14",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.1
+  },
+  {
+    "topicId": "writing:negotiating-a-freelance-brief:negotiating-a-freelance-brief-c2",
+    "unitId": "writing-unit-14",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.2
+  },
+  {
+    "topicId": "writing:staying-safe-online:staying-safe-online-c2",
+    "unitId": "writing-unit-14",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.2
+  },
+  {
+    "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c4",
+    "unitId": "writing-unit-14",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.3
+  },
+  {
+    "topicId": "writing:reporting-a-bug:reporting-a-bug-c3",
+    "unitId": "writing-unit-14",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "incident-update"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:planning-a-career-change:planning-a-career-change-c2",
+    "unitId": "writing-unit-14",
+    "order": 26,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:contesting-a-bank-charge",
+    "unitId": "writing-unit-15",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 70.8
+  },
+  {
+    "topicId": "writing:evening-wind-down",
+    "unitId": "writing-unit-15",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 70.8
+  },
+  {
+    "topicId": "writing:explaining-a-food-allergy",
+    "unitId": "writing-unit-15",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 70.8
+  },
+  {
+    "topicId": "writing:comparing-dental-treatments",
+    "unitId": "writing-unit-15",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:comparing-energy-providers",
+    "unitId": "writing-unit-15",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:evaluating-a-training-course",
+    "unitId": "writing-unit-15",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:planning-an-accessible-event",
+    "unitId": "writing-unit-15",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:resolving-shared-house-issues",
+    "unitId": "writing-unit-15",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:negotiating-flexible-hours:negotiating-flexible-hours-c1",
+    "unitId": "writing-unit-15",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:negotiating-project-scope:negotiating-project-scope-c3",
+    "unitId": "writing-unit-15",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:planning-a-product-launch:planning-a-product-launch-c1",
+    "unitId": "writing-unit-15",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c4",
+    "unitId": "writing-unit-15",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:staying-safe-online:staying-safe-online-c3",
+    "unitId": "writing-unit-15",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.8
+  },
+  {
+    "topicId": "writing:negotiating-a-freelance-brief:negotiating-a-freelance-brief-c3",
+    "unitId": "writing-unit-15",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c1",
+    "unitId": "writing-unit-15",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:staying-safe-online:staying-safe-online-c4",
+    "unitId": "writing-unit-15",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "incident-update"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:building-a-remote-work-routine:building-a-remote-work-routine-c1",
+    "unitId": "writing-unit-15",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:requesting-a-late-checkout",
+    "unitId": "writing-unit-15",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.1
+  },
+  {
+    "topicId": "writing:resolving-a-parking-space-dispute",
+    "unitId": "writing-unit-15",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.1
+  },
+  {
+    "topicId": "writing:requesting-a-merchant-refund",
+    "unitId": "writing-unit-15",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.2
+  },
+  {
+    "topicId": "writing:resolving-a-subscription-dispute",
+    "unitId": "writing-unit-15",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.2
+  },
+  {
+    "topicId": "writing:negotiating-project-scope:negotiating-project-scope-c2",
+    "unitId": "writing-unit-15",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c1",
+    "unitId": "writing-unit-15",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:planning-a-career-change:planning-a-career-change-c1",
+    "unitId": "writing-unit-15",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:deadline-discussion:deadline-discussion-c2",
+    "unitId": "writing-unit-15",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:discussing-workplace-accessibility:discussing-workplace-accessibility-c2",
+    "unitId": "writing-unit-15",
+    "order": 26,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-blocker"
+    ],
+    "difficultyScore": 73.4
+  },
+  {
+    "topicId": "writing:discussing-a-rental-deposit",
+    "unitId": "writing-unit-16",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:online-shopping",
+    "unitId": "writing-unit-16",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:buying-travel-insurance",
+    "unitId": "writing-unit-16",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:planning-a-home-renovation",
+    "unitId": "writing-unit-16",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 70.9
+  },
+  {
+    "topicId": "writing:asking-a-friend-to-repay",
+    "unitId": "writing-unit-16",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71
+  },
+  {
+    "topicId": "writing:discussing-mental-wellbeing",
+    "unitId": "writing-unit-16",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71
+  },
+  {
+    "topicId": "writing:supporting-a-grieving-friend",
+    "unitId": "writing-unit-16",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71
+  },
+  {
+    "topicId": "writing:appealing-an-insurance-decision",
+    "unitId": "writing-unit-16",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.1
+  },
+  {
+    "topicId": "writing:planning-a-product-launch:planning-a-product-launch-c2",
+    "unitId": "writing-unit-16",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-blocker"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:having-a-performance-review:having-a-performance-review-c2",
+    "unitId": "writing-unit-16",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c2",
+    "unitId": "writing-unit-16",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-blocker"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:building-a-remote-work-routine:building-a-remote-work-routine-c3",
+    "unitId": "writing-unit-16",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c2",
+    "unitId": "writing-unit-16",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:recovering-a-compromised-account:recovering-a-compromised-account-c1",
+    "unitId": "writing-unit-16",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:asking-for-leave:asking-for-leave-c3",
+    "unitId": "writing-unit-16",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:having-a-performance-review:having-a-performance-review-c1",
+    "unitId": "writing-unit-16",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:discussing-salary-expectations:discussing-salary-expectations-c2",
+    "unitId": "writing-unit-16",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:discussing-workplace-accessibility:discussing-workplace-accessibility-c1",
+    "unitId": "writing-unit-16",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:coordinating-a-volunteer-rota",
+    "unitId": "writing-unit-16",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.3
+  },
+  {
+    "topicId": "writing:requesting-a-deadline-extension",
+    "unitId": "writing-unit-16",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.4
+  },
+  {
+    "topicId": "writing:following-up-on-noise",
+    "unitId": "writing-unit-16",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "incident-update"
+    ],
+    "difficultyScore": 72.4
+  },
+  {
+    "topicId": "writing:apologizing-to-a-friend",
+    "unitId": "writing-unit-16",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "apologize-explain"
+    ],
+    "difficultyScore": 72.6
+  },
+  {
+    "topicId": "writing:facilitating-a-retrospective:facilitating-a-retrospective-c2",
+    "unitId": "writing-unit-16",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-blocker"
+    ],
+    "difficultyScore": 73.2
+  },
+  {
+    "topicId": "writing:laptop-problem:laptop-problem-c2",
+    "unitId": "writing-unit-16",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c2",
+    "unitId": "writing-unit-16",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c1",
+    "unitId": "writing-unit-16",
+    "order": 26,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c1",
+    "unitId": "writing-unit-16",
+    "order": 27,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c1",
+    "unitId": "writing-unit-16",
+    "order": 28,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:setting-a-boundary-with-a-friend",
+    "unitId": "writing-unit-17",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.1
+  },
+  {
+    "topicId": "writing:resolving-a-school-bullying-report",
+    "unitId": "writing-unit-17",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.1
+  },
+  {
+    "topicId": "writing:discussing-medication-side-effects",
+    "unitId": "writing-unit-17",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.2
+  },
+  {
+    "topicId": "writing:appealing-a-parking-fine",
+    "unitId": "writing-unit-17",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 71.2
+  },
+  {
+    "topicId": "writing:interpreting-lab-results",
+    "unitId": "writing-unit-17",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 71.2
+  },
+  {
+    "topicId": "writing:planning-an-evacuation-drill",
+    "unitId": "writing-unit-17",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.2
+  },
+  {
+    "topicId": "writing:coordinating-support-after-a-storm",
+    "unitId": "writing-unit-17",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.2
+  },
+  {
+    "topicId": "writing:requesting-building-maintenance",
+    "unitId": "writing-unit-17",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.5
+  },
+  {
+    "topicId": "writing:planning-a-customer-survey:planning-a-customer-survey-c1",
+    "unitId": "writing-unit-17",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:discussing-salary-expectations:discussing-salary-expectations-c1",
+    "unitId": "writing-unit-17",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:discussing-workplace-accessibility:discussing-workplace-accessibility-c3",
+    "unitId": "writing-unit-17",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:planning-a-customer-survey:planning-a-customer-survey-c3",
+    "unitId": "writing-unit-17",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:facilitating-a-retrospective:facilitating-a-retrospective-c1",
+    "unitId": "writing-unit-17",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:planning-a-customer-survey:planning-a-customer-survey-c2",
+    "unitId": "writing-unit-17",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c3",
+    "unitId": "writing-unit-17",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72.2
+  },
+  {
+    "topicId": "writing:managing-community-conflict",
+    "unitId": "writing-unit-17",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 72.3
+  },
+  {
+    "topicId": "writing:planning-a-zero-waste-event",
+    "unitId": "writing-unit-17",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72.3
+  },
+  {
+    "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c3",
+    "unitId": "writing-unit-17",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72.3
+  },
+  {
+    "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c4",
+    "unitId": "writing-unit-17",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.4
+  },
+  {
+    "topicId": "writing:resolving-an-event-conflict",
+    "unitId": "writing-unit-17",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.6
+  },
+  {
+    "topicId": "writing:resolving-a-disagreement",
+    "unitId": "writing-unit-17",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.8
+  },
+  {
+    "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c2",
+    "unitId": "writing-unit-17",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c4",
+    "unitId": "writing-unit-17",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:laptop-problem:laptop-problem-c3",
+    "unitId": "writing-unit-17",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c4",
+    "unitId": "writing-unit-17",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 73.8
+  },
+  {
+    "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c4",
+    "unitId": "writing-unit-17",
+    "order": 26,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 74.1
+  },
+  {
+    "topicId": "writing:booking-event-tickets",
+    "unitId": "writing-unit-18",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:coordinating-wedding-guests",
+    "unitId": "writing-unit-18",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.7
+  },
+  {
+    "topicId": "writing:caring-for-a-sick-child",
+    "unitId": "writing-unit-18",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:discussing-family-screen-time",
+    "unitId": "writing-unit-18",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 71.9
+  },
+  {
+    "topicId": "writing:managing-a-travel-itinerary",
+    "unitId": "writing-unit-18",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72
+  },
+  {
+    "topicId": "writing:joining-a-language-exchange",
+    "unitId": "writing-unit-18",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.2
+  },
+  {
+    "topicId": "writing:planning-a-fundraiser",
+    "unitId": "writing-unit-18",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 72.2
+  },
+  {
+    "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c2",
+    "unitId": "writing-unit-18",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 72.6
+  },
+  {
+    "topicId": "writing:mentoring-a-junior-colleague:mentoring-a-junior-colleague-c1",
+    "unitId": "writing-unit-18",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 72.9
+  },
+  {
+    "topicId": "writing:taking-a-bus",
+    "unitId": "writing-unit-18",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 73
+  },
+  {
+    "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c3",
+    "unitId": "writing-unit-18",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73
+  },
+  {
+    "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c3",
+    "unitId": "writing-unit-18",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73
+  },
+  {
+    "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c2",
+    "unitId": "writing-unit-18",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 73
+  },
+  {
+    "topicId": "writing:describing-a-migraine-at-a-clinic",
+    "unitId": "writing-unit-18",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.1
+  },
+  {
+    "topicId": "writing:planning-a-product-launch:planning-a-product-launch-c3",
+    "unitId": "writing-unit-18",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.1
+  },
+  {
+    "topicId": "writing:negotiating-flexible-hours:negotiating-flexible-hours-c3",
+    "unitId": "writing-unit-18",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 73.2
+  },
+  {
+    "topicId": "writing:repairing-a-car",
+    "unitId": "writing-unit-18",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 73.5
+  },
+  {
+    "topicId": "writing:managing-club-finances",
+    "unitId": "writing-unit-18",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 73.6
+  },
+  {
+    "topicId": "writing:laptop-problem:laptop-problem-c1",
+    "unitId": "writing-unit-18",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 74.3
+  },
+  {
+    "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c4",
+    "unitId": "writing-unit-18",
+    "order": 20,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "incident-update"
+    ],
+    "difficultyScore": 74.3
+  },
+  {
+    "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c4",
+    "unitId": "writing-unit-18",
+    "order": 21,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 74.4
+  },
+  {
+    "topicId": "writing:having-a-performance-review:having-a-performance-review-c3",
+    "unitId": "writing-unit-18",
+    "order": 22,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 74.4
+  },
+  {
+    "topicId": "writing:negotiating-flexible-hours:negotiating-flexible-hours-c2",
+    "unitId": "writing-unit-18",
+    "order": 23,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 74.6
+  },
+  {
+    "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c1",
+    "unitId": "writing-unit-18",
+    "order": 24,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 75.6
+  },
+  {
+    "topicId": "writing:planning-a-career-change:planning-a-career-change-c3",
+    "unitId": "writing-unit-18",
+    "order": 25,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 75.7
+  },
+  {
+    "topicId": "writing:food-delivery",
+    "unitId": "writing-unit-18",
+    "order": 26,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 75.8
+  },
+  {
+    "topicId": "writing:handling-unequal-group-work",
+    "unitId": "writing-unit-19",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 94.3
+  },
+  {
+    "topicId": "writing:negotiating-a-catering-plan",
+    "unitId": "writing-unit-19",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 94.9
+  },
+  {
+    "topicId": "writing:choosing-between-courses",
+    "unitId": "writing-unit-19",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 94.9
+  },
+  {
+    "topicId": "writing:reviewing-digital-exam-proctoring",
+    "unitId": "writing-unit-19",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95
+  },
+  {
+    "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c3",
+    "unitId": "writing-unit-19",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 95.7
+  },
+  {
+    "topicId": "writing:getting-a-haircut",
+    "unitId": "writing-unit-19",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 95.8
+  },
+  {
+    "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c2",
+    "unitId": "writing-unit-19",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95.8
+  },
+  {
+    "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c3",
+    "unitId": "writing-unit-19",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 95.9
+  },
+  {
+    "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c2",
+    "unitId": "writing-unit-19",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:designing-inclusive-hiring:designing-inclusive-hiring-c3",
+    "unitId": "writing-unit-19",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:assessing-algorithmic-bias:assessing-algorithmic-bias-c2",
+    "unitId": "writing-unit-19",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:giving-constructive-feedback:giving-constructive-feedback-c2",
+    "unitId": "writing-unit-19",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:handling-a-disagreement-about-childcare",
+    "unitId": "writing-unit-19",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.1
+  },
+  {
+    "topicId": "writing:designing-inclusive-hiring:designing-inclusive-hiring-c2",
+    "unitId": "writing-unit-19",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.2
+  },
+  {
+    "topicId": "writing:giving-constructive-feedback:giving-constructive-feedback-c1",
+    "unitId": "writing-unit-19",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.3
+  },
+  {
+    "topicId": "writing:handling-workplace-conflict:handling-workplace-conflict-c2",
+    "unitId": "writing-unit-19",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.3
+  },
+  {
+    "topicId": "writing:assessing-algorithmic-bias:assessing-algorithmic-bias-c1",
+    "unitId": "writing-unit-19",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.4
+  },
+  {
+    "topicId": "writing:evaluating-charity-impact",
+    "unitId": "writing-unit-19",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.7
+  },
+  {
+    "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c2",
+    "unitId": "writing-unit-19",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 100
+  },
+  {
+    "topicId": "writing:reviewing-a-cultural-event",
+    "unitId": "writing-unit-20",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95
+  },
+  {
+    "topicId": "writing:reviewing-a-public-consultation",
+    "unitId": "writing-unit-20",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 95
+  },
+  {
+    "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c1",
+    "unitId": "writing-unit-20",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c2",
+    "unitId": "writing-unit-20",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c4",
+    "unitId": "writing-unit-20",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c4",
+    "unitId": "writing-unit-20",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:online-meeting:online-meeting-c1",
+    "unitId": "writing-unit-20",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.1
+  },
+  {
+    "topicId": "writing:reviewing-a-research-proposal",
+    "unitId": "writing-unit-20",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.3
+  },
+  {
+    "topicId": "writing:correcting-online-misinformation",
+    "unitId": "writing-unit-20",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.4
+  },
+  {
+    "topicId": "writing:returning-an-item",
+    "unitId": "writing-unit-20",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.4
+  },
+  {
+    "topicId": "writing:handling-workplace-conflict:handling-workplace-conflict-c1",
+    "unitId": "writing-unit-20",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.4
+  },
+  {
+    "topicId": "writing:assessing-algorithmic-bias:assessing-algorithmic-bias-c3",
+    "unitId": "writing-unit-20",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.4
+  },
+  {
+    "topicId": "writing:giving-constructive-feedback:giving-constructive-feedback-c3",
+    "unitId": "writing-unit-20",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.4
+  },
+  {
+    "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c3",
+    "unitId": "writing-unit-20",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.4
+  },
+  {
+    "topicId": "writing:handling-workplace-conflict:handling-workplace-conflict-c3",
+    "unitId": "writing-unit-20",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.4
+  },
+  {
+    "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c3",
+    "unitId": "writing-unit-20",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:negotiating-a-refund-delay",
+    "unitId": "writing-unit-20",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.1
+  },
+  {
+    "topicId": "writing:evaluating-a-climate-claim",
+    "unitId": "writing-unit-21",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:discussing-a-medical-treatment",
+    "unitId": "writing-unit-21",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c1",
+    "unitId": "writing-unit-21",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c1",
+    "unitId": "writing-unit-21",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:reviewing-an-environmental-impact",
+    "unitId": "writing-unit-21",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 96.4
+  },
+  {
+    "topicId": "writing:planning-crisis-communication",
+    "unitId": "writing-unit-21",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 96.6
+  },
+  {
+    "topicId": "writing:resolving-a-hotel-billing-dispute",
+    "unitId": "writing-unit-21",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.6
+  },
+  {
+    "topicId": "writing:responding-to-a-data-breach:responding-to-a-data-breach-c1",
+    "unitId": "writing-unit-21",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 97.1
+  },
+  {
+    "topicId": "writing:responding-to-a-data-breach:responding-to-a-data-breach-c3",
+    "unitId": "writing-unit-21",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 97.1
+  },
+  {
+    "topicId": "writing:escalating-an-internet-provider-complaint",
+    "unitId": "writing-unit-21",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 97.3
+  },
+  {
+    "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c1",
+    "unitId": "writing-unit-21",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c3",
+    "unitId": "writing-unit-21",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:responding-to-a-data-breach:responding-to-a-data-breach-c2",
+    "unitId": "writing-unit-21",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:negotiating-a-vendor-contract:negotiating-a-vendor-contract-c2",
+    "unitId": "writing-unit-21",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c2",
+    "unitId": "writing-unit-21",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk",
+      "explain-tradeoff",
+      "incident-update"
+    ],
+    "difficultyScore": 98.7
+  },
+  {
+    "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c5",
+    "unitId": "writing-unit-21",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 98.9
+  },
+  {
+    "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c1",
+    "unitId": "writing-unit-21",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 98.9
+  },
+  {
+    "topicId": "writing:planning-ethical-research-consent",
+    "unitId": "writing-unit-22",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:discussing-treatment-risks",
+    "unitId": "writing-unit-22",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:resolving-an-authorship-dispute",
+    "unitId": "writing-unit-22",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:negotiating-family-care-boundaries",
+    "unitId": "writing-unit-22",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:online-meeting:online-meeting-c2",
+    "unitId": "writing-unit-22",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step"
+    ],
+    "difficultyScore": 96.4
+  },
+  {
+    "topicId": "writing:evaluating-a-public-health-programme",
+    "unitId": "writing-unit-22",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.6
+  },
+  {
+    "topicId": "writing:debating-remote-work-policy:debating-remote-work-policy-c1",
+    "unitId": "writing-unit-22",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.1
+  },
+  {
+    "topicId": "writing:debating-remote-work-policy:debating-remote-work-policy-c3",
+    "unitId": "writing-unit-22",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.1
+  },
+  {
+    "topicId": "writing:discussing-ai-ethics:discussing-ai-ethics-c3",
+    "unitId": "writing-unit-22",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.1
+  },
+  {
+    "topicId": "writing:discussing-ai-ethics:discussing-ai-ethics-c2",
+    "unitId": "writing-unit-22",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.1
+  },
+  {
+    "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c4",
+    "unitId": "writing-unit-22",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan"
+    ],
+    "difficultyScore": 97.2
+  },
+  {
+    "topicId": "writing:online-meeting:online-meeting-c4",
+    "unitId": "writing-unit-22",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:discussing-news-responsibly",
+    "unitId": "writing-unit-22",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.7
+  },
+  {
+    "topicId": "writing:correcting-a-wrong-bank-transfer",
+    "unitId": "writing-unit-22",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.1
+  },
+  {
+    "topicId": "writing:being-late-for-work:being-late-for-work-c3",
+    "unitId": "writing-unit-22",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:mediating-a-team-disagreement:mediating-a-team-disagreement-c1",
+    "unitId": "writing-unit-22",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:mediating-a-team-disagreement:mediating-a-team-disagreement-c2",
+    "unitId": "writing-unit-22",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:managing-organizational-change:managing-organizational-change-c1",
+    "unitId": "writing-unit-22",
+    "order": 18,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:managing-organizational-change:managing-organizational-change-c2",
+    "unitId": "writing-unit-22",
+    "order": 19,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:balancing-heritage-and-housing",
+    "unitId": "writing-unit-23",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 95.2
+  },
+  {
+    "topicId": "writing:designing-inclusive-hiring:designing-inclusive-hiring-c1",
+    "unitId": "writing-unit-23",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c1",
+    "unitId": "writing-unit-23",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c2",
+    "unitId": "writing-unit-23",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 96
+  },
+  {
+    "topicId": "writing:negotiating-a-tour-change",
+    "unitId": "writing-unit-23",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 96.2
+  },
+  {
+    "topicId": "writing:evaluating-health-information",
+    "unitId": "writing-unit-23",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.3
+  },
+  {
+    "topicId": "writing:discussing-urban-development",
+    "unitId": "writing-unit-23",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 96.3
+  },
+  {
+    "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c4",
+    "unitId": "writing-unit-23",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c5",
+    "unitId": "writing-unit-23",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c3",
+    "unitId": "writing-unit-23",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:negotiating-apartment-damage-responsibility",
+    "unitId": "writing-unit-23",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.1
+  },
+  {
+    "topicId": "writing:debating-remote-work-policy:debating-remote-work-policy-c2",
+    "unitId": "writing-unit-23",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 98.5
+  },
+  {
+    "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c2",
+    "unitId": "writing-unit-23",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.9
+  },
+  {
+    "topicId": "writing:flight-disruption",
+    "unitId": "writing-unit-23",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk",
+      "explain-tradeoff"
+    ],
+    "difficultyScore": 99
+  },
+  {
+    "topicId": "writing:negotiating-a-vendor-contract:negotiating-a-vendor-contract-c3",
+    "unitId": "writing-unit-23",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 99.7
+  },
+  {
+    "topicId": "writing:mediating-a-team-disagreement:mediating-a-team-disagreement-c3",
+    "unitId": "writing-unit-23",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 99.7
+  },
+  {
+    "topicId": "writing:managing-organizational-change:managing-organizational-change-c3",
+    "unitId": "writing-unit-23",
+    "order": 17,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 99.7
+  },
+  {
+    "topicId": "writing:noisy-neighbor",
+    "unitId": "writing-unit-24",
+    "order": 1,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "apologize-explain",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.3
+  },
+  {
+    "topicId": "writing:following-up-on-test-results",
+    "unitId": "writing-unit-24",
+    "order": 2,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 96.7
+  },
+  {
+    "topicId": "writing:being-late-for-work:being-late-for-work-c2",
+    "unitId": "writing-unit-24",
+    "order": 3,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "apologize-explain",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.2
+  },
+  {
+    "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c5",
+    "unitId": "writing-unit-24",
+    "order": 4,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c4",
+    "unitId": "writing-unit-24",
+    "order": 5,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.5
+  },
+  {
+    "topicId": "writing:negotiating-a-rent-renewal",
+    "unitId": "writing-unit-24",
+    "order": 6,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.6
+  },
+  {
+    "topicId": "writing:handling-a-service-complaint",
+    "unitId": "writing-unit-24",
+    "order": 7,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "apologize-explain",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.7
+  },
+  {
+    "topicId": "writing:planning-a-return-to-work-after-illness",
+    "unitId": "writing-unit-24",
+    "order": 8,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 97.9
+  },
+  {
+    "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c4",
+    "unitId": "writing-unit-24",
+    "order": 9,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.3
+  },
+  {
+    "topicId": "writing:negotiating-a-vendor-contract:negotiating-a-vendor-contract-c1",
+    "unitId": "writing-unit-24",
+    "order": 10,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.3
+  },
+  {
+    "topicId": "writing:discussing-ai-ethics:discussing-ai-ethics-c1",
+    "unitId": "writing-unit-24",
+    "order": 11,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.3
+  },
+  {
+    "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c1",
+    "unitId": "writing-unit-24",
+    "order": 12,
+    "skills": [
+      "describe-situation",
+      "sequence-events",
+      "summarize-event",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk"
+    ],
+    "difficultyScore": 98.7
+  },
+  {
+    "topicId": "writing:being-late-for-work:being-late-for-work-c1",
+    "unitId": "writing-unit-24",
+    "order": 13,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "apologize-explain",
+      "explain-risk"
+    ],
+    "difficultyScore": 99.5
+  },
+  {
+    "topicId": "writing:online-meeting:online-meeting-c3",
+    "unitId": "writing-unit-24",
+    "order": 14,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "explain-risk"
+    ],
+    "difficultyScore": 100
+  },
+  {
+    "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c3",
+    "unitId": "writing-unit-24",
+    "order": 15,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 100
+  },
+  {
+    "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c4",
+    "unitId": "writing-unit-24",
+    "order": 16,
+    "skills": [
+      "describe-situation",
+      "report-problem",
+      "explain-reason",
+      "explain-cause-result",
+      "explain-action-taken",
+      "explain-result",
+      "explain-next-step",
+      "request-change-plan",
+      "explain-technical-issue",
+      "explain-risk",
+      "incident-update"
+    ],
+    "difficultyScore": 100
+  }
+]

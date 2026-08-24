@@ -12,6 +12,10 @@ const VocabularyPracticePage = lazy(() => import('../pages/VocabularyPracticePag
 const AddCustomVocabularyPage = lazy(() => import('../pages/AddCustomVocabularyPage'));
 const MistakesPage = lazy(() => import('../pages/MistakesPage'));
 const SettingsPage = lazy(() => import('../pages/SettingsPage'));
+const WritingPage = lazy(() => import('../pages/WritingPage'));
+const WritingPracticePage = lazy(() => import('../pages/WritingPracticePage'));
+const WritingUnitPage = lazy(() => import('../pages/WritingUnitPage'));
+const DailyLearningPage = lazy(() => import('../pages/DailyLearningPage'));
 
 function PageLoader() {
   return <div className="page-loader" role="status">Đang mở bài học…</div>;
@@ -28,6 +32,10 @@ export function App() {
           <Route path="vocabulary" element={<VocabularyPage />} />
           <Route path="vocabulary/custom" element={<AddCustomVocabularyPage />} />
           <Route path="vocabulary/:vocabularyId" element={<VocabularyDetailPage />} />
+          <Route path="writing" element={<WritingPage />} />
+          <Route path="writing/path/:unitId" element={<WritingUnitPage />} />
+          <Route path="writing/:writingId" element={<WritingPracticePage />} />
+          <Route path="daily" element={<DailyLearningPage />} />
           <Route path="mistakes" element={<MistakesPage />} />
           <Route path="settings" element={<SettingsPage />} />
         </Route>

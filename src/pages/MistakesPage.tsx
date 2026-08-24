@@ -1,4 +1,4 @@
-import { AlertTriangle, ArrowRight } from 'lucide-react';
+import { AlertTriangle, ArrowRight, FilePenLine } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EmptyState } from '../components/common/EmptyState';
@@ -7,6 +7,8 @@ import { isReviewDue } from '../engine/review-scheduler';
 import { useProgressStore } from '../store/progress-store';
 import type { MistakeRecord } from '../types/domain';
 import { vocabularyIndex } from '../data/vocabulary/vocabulary-repository';
+import { writingManifest } from '../data/writing/writing-repository';
+import { writingVariantForTopic } from '../engine/writing-learning-path';
 
 function ReviewCard({ item }: { item: MistakeRecord }) {
   return (
@@ -69,6 +71,10 @@ export default function MistakesPage() {
   const dueVocabulary = progress.vocabulary
     .filter((item) => item.nextReviewAt && Date.parse(item.nextReviewAt) <= now)
     .slice(0, 12);
+  const dueWriting = Object.values(progress.writingProgress)
+    .filter((item) => item.attempts.length > 0 && Date.parse(item.nextReviewAt) <= now)
+    .sort((left, right) => left.nextReviewAt.localeCompare(right.nextReviewAt))
+    .slice(0, 12);
   return (
     <div className="page">
       <p className="eyebrow">Biến lỗi sai thành tiến bộ</p>
@@ -77,7 +83,7 @@ export default function MistakesPage() {
         Lịch ôn theo ngày ưu tiên câu đến hạn, điểm ngữ pháp yếu và từ vựng cần củng cố. Mỗi lỗi chỉ
         có một bản ghi đang hoạt động.
       </p>
-      {progress.mistakes.length === 0 && dueVocabulary.length === 0 ? (
+      {progress.mistakes.length === 0 && dueVocabulary.length === 0 && dueWriting.length === 0 ? (
         <EmptyState
           icon={AlertTriangle}
           title="Chưa có nội dung đến hạn"
@@ -136,6 +142,45 @@ export default function MistakesPage() {
                       item.id}
                   </Link>
                 ))}
+              </div>
+            </>
+          )}
+          {dueWriting.length > 0 && (
+            <>
+              <div className="section-heading">
+                <h2>Writing Due</h2>
+                <span>{dueWriting.length} đoạn</span>
+              </div>
+              <div className="review-list">
+                {dueWriting.map((item) => {
+                  const topic = writingManifest.find((candidate) => candidate.id === item.topicId);
+                  const variant = item.recommendedReviewMode === 'exact-retry'
+                    ? undefined
+                    : writingVariantForTopic(item.topicId, new Set(Object.keys(progress.writingProgress)));
+                  const reviewTopicId = variant?.topicId ?? item.topicId;
+                  const recurringWeakness = Object.entries(item.weaknessCounts ?? {})
+                    .sort((left, right) => right[1] - left[1])[0];
+                  return (
+                    <article className="review-card card writing-review-card" key={item.topicId}>
+                      <div className="review-prompt">
+                        <small>WRITING · {topic?.domain === 'it-work' ? 'IT' : 'DAILY'} · {topic?.level}</small>
+                        <h2>{topic?.titleVietnamese ?? item.topicId}</h2>
+                        <p>
+                          {item.bestAttempt
+                            ? `Best meaning coverage: ${Math.round(item.bestAttempt.meaningCoverage * 100)}%`
+                            : 'Topic đã được đánh dấu để luyện.'}
+                        </p>
+                        {recurringWeakness && <small>Ưu tiên: {recurringWeakness[0]} · gặp lại {recurringWeakness[1]} lần</small>}
+                      </div>
+                      <footer>
+                        <span className={`mastery ${item.mastery}`}>{item.mastery}</span>
+                        <Link className="btn btn-secondary" to={`/writing/${encodeURIComponent(reviewTopicId)}?session=review`}>
+                          <FilePenLine size={16} /> {variant ? 'Luyện biến thể' : 'Ôn đoạn này'}
+                        </Link>
+                      </footer>
+                    </article>
+                  );
+                })}
               </div>
             </>
           )}

@@ -22,12 +22,13 @@ export default function LessonPage() {
   const { topicId, conversationId } = useParams();
   const [searchParams] = useSearchParams();
   const requestedRole = searchParams.get('role');
+  const dailyItemId = searchParams.get('dailyItem');
   const navigate = useNavigate();
   const [content, setContent] = useState<{ id: string; topic?: Topic; error?: boolean }>();
   const topic = content?.id === topicId ? content.topic : undefined;
   const contentLoaded = content?.id === topicId;
   const conversation = topic?.conversations.find((item) => item.id === conversationId);
-  const { recordAnswer, completeConversationRole, markVocabularySeen, settings, conversationProgress } = useProgressStore();
+  const { recordAnswer, completeConversationRole, completeDailyLearningItem, markVocabularySeen, settings, conversationProgress } = useProgressStore();
   const [role, setRole] = useState<LearningRole>();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
@@ -126,6 +127,7 @@ export default function LessonPage() {
       const perfect = stats.correctFirstTry === stats.total;
       const accuracy = stats.total ? Math.round(stats.scoreTotal / stats.total) : 0;
       const outcome = completeConversationRole({ conversationId:conversation!.id, topicId:topic!.id, topicConversationIds:topic!.conversations.map((item) => item.id), role, accuracy, sessionXp:stats.xpEarned, roleBonusXp:calculateLessonBonus(perfect) });
+      if (dailyItemId) completeDailyLearningItem(dailyItemId, { firstTryCorrect: perfect });
       setCompletionOutcome(outcome);
       setStats((old) => ({ ...old, xpEarned: old.xpEarned + outcome.completionXp }));
       setComplete(true); return;
@@ -136,7 +138,7 @@ export default function LessonPage() {
 
   function restart() { if (role) start(role); }
 
-  if (complete && role && completionOutcome) return <LessonSummary stats={stats} topicId={topic.id} conversationId={conversation.id} role={role} progress={conversationProgress[conversation.id]} outcome={completionOutcome} onRestart={restart} onPracticeOther={() => start(role === 'A' ? 'B' : 'A')} />;
+  if (complete && role && completionOutcome) return <LessonSummary stats={stats} topicId={topic.id} conversationId={conversation.id} role={role} progress={conversationProgress[conversation.id]} outcome={completionOutcome} dailyReturn={Boolean(dailyItemId)} onRestart={restart} onPracticeOther={() => start(role === 'A' ? 'B' : 'A')} />;
   if (!role) {
     const count = completedRoleCount(savedProgress);
     return <main className="role-page"><Link to={`/topics/${topic.id}`} className="back-link"><ArrowLeft size={17} /> {topic.title}</Link><div className="role-intro"><span>{topic.icon}</span><p className="eyebrow">Luyện cả hai phía</p><h1>{conversation.title}</h1><p>Mỗi vai có các lượt viết riêng. Cuộc hội thoại chỉ hoàn thành khi bạn đã luyện cả Person A và Person B.</p><div className="role-overall"><ProgressBar value={count} max={2} /><b>{count} / 2 vai đã hoàn thành</b></div></div><div className="role-options">{(['A','B'] as const).map((item) => { const done = isRoleCompleted(savedProgress,item); return <button className={done ? 'completed' : ''} onClick={() => start(item)} key={item}><span className={`role-avatar ${item.toLowerCase()}`}>{item === 'A' ? <UserRound /> : <MessageCircle />}</span><small>PERSON {item}</small><h2>Bạn là Person {item}</h2><p>{item === 'A' ? 'Luyện mở đầu, đặt câu hỏi và dẫn dắt hội thoại.' : 'Nghe ngữ cảnh trước, luyện phản hồi và kết thúc.'}</p><span className={`role-status ${done ? 'done' : ''}`}>{done ? '✓ Đã hoàn thành' : '○ Chưa hoàn thành'}</span><b>{done ? 'Luyện lại' : `Luyện vai ${item}`} →</b></button>; })}</div>{isConversationCompleted(savedProgress) && <p className="conversation-mastered-note">✓ Bạn đã luyện thành thạo cả hai vai của hội thoại này.</p>}</main>;

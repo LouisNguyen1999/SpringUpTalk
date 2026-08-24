@@ -65,7 +65,7 @@ describe('vocabulary persistence and mastery', () => {
       },
       7,
     );
-    expect(migrated.version).toBe(8);
+    expect(migrated.version).toBe(CURRENT_PROGRESS_VERSION);
     expect(migrated.vocabulary[0]).toMatchObject({
       id: 'vocab:deadline',
       timesSeen: 4,

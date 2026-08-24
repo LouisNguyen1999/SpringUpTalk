@@ -4,7 +4,7 @@ const matrix = [
   { width:320,height:568 }, { width:360,height:800 }, { width:375,height:667 },
   { width:390,height:844 }, { width:412,height:915 }, { width:430,height:932 },
   { width:600,height:960 }, { width:768,height:1024 }, { width:820,height:1180 }, { width:1024,height:768 },
-  { width:1366,height:768 }, { width:1440,height:900 }, { width:1920,height:1080 },
+  { width:1280,height:800 }, { width:1366,height:768 }, { width:1440,height:900 }, { width:1920,height:1080 },
   { width:844,height:390 },
 ] as const;
 
@@ -30,7 +30,7 @@ async function expectLatestMessageVisible(page: Page) {
 for (const viewport of matrix) {
   test(`critical layouts have no page overflow at ${viewport.width}x${viewport.height}`, async ({ page }) => {
     await page.setViewportSize(viewport);
-    for (const path of ['/', '/topics', '/vocabulary', '/vocabulary/vocab%3Adeadline', '/vocabulary/vocab%3Adeadline/practice', '/lesson/meeting-a-friend/meeting-a-friend-c1', '/lesson/giving-difficult-feedback/giving-difficult-feedback-c1']) {
+    for (const path of ['/', '/daily', '/topics', '/vocabulary', '/vocabulary/vocab%3Adeadline', '/vocabulary/vocab%3Adeadline/practice', '/writing', '/writing/path/writing-unit-01', '/writing/writing%3Ameeting-a-friend', '/lesson/meeting-a-friend/meeting-a-friend-c1', '/lesson/giving-difficult-feedback/giving-difficult-feedback-c1']) {
       await page.goto(path);
       await expect(page.locator('#root')).toBeVisible();
       await expectNoHorizontalOverflow(page);
@@ -116,7 +116,7 @@ test('tablet and desktop switch navigation and topic columns at layout breakpoin
 
 test('all critical application pages remain within a 320px viewport', async ({ page }) => {
   await page.setViewportSize({ width:320,height:568 });
-  for (const path of ['/', '/topics', '/topics/meeting-a-friend', '/vocabulary', '/mistakes', '/settings', '/lesson/meeting-a-friend/meeting-a-friend-c1']) {
+  for (const path of ['/', '/daily', '/topics', '/topics/meeting-a-friend', '/vocabulary', '/writing', '/writing/path/writing-unit-01', '/writing/writing%3Ameeting-a-friend', '/mistakes', '/settings', '/lesson/meeting-a-friend/meeting-a-friend-c1']) {
     await page.goto(path);
     await expect(page.locator('#root')).toBeVisible();
     await expectNoHorizontalOverflow(page);

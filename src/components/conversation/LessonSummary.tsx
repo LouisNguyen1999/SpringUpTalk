@@ -11,11 +11,12 @@ interface LessonSummaryProps {
   role: LearningRole;
   progress?: ConversationProgress;
   outcome: RoleCompletionOutcome;
+  dailyReturn?: boolean;
   onRestart: () => void;
   onPracticeOther: () => void;
 }
 
-export function LessonSummary({ stats, topicId, role, progress, outcome, onRestart, onPracticeOther }: LessonSummaryProps) {
+export function LessonSummary({ stats, topicId, role, progress, outcome, dailyReturn, onRestart, onPracticeOther }: LessonSummaryProps) {
   const accuracy = stats.total ? Math.round(stats.scoreTotal / stats.total) : 0;
   const otherRole = role === 'A' ? 'B' : 'A';
   const conversationAccuracy = progress
@@ -26,6 +27,6 @@ export function LessonSummary({ stats, topicId, role, progress, outcome, onResta
     <div className="summary-role-progress"><div><span>Tiến độ hội thoại</span><b>{outcome.rolesCompleted} / 2 vai</b></div><div className="progress-track"><span style={{ width:`${outcome.rolesCompleted * 50}%` }} /></div></div>
     <div className="accuracy-ring" style={{ '--accuracy': `${(outcome.conversationCompleted ? conversationAccuracy : accuracy) * 3.6}deg` } as React.CSSProperties}><div><b>{outcome.conversationCompleted ? conversationAccuracy : accuracy}%</b><span>{outcome.conversationCompleted ? 'chính xác tổng' : `chính xác vai ${role}`}</span></div></div>
     <div className="summary-stats"><div><CheckCircle2 /><b>{stats.correctFirstTry}/{stats.total}</b><span>Đúng lần đầu</span></div><div><Sparkles /><b>+{stats.xpEarned}</b><span>XP phiên này</span></div><div><RotateCcw /><b>{stats.grammarMistakes}</b><span>Lỗi ngữ pháp</span></div></div>
-    <div className="summary-actions"><Link className="btn btn-secondary" to={`/topics/${topicId}`}><Home size={17} /> Về chủ đề</Link>{!outcome.conversationCompleted && <button className="btn btn-primary" onClick={onPracticeOther}><Users size={17} /> Luyện Person {otherRole}</button>}<button className={outcome.conversationCompleted ? 'btn btn-primary' : 'btn btn-ghost'} onClick={onRestart}><RotateCcw size={17} /> Luyện lại vai {role}</button></div>
+    <div className="summary-actions">{dailyReturn ? <Link className="btn btn-primary" to="/daily"><Home size={17} /> Tiếp tục kế hoạch hôm nay</Link> : <Link className="btn btn-secondary" to={`/topics/${topicId}`}><Home size={17} /> Về chủ đề</Link>}{!dailyReturn && !outcome.conversationCompleted && <button className="btn btn-primary" onClick={onPracticeOther}><Users size={17} /> Luyện Person {otherRole}</button>}<button className={outcome.conversationCompleted && !dailyReturn ? 'btn btn-primary' : 'btn btn-ghost'} onClick={onRestart}><RotateCcw size={17} /> Luyện lại vai {role}</button></div>
   </main>;
 }

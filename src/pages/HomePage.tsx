@@ -1,6 +1,7 @@
 import {
   ArrowRight,
   BookOpenCheck,
+  CalendarCheck2,
   MessageCircleMore,
   RotateCcw,
   Sparkles,
@@ -20,6 +21,10 @@ import {
   rolesPracticed,
   topicRoleCounts,
 } from '../engine/progress';
+import { buildDailyLearningSession, dailySessionCounts } from '../engine/daily-learning';
+import { vocabularyIndex } from '../data/vocabulary/vocabulary-repository';
+import { writingManifest } from '../data/writing/writing-repository';
+import { localDateKey } from '../utils/local-date';
 
 export default function HomePage() {
   const progress = useProgressStore();
@@ -44,6 +49,15 @@ export default function HomePage() {
   const dueCount = progress.mistakes.filter((item) =>
     isReviewDue(progress.sentenceProgress[item.turnId]),
   ).length;
+  const dailySession = progress.dailyLearningSession?.date === localDateKey()
+    ? progress.dailyLearningSession
+    : buildDailyLearningSession(progress, progress.dailyLearningPreferences, {
+        conversations: topicManifest,
+        vocabulary: vocabularyIndex,
+        writing: writingManifest,
+      });
+  const dailyCounts = dailySessionCounts(dailySession.items);
+  const dailyCompleted = dailySession.items.filter((item) => item.status === 'completed').length;
   return (
     <div className="page home-page">
       <section className="welcome-row">
@@ -76,6 +90,17 @@ export default function HomePage() {
               : `Còn ${progress.dailyGoal - progress.todayXp} XP để hoàn thành.`}
           </small>
         </div>
+      </section>
+
+      <section className={`daily-home-card card ${dailySession.status}`}>
+        <span className="daily-home-icon"><CalendarCheck2 /></span>
+        <div className="daily-home-copy">
+          <p className="eyebrow">Hôm nay</p>
+          <h2>Luyện tập hôm nay</h2>
+          <p>~{dailySession.estimatedMinutes} phút · {dailyCompleted} / {dailySession.items.length} hoạt động</p>
+          <div>{dailyCounts.conversation > 0 && <span>Conversation <b>{dailyCounts.conversation}</b></span>}{dailyCounts.vocabulary > 0 && <span>Vocabulary <b>{dailyCounts.vocabulary}</b></span>}{dailyCounts.writing > 0 && <span>Writing <b>{dailyCounts.writing}</b></span>}{dailyCounts.review > 0 && <span>Review <b>{dailyCounts.review}</b></span>}</div>
+        </div>
+        <Link className="btn btn-primary" to="/daily">{dailySession.status === 'completed' ? '✓ Hoàn thành hôm nay' : dailySession.status === 'in-progress' ? 'Tiếp tục' : 'Bắt đầu học'} <ArrowRight size={18} /></Link>
       </section>
 
       {nextTopic && (

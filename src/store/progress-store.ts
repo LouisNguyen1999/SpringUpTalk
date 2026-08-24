@@ -2,6 +2,9 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import type {
   ConversationProgress,
+  DailyLearningItem,
+  DailyLearningPreferences,
+  DailyLearningSession,
   Difficulty,
   EvaluationResult,
   LearningRole,
@@ -11,13 +14,19 @@ import type {
   VocabularyItem,
   VocabularyPracticeItem,
   VocabularyProgress,
+  WritingEvaluation,
+  WritingPathPreference,
+  WritingTopicProgress,
 } from '../types/domain';
 import { normalizeVocabularyIdentityKey } from '../utils/search';
 import { masteryFor, scheduleNextReview } from '../engine/review-scheduler';
 import { isConversationCompleted, isTopicCompleted } from '../engine/progress';
+import { dailyItemKey, dailySessionCounts, isDailySessionComplete } from '../engine/daily-learning/session';
+import { localDateKey } from '../utils/local-date';
+import { masteryResultForEvaluation, updateWritingSkillMastery } from '../engine/writing-mastery';
 
-const TODAY = () => new Date().toISOString().slice(0, 10);
-export const CURRENT_PROGRESS_VERSION = 8;
+const TODAY = () => localDateKey();
+export const CURRENT_PROGRESS_VERSION = 13;
 export const CONVERSATION_MASTERY_BONUS = 10;
 
 export const defaultSettings: UserSettings = {
@@ -43,9 +52,17 @@ export const defaultProgress: UserProgress = {
   customVocabulary: [],
   customVocabularyPractice: [],
   disabledVocabularyPracticeIds: [],
+  writingProgress: {},
+  writingDrafts: {},
+  writingPathPreference: 'all',
+  writingCurrentUnitId: undefined,
+  writingSkillProgress: {},
   achievements: [],
   favorites: [],
   dailyGoal: 20,
+  dailyLearningPreferences: { mode: 'standard', focus: 'balanced' },
+  dailyLearningSession: undefined,
+  dailyLearningHistory: [],
   settings: defaultSettings,
 };
 
@@ -171,6 +188,62 @@ export function migrateProgress(value: unknown, version: number): UserProgress {
   if (version < 8) {
     base.disabledVocabularyPracticeIds = base.disabledVocabularyPracticeIds ?? [];
   }
+  if (version < 9) {
+    base.writingProgress = base.writingProgress ?? {};
+    base.writingDrafts = base.writingDrafts ?? {};
+  }
+  if (version < 10) {
+    base.writingProgress = Object.fromEntries(
+      Object.entries(base.writingProgress ?? {}).map(([topicId, progress]) => [
+        topicId,
+        {
+          ...progress,
+          attempts: (progress.attempts ?? []).map((attempt) => ({
+            ...attempt,
+            contradictedIdeaIds: attempt.contradictedIdeaIds ?? [],
+            missingIdeaKinds: attempt.missingIdeaKinds ?? [],
+          })),
+          bestAttempt: progress.bestAttempt
+            ? {
+                ...progress.bestAttempt,
+                contradictedIdeaIds: progress.bestAttempt.contradictedIdeaIds ?? [],
+                missingIdeaKinds: progress.bestAttempt.missingIdeaKinds ?? [],
+              }
+            : undefined,
+          weaknessCounts: progress.weaknessCounts ?? {},
+        },
+      ]),
+    );
+  }
+  if (version < 11) {
+    base.dailyLearningPreferences = base.dailyLearningPreferences ?? {
+      mode: 'standard',
+      focus: 'balanced',
+    };
+    base.dailyLearningHistory = base.dailyLearningHistory ?? [];
+    base.dailyLearningSession = base.dailyLearningSession
+      ? { ...base.dailyLearningSession, streakAwarded: base.dailyLearningSession.streakAwarded ?? false }
+      : undefined;
+  }
+  if (version < 12) {
+    base.writingPathPreference = base.writingPathPreference ?? 'all';
+    base.writingCurrentUnitId = base.writingCurrentUnitId || undefined;
+  }
+  if (version < 13) {
+    base.writingSkillProgress = base.writingSkillProgress ?? {};
+    base.writingProgress = Object.fromEntries(
+      Object.entries(base.writingProgress ?? {}).map(([topicId, progress]) => [
+        topicId,
+        {
+          ...progress,
+          recommendedReviewMode: progress.recommendedReviewMode ?? (
+            progress.bestAttempt?.contradictedIdeaIds.length ? 'exact-retry' : 'variant-retry'
+          ),
+        },
+      ]),
+    );
+  }
+  base.writingSkillProgress = base.writingSkillProgress ?? {};
   return { ...base, version: CURRENT_PROGRESS_VERSION };
 }
 
@@ -227,6 +300,17 @@ interface ProgressActions {
     firstTry: boolean;
     shownAnswer: boolean;
   }) => void;
+  saveWritingDraft: (topicId: string, draft: string) => void;
+  clearWritingDraft: (topicId: string) => void;
+  toggleWritingFavorite: (topicId: string) => void;
+  recordWritingAttempt: (topicId: string, evaluation: WritingEvaluation) => void;
+  setWritingPathPreference: (preference: WritingPathPreference) => void;
+  setWritingCurrentUnit: (unitId?: string) => void;
+  setDailyLearningPreferences: (preferences: Partial<DailyLearningPreferences>) => void;
+  saveDailyLearningSession: (session: DailyLearningSession, regenerate?: boolean) => void;
+  startDailyLearningItem: (itemId: string) => void;
+  completeDailyLearningItem: (itemId: string, result?: DailyLearningItem['result']) => void;
+  skipDailyLearningItem: (itemId: string) => void;
   resetProgress: () => void;
   setLevel: (level: Difficulty) => void;
 }
@@ -237,6 +321,36 @@ function dailyState(state: UserProgress): Pick<UserProgress, 'todayXp' | 'activi
   return state.activityDate === TODAY()
     ? { todayXp: state.todayXp, activityDate: state.activityDate }
     : { todayXp: 0, activityDate: TODAY() };
+}
+
+function dailyHistoryEntry(session: DailyLearningSession, xp: number) {
+  const completed = session.items.filter((item) => item.status === 'completed');
+  const firstTry = completed.filter((item) => item.result?.firstTryCorrect !== undefined);
+  const focusAreas = Array.from(
+    new Set(completed.flatMap((item) => item.result?.weaknessTypes ?? [])),
+  ).slice(0, 4);
+  return {
+    date: session.date,
+    status: session.status,
+    planned: session.items.length,
+    completed: completed.length,
+    xpEarned: Math.max(0, xp - session.xpAtStart),
+    counts: dailySessionCounts(completed),
+    firstTryCorrect: firstTry.filter((item) => item.result?.firstTryCorrect).length,
+    firstTryTotal: firstTry.length,
+    focusAreas,
+    recentItemKeys: completed.map(dailyItemKey).slice(-30),
+  };
+}
+
+function upsertDailyHistory(
+  history: UserProgress['dailyLearningHistory'],
+  session: DailyLearningSession,
+  xp: number,
+) {
+  return [...history.filter((item) => item.date !== session.date), dailyHistoryEntry(session, xp)]
+    .sort((left, right) => left.date.localeCompare(right.date))
+    .slice(-90);
 }
 
 export const useProgressStore = create<ProgressStore>()(
@@ -551,14 +665,166 @@ export const useProgressStore = create<ProgressStore>()(
                 ...state.mistakes.filter((mistake) => mistake.turnId !== item.id),
               ].slice(0, 500)
             : state.mistakes;
+          const rewardXp = productionSuccess ? 5 : successful ? 2 : 0;
+          const daily = dailyState(state);
+          const todayXp = daily.todayXp + rewardXp;
           return {
+            ...daily,
             vocabulary,
             sentenceProgress,
             mistakes,
-            xp: state.xp + (productionSuccess ? 5 : successful ? 2 : 0),
-            todayXp: state.todayXp + (productionSuccess ? 5 : successful ? 2 : 0),
+            xp: state.xp + rewardXp,
+            todayXp,
+            streak:
+              daily.todayXp < state.dailyGoal && todayXp >= state.dailyGoal
+                ? state.streak + 1
+                : state.streak,
           };
         }),
+      saveWritingDraft: (topicId, draft) =>
+        set((state) => ({
+          writingDrafts: draft.trim()
+            ? { ...state.writingDrafts, [topicId]: draft }
+            : Object.fromEntries(
+                Object.entries(state.writingDrafts).filter(([id]) => id !== topicId),
+              ),
+        })),
+      clearWritingDraft: (topicId) =>
+        set((state) => ({
+          writingDrafts: Object.fromEntries(
+            Object.entries(state.writingDrafts).filter(([id]) => id !== topicId),
+          ),
+        })),
+      toggleWritingFavorite: (topicId) =>
+        set((state) => {
+          const current = state.writingProgress[topicId];
+          const now = new Date().toISOString();
+          const next: WritingTopicProgress = current ?? {
+            topicId,
+            attempts: [],
+            successfulCount: 0,
+            consecutiveCorrect: 0,
+            lastPracticedAt: now,
+            nextReviewAt: now,
+            mastery: 'new',
+            favorite: false,
+            weaknessCounts: {},
+          };
+          return {
+            writingProgress: {
+              ...state.writingProgress,
+              [topicId]: { ...next, favorite: !next.favorite },
+            },
+          };
+        }),
+      recordWritingAttempt: (topicId, evaluation) =>
+        set((state) => {
+          const now = new Date();
+          const previous = state.writingProgress[topicId];
+          const successful =
+            evaluation.status === 'communicates-well' &&
+            evaluation.facts.every((fact) => fact.correct);
+          const qualifiesForMastery = successful &&
+            (!previous?.lastSuccessfulAt || Date.parse(previous.nextReviewAt) <= now.getTime());
+          const schedule = successful && !qualifiesForMastery && previous
+            ? {
+                mastery: previous.mastery,
+                nextReviewAt: previous.nextReviewAt,
+                consecutiveCorrect: previous.consecutiveCorrect,
+              }
+            : scheduleNextReview(
+                previous
+                  ? {
+                      attempts: previous.attempts.length,
+                      correct: previous.successfulCount,
+                      consecutiveCorrect: previous.consecutiveCorrect,
+                      lastSeenAt: previous.lastPracticedAt,
+                      nextReviewAt: previous.nextReviewAt,
+                    }
+                  : undefined,
+                successful,
+                now,
+              );
+          const attempt = {
+            id: `${topicId}:attempt:${now.getTime()}`,
+            answer: evaluation.userAnswer,
+            status: evaluation.status,
+            communicationScore: evaluation.communicationScore,
+            meaningCoverage: evaluation.meaningCoverage,
+            missingIdeaIds: evaluation.ideas
+              .filter((idea) => idea.status === 'missing' || idea.status === 'partial')
+              .map((idea) => idea.id),
+            contradictedIdeaIds: evaluation.ideas
+              .filter((idea) => idea.status === 'contradicted')
+              .map((idea) => idea.id),
+            missingIdeaKinds: Array.from(new Set(evaluation.ideas
+              .filter((idea) => idea.status !== 'covered')
+              .map((idea) => idea.kind))),
+            criticalErrorIds: evaluation.facts
+              .filter((fact) => !fact.correct)
+              .map((fact) => fact.id),
+            languageIssueTypes: evaluation.languageIssues.map((issue) => issue.type),
+            feedbackCategories: Array.from(new Set(evaluation.feedbackIssues?.map((issue) => issue.category) ?? [])),
+            practicedSkills: evaluation.practicedSkills ?? [],
+            qualityBand: evaluation.qualityBand,
+            createdAt: now.toISOString(),
+          };
+          const isBetter = !previous?.bestAttempt ||
+            attempt.meaningCoverage > previous.bestAttempt.meaningCoverage ||
+            (attempt.meaningCoverage === previous.bestAttempt.meaningCoverage &&
+              attempt.criticalErrorIds.length < previous.bestAttempt.criticalErrorIds.length) ||
+            (attempt.meaningCoverage === previous.bestAttempt.meaningCoverage &&
+              attempt.criticalErrorIds.length === previous.bestAttempt.criticalErrorIds.length &&
+              attempt.languageIssueTypes.length < previous.bestAttempt.languageIssueTypes.length);
+          const bestAttempt =
+            isBetter ? attempt : previous.bestAttempt;
+          const weaknessCounts = { ...(previous?.weaknessCounts ?? {}) };
+          for (const kind of attempt.missingIdeaKinds) {
+            weaknessCounts[kind] = (weaknessCounts[kind] ?? 0) + 1;
+          }
+          const writingProgress: WritingTopicProgress = {
+            topicId,
+            attempts: [...(previous?.attempts ?? []), attempt].slice(-3),
+            bestAttempt,
+            successfulCount: (previous?.successfulCount ?? 0) + (qualifiesForMastery ? 1 : 0),
+            consecutiveCorrect: schedule.consecutiveCorrect,
+            lastPracticedAt: now.toISOString(),
+            nextReviewAt: schedule.nextReviewAt,
+            mastery: schedule.mastery,
+            favorite: previous?.favorite ?? false,
+            weaknessCounts,
+            lastSuccessfulAt: qualifiesForMastery ? now.toISOString() : previous?.lastSuccessfulAt,
+            recommendedReviewMode: evaluation.qualityBand === 'meaning-changed' || evaluation.qualityBand === 'incorrect'
+              ? 'exact-retry'
+              : 'variant-retry',
+          };
+          const xp = successful ? 8 : evaluation.status === 'mostly-correct' ? 3 : 0;
+          const daily = dailyState(state);
+          const todayXp = daily.todayXp + xp;
+          return {
+            ...daily,
+            xp: state.xp + xp,
+            todayXp,
+            streak:
+              daily.todayXp < state.dailyGoal && todayXp >= state.dailyGoal
+                ? state.streak + 1
+                : state.streak,
+            writingProgress: { ...state.writingProgress, [topicId]: writingProgress },
+            writingSkillProgress: updateWritingSkillMastery(
+              state.writingSkillProgress,
+              evaluation.practicedSkills ?? [],
+              masteryResultForEvaluation(evaluation),
+              now,
+            ),
+            writingDrafts: successful
+              ? Object.fromEntries(
+                  Object.entries(state.writingDrafts).filter(([id]) => id !== topicId),
+                )
+              : state.writingDrafts,
+          };
+        }),
+      setWritingPathPreference: (writingPathPreference) => set({ writingPathPreference }),
+      setWritingCurrentUnit: (writingCurrentUnitId) => set({ writingCurrentUnitId }),
       markVocabularySeen: (items, topicId, correct) =>
         set((state) => {
           const vocabulary = [...state.vocabulary];
@@ -594,6 +860,118 @@ export const useProgressStore = create<ProgressStore>()(
             }
           }
           return { vocabulary };
+        }),
+      setDailyLearningPreferences: (preferences) =>
+        set((state) => ({
+          dailyLearningPreferences: { ...state.dailyLearningPreferences, ...preferences },
+        })),
+      saveDailyLearningSession: (session, regenerate = false) =>
+        set((state) => {
+          const previous = state.dailyLearningSession;
+          let dailyLearningHistory = state.dailyLearningHistory;
+          if (previous && previous.date !== session.date) {
+            dailyLearningHistory = upsertDailyHistory(dailyLearningHistory, previous, state.xp);
+          }
+          if (!regenerate || !previous || previous.date !== session.date) {
+            return { dailyLearningSession: session, dailyLearningHistory };
+          }
+          const previousItems = new Map(previous.items.map((item) => [dailyItemKey(item), item]));
+          const items = session.items.map((item) => {
+            const old = previousItems.get(dailyItemKey(item));
+            return old?.status === 'completed' || old?.status === 'skipped'
+              ? { ...item, status: old.status, completedAt: old.completedAt, skippedAt: old.skippedAt, result: old.result }
+              : item;
+          });
+          const now = new Date().toISOString();
+          const merged: DailyLearningSession = {
+            ...session,
+            items,
+            currentItemId: items.find((item) => item.status === 'pending')?.id,
+            status: isDailySessionComplete(items)
+              ? 'completed'
+              : items.some((item) => item.status !== 'pending')
+                ? 'in-progress'
+                : 'not-started',
+            startedAt: previous.startedAt,
+            completedAt: isDailySessionComplete(items) ? previous.completedAt ?? now : undefined,
+            updatedAt: now,
+            xpAtStart: previous.xpAtStart,
+            streakAwarded: previous.streakAwarded,
+          };
+          return {
+            dailyLearningSession: merged,
+            dailyLearningHistory: upsertDailyHistory(dailyLearningHistory, merged, state.xp),
+          };
+        }),
+      startDailyLearningItem: (itemId) =>
+        set((state) => {
+          const session = state.dailyLearningSession;
+          if (!session || !session.items.some((item) => item.id === itemId)) return state;
+          const now = new Date().toISOString();
+          return {
+            dailyLearningSession: {
+              ...session,
+              status: session.status === 'not-started' ? 'in-progress' : session.status,
+              currentItemId: itemId,
+              startedAt: session.startedAt ?? now,
+              updatedAt: now,
+            },
+          };
+        }),
+      completeDailyLearningItem: (itemId, result) =>
+        set((state) => {
+          const session = state.dailyLearningSession;
+          if (!session || session.date !== TODAY()) return state;
+          const target = session.items.find((item) => item.id === itemId);
+          if (!target || target.status === 'completed') return state;
+          const now = new Date().toISOString();
+          const items = session.items.map((item) =>
+            item.id === itemId
+              ? { ...item, status: 'completed' as const, completedAt: now, skippedAt: undefined, result }
+              : item,
+          );
+          const completed = isDailySessionComplete(items);
+          const daily = dailyState(state);
+          const awardStreak = completed && !session.streakAwarded && daily.todayXp < state.dailyGoal;
+          const updated: DailyLearningSession = {
+            ...session,
+            items,
+            currentItemId: items.find((item) => item.status === 'pending')?.id,
+            status: completed ? 'completed' : 'in-progress',
+            startedAt: session.startedAt ?? now,
+            completedAt: completed ? session.completedAt ?? now : undefined,
+            streakAwarded: session.streakAwarded || completed,
+            updatedAt: now,
+          };
+          return {
+            ...daily,
+            streak: state.streak + (awardStreak ? 1 : 0),
+            dailyLearningSession: updated,
+            dailyLearningHistory: upsertDailyHistory(state.dailyLearningHistory, updated, state.xp),
+          };
+        }),
+      skipDailyLearningItem: (itemId) =>
+        set((state) => {
+          const session = state.dailyLearningSession;
+          if (!session || session.date !== TODAY()) return state;
+          const now = new Date().toISOString();
+          const items = session.items.map((item) =>
+            item.id === itemId && item.status !== 'completed'
+              ? { ...item, status: 'skipped' as const, skippedAt: now }
+              : item,
+          );
+          const updated: DailyLearningSession = {
+            ...session,
+            items,
+            currentItemId: items.find((item) => item.status === 'pending')?.id,
+            status: 'in-progress',
+            startedAt: session.startedAt ?? now,
+            updatedAt: now,
+          };
+          return {
+            dailyLearningSession: updated,
+            dailyLearningHistory: upsertDailyHistory(state.dailyLearningHistory, updated, state.xp),
+          };
         }),
       resetProgress: () => set(defaultProgress),
       setLevel: (currentLevel) => set({ currentLevel }),

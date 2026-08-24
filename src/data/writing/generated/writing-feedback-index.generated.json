@@ -1,0 +1,2522 @@
+{
+  "skills": [
+    "subject-be",
+    "present-simple",
+    "negation",
+    "question-formation",
+    "past-narration",
+    "time-expressions",
+    "connectors",
+    "word-order",
+    "collocations",
+    "sentence-expansion",
+    "story-sequencing",
+    "problem-solution-writing",
+    "workplace-writing",
+    "it-communication",
+    "paraphrasing",
+    "natural-expression"
+  ],
+  "topics": [
+    {
+      "topicId": "writing:meeting-a-friend",
+      "skillMask": 22019,
+      "contextHash": 103537931
+    },
+    {
+      "topicId": "writing:greeting-a-neighbor",
+      "skillMask": 22049,
+      "contextHash": 2010578052
+    },
+    {
+      "topicId": "writing:morning-routine",
+      "skillMask": 22050,
+      "contextHash": 534239859
+    },
+    {
+      "topicId": "writing:breakfast-at-home",
+      "skillMask": 22016,
+      "contextHash": 4089319571
+    },
+    {
+      "topicId": "writing:going-to-work",
+      "skillMask": 23042,
+      "contextHash": 3069116406
+    },
+    {
+      "topicId": "writing:lunch-break",
+      "skillMask": 22016,
+      "contextHash": 3915717467
+    },
+    {
+      "topicId": "writing:coming-home",
+      "skillMask": 22064,
+      "contextHash": 1587579541
+    },
+    {
+      "topicId": "writing:cooking-dinner",
+      "skillMask": 23040,
+      "contextHash": 3632047180
+    },
+    {
+      "topicId": "writing:evening-wind-down",
+      "skillMask": 55136,
+      "contextHash": 3919550567
+    },
+    {
+      "topicId": "writing:ordering-pho",
+      "skillMask": 22016,
+      "contextHash": 793204816
+    },
+    {
+      "topicId": "writing:buying-banh-mi",
+      "skillMask": 22048,
+      "contextHash": 3626879414
+    },
+    {
+      "topicId": "writing:coffee-shop-orders",
+      "skillMask": 22048,
+      "contextHash": 2977758076
+    },
+    {
+      "topicId": "writing:bubble-tea",
+      "skillMask": 22016,
+      "contextHash": 2380354384
+    },
+    {
+      "topicId": "writing:restaurant-order",
+      "skillMask": 56128,
+      "contextHash": 858016495
+    },
+    {
+      "topicId": "writing:food-delivery",
+      "skillMask": 56160,
+      "contextHash": 3443628895
+    },
+    {
+      "topicId": "writing:booking-a-grab",
+      "skillMask": 22016,
+      "contextHash": 2495086203
+    },
+    {
+      "topicId": "writing:riding-a-motorbike",
+      "skillMask": 22048,
+      "contextHash": 3167411663
+    },
+    {
+      "topicId": "writing:traffic-jam",
+      "skillMask": 22016,
+      "contextHash": 2658578493
+    },
+    {
+      "topicId": "writing:asking-for-directions",
+      "skillMask": 22048,
+      "contextHash": 1339041224
+    },
+    {
+      "topicId": "writing:taking-a-bus",
+      "skillMask": 56160,
+      "contextHash": 1199547167
+    },
+    {
+      "topicId": "writing:at-the-supermarket",
+      "skillMask": 22016,
+      "contextHash": 387750328
+    },
+    {
+      "topicId": "writing:convenience-store",
+      "skillMask": 22050,
+      "contextHash": 349983772
+    },
+    {
+      "topicId": "writing:buying-clothes",
+      "skillMask": 22016,
+      "contextHash": 2725845338
+    },
+    {
+      "topicId": "writing:online-shopping",
+      "skillMask": 55104,
+      "contextHash": 3416731095
+    },
+    {
+      "topicId": "writing:returning-an-item",
+      "skillMask": 56128,
+      "contextHash": 2615054980
+    },
+    {
+      "topicId": "writing:birthday-party",
+      "skillMask": 22048,
+      "contextHash": 301530831
+    },
+    {
+      "topicId": "writing:cancelling-plans",
+      "skillMask": 23072,
+      "contextHash": 2142104161
+    },
+    {
+      "topicId": "writing:apologizing-to-a-friend",
+      "skillMask": 56160,
+      "contextHash": 1271988553
+    },
+    {
+      "topicId": "writing:hosting-a-game-night",
+      "skillMask": 22048,
+      "contextHash": 1682527698
+    },
+    {
+      "topicId": "writing:resolving-a-disagreement",
+      "skillMask": 56160,
+      "contextHash": 2716261527
+    },
+    {
+      "topicId": "writing:renting-a-room",
+      "skillMask": 22016,
+      "contextHash": 2220692115
+    },
+    {
+      "topicId": "writing:talking-to-the-landlord",
+      "skillMask": 22064,
+      "contextHash": 132802998
+    },
+    {
+      "topicId": "writing:broken-air-conditioner",
+      "skillMask": 56128,
+      "contextHash": 3341224320
+    },
+    {
+      "topicId": "writing:noisy-neighbor",
+      "skillMask": 56160,
+      "contextHash": 3514562638
+    },
+    {
+      "topicId": "writing:at-the-bank",
+      "skillMask": 22048,
+      "contextHash": 456220405
+    },
+    {
+      "topicId": "writing:at-the-pharmacy",
+      "skillMask": 22048,
+      "contextHash": 1968959701
+    },
+    {
+      "topicId": "writing:receiving-a-delivery",
+      "skillMask": 23040,
+      "contextHash": 169918802
+    },
+    {
+      "topicId": "writing:getting-a-haircut",
+      "skillMask": 56128,
+      "contextHash": 1700105027
+    },
+    {
+      "topicId": "writing:hotel-check-in",
+      "skillMask": 22048,
+      "contextHash": 2143237746
+    },
+    {
+      "topicId": "writing:airport-check-in",
+      "skillMask": 22016,
+      "contextHash": 543133366
+    },
+    {
+      "topicId": "writing:planning-a-da-lat-trip",
+      "skillMask": 55136,
+      "contextHash": 4275977422
+    },
+    {
+      "topicId": "writing:flight-disruption",
+      "skillMask": 56160,
+      "contextHash": 3189202694
+    },
+    {
+      "topicId": "writing:introducing-your-family",
+      "skillMask": 22049,
+      "contextHash": 647242795
+    },
+    {
+      "topicId": "writing:making-a-grocery-list",
+      "skillMask": 22016,
+      "contextHash": 853437762
+    },
+    {
+      "topicId": "writing:visiting-a-clinic",
+      "skillMask": 22018,
+      "contextHash": 2066380684
+    },
+    {
+      "topicId": "writing:sharing-family-chores",
+      "skillMask": 22048,
+      "contextHash": 1395233961
+    },
+    {
+      "topicId": "writing:starting-an-exercise-routine",
+      "skillMask": 22048,
+      "contextHash": 4053385922
+    },
+    {
+      "topicId": "writing:going-to-the-dentist",
+      "skillMask": 22048,
+      "contextHash": 4170235967
+    },
+    {
+      "topicId": "writing:moving-to-a-new-apartment",
+      "skillMask": 55136,
+      "contextHash": 3146213589
+    },
+    {
+      "topicId": "writing:talking-about-school-day",
+      "skillMask": 22050,
+      "contextHash": 3472330432
+    },
+    {
+      "topicId": "writing:using-a-public-library",
+      "skillMask": 22048,
+      "contextHash": 1981998532
+    },
+    {
+      "topicId": "writing:parent-teacher-meeting",
+      "skillMask": 23072,
+      "contextHash": 22986113
+    },
+    {
+      "topicId": "writing:planning-a-movie-night",
+      "skillMask": 22016,
+      "contextHash": 1826331755
+    },
+    {
+      "topicId": "writing:using-the-post-office",
+      "skillMask": 23072,
+      "contextHash": 1352897436
+    },
+    {
+      "topicId": "writing:buying-travel-insurance",
+      "skillMask": 55136,
+      "contextHash": 1197607771
+    },
+    {
+      "topicId": "writing:building-healthy-habits",
+      "skillMask": 56128,
+      "contextHash": 657110881
+    },
+    {
+      "topicId": "writing:joining-a-language-exchange",
+      "skillMask": 55136,
+      "contextHash": 2243762005
+    },
+    {
+      "topicId": "writing:discussing-a-medical-treatment",
+      "skillMask": 55104,
+      "contextHash": 4175025033
+    },
+    {
+      "topicId": "writing:talking-about-the-weather",
+      "skillMask": 22050,
+      "contextHash": 1776729600
+    },
+    {
+      "topicId": "writing:taking-care-of-a-pet",
+      "skillMask": 22050,
+      "contextHash": 1264383431
+    },
+    {
+      "topicId": "writing:at-the-playground",
+      "skillMask": 22016,
+      "contextHash": 960164684
+    },
+    {
+      "topicId": "writing:making-a-basic-phone-call",
+      "skillMask": 22050,
+      "contextHash": 4290680528
+    },
+    {
+      "topicId": "writing:cooking-with-family",
+      "skillMask": 22048,
+      "contextHash": 595582266
+    },
+    {
+      "topicId": "writing:joining-a-gym",
+      "skillMask": 22048,
+      "contextHash": 1222424169
+    },
+    {
+      "topicId": "writing:working-on-a-school-project",
+      "skillMask": 22016,
+      "contextHash": 2102371843
+    },
+    {
+      "topicId": "writing:repairing-a-car",
+      "skillMask": 56160,
+      "contextHash": 34364245
+    },
+    {
+      "topicId": "writing:visiting-a-museum",
+      "skillMask": 22016,
+      "contextHash": 1953920629
+    },
+    {
+      "topicId": "writing:organizing-a-neighborhood-event",
+      "skillMask": 22048,
+      "contextHash": 3970795449
+    },
+    {
+      "topicId": "writing:discussing-mental-wellbeing",
+      "skillMask": 55104,
+      "contextHash": 2699193137
+    },
+    {
+      "topicId": "writing:booking-event-tickets",
+      "skillMask": 55136,
+      "contextHash": 2801454182
+    },
+    {
+      "topicId": "writing:negotiating-a-rent-renewal",
+      "skillMask": 55104,
+      "contextHash": 2253705356
+    },
+    {
+      "topicId": "writing:using-an-elevator",
+      "skillMask": 23072,
+      "contextHash": 3731830520
+    },
+    {
+      "topicId": "writing:doing-the-laundry",
+      "skillMask": 22050,
+      "contextHash": 1086779545
+    },
+    {
+      "topicId": "writing:visiting-a-zoo",
+      "skillMask": 22048,
+      "contextHash": 666112795
+    },
+    {
+      "topicId": "writing:planning-a-family-budget",
+      "skillMask": 22048,
+      "contextHash": 4211636252
+    },
+    {
+      "topicId": "writing:joining-a-swimming-class",
+      "skillMask": 22016,
+      "contextHash": 57573610
+    },
+    {
+      "topicId": "writing:joining-a-community-club",
+      "skillMask": 22048,
+      "contextHash": 2627875273
+    },
+    {
+      "topicId": "writing:travelling-by-train",
+      "skillMask": 22016,
+      "contextHash": 2533323230
+    },
+    {
+      "topicId": "writing:volunteering-at-an-event",
+      "skillMask": 55136,
+      "contextHash": 3394127232
+    },
+    {
+      "topicId": "writing:planning-a-home-renovation",
+      "skillMask": 55136,
+      "contextHash": 2374471804
+    },
+    {
+      "topicId": "writing:planning-a-fundraiser",
+      "skillMask": 55136,
+      "contextHash": 1315908768
+    },
+    {
+      "topicId": "writing:handling-a-service-complaint",
+      "skillMask": 56160,
+      "contextHash": 1258992025
+    },
+    {
+      "topicId": "writing:discussing-news-responsibly",
+      "skillMask": 56128,
+      "contextHash": 2405024233
+    },
+    {
+      "topicId": "writing:using-a-vending-machine",
+      "skillMask": 23040,
+      "contextHash": 4086869144
+    },
+    {
+      "topicId": "writing:visiting-a-bookshop",
+      "skillMask": 22018,
+      "contextHash": 3508262782
+    },
+    {
+      "topicId": "writing:packing-a-school-bag",
+      "skillMask": 22048,
+      "contextHash": 790345432
+    },
+    {
+      "topicId": "writing:buying-fruit-at-a-market",
+      "skillMask": 23040,
+      "contextHash": 2838145168
+    },
+    {
+      "topicId": "writing:booking-a-doctor-appointment",
+      "skillMask": 22016,
+      "contextHash": 2439965419
+    },
+    {
+      "topicId": "writing:reporting-lost-property",
+      "skillMask": 23056,
+      "contextHash": 3895411823
+    },
+    {
+      "topicId": "writing:attending-a-potluck",
+      "skillMask": 22016,
+      "contextHash": 315074942
+    },
+    {
+      "topicId": "writing:comparing-bank-accounts",
+      "skillMask": 22016,
+      "contextHash": 1805246889
+    },
+    {
+      "topicId": "writing:requesting-a-data-correction",
+      "skillMask": 55136,
+      "contextHash": 172537727
+    },
+    {
+      "topicId": "writing:planning-an-accessible-event",
+      "skillMask": 55136,
+      "contextHash": 4169376052
+    },
+    {
+      "topicId": "writing:evaluating-health-information",
+      "skillMask": 55104,
+      "contextHash": 1678356456
+    },
+    {
+      "topicId": "writing:waiting-at-a-bus-stop",
+      "skillMask": 22018,
+      "contextHash": 885922463
+    },
+    {
+      "topicId": "writing:using-a-public-restroom",
+      "skillMask": 23040,
+      "contextHash": 1843429991
+    },
+    {
+      "topicId": "writing:meeting-a-new-classmate",
+      "skillMask": 22050,
+      "contextHash": 3397434568
+    },
+    {
+      "topicId": "writing:feeding-a-pet",
+      "skillMask": 22018,
+      "contextHash": 2992815161
+    },
+    {
+      "topicId": "writing:preparing-for-a-power-cut",
+      "skillMask": 22048,
+      "contextHash": 2669145986
+    },
+    {
+      "topicId": "writing:arranging-childcare",
+      "skillMask": 22048,
+      "contextHash": 2662214253
+    },
+    {
+      "topicId": "writing:planning-a-hiking-day",
+      "skillMask": 22016,
+      "contextHash": 3258859485
+    },
+    {
+      "topicId": "writing:renewing-a-library-card",
+      "skillMask": 22048,
+      "contextHash": 1254193603
+    },
+    {
+      "topicId": "writing:joining-a-dance-class",
+      "skillMask": 22016,
+      "contextHash": 3442444218
+    },
+    {
+      "topicId": "writing:discussing-food-allergies",
+      "skillMask": 55136,
+      "contextHash": 3450088906
+    },
+    {
+      "topicId": "writing:resolving-shared-house-issues",
+      "skillMask": 55136,
+      "contextHash": 1742717118
+    },
+    {
+      "topicId": "writing:managing-a-travel-itinerary",
+      "skillMask": 55136,
+      "contextHash": 3189238718
+    },
+    {
+      "topicId": "writing:discussing-family-screen-time",
+      "skillMask": 55136,
+      "contextHash": 53299745
+    },
+    {
+      "topicId": "writing:discussing-urban-development",
+      "skillMask": 55136,
+      "contextHash": 809784959
+    },
+    {
+      "topicId": "writing:using-a-ticket-machine",
+      "skillMask": 22016,
+      "contextHash": 2208239883
+    },
+    {
+      "topicId": "writing:collecting-a-parcel-locker",
+      "skillMask": 22048,
+      "contextHash": 2724252672
+    },
+    {
+      "topicId": "writing:shopping-at-a-florist",
+      "skillMask": 22048,
+      "contextHash": 3738165112
+    },
+    {
+      "topicId": "writing:visiting-a-farm",
+      "skillMask": 22018,
+      "contextHash": 2824961848
+    },
+    {
+      "topicId": "writing:borrowing-an-umbrella",
+      "skillMask": 23072,
+      "contextHash": 1030512827
+    },
+    {
+      "topicId": "writing:changing-a-train-ticket",
+      "skillMask": 23088,
+      "contextHash": 3730890860
+    },
+    {
+      "topicId": "writing:preparing-a-class-presentation",
+      "skillMask": 22016,
+      "contextHash": 1950829809
+    },
+    {
+      "topicId": "writing:organizing-a-wardrobe",
+      "skillMask": 23040,
+      "contextHash": 1627236394
+    },
+    {
+      "topicId": "writing:visiting-an-optician",
+      "skillMask": 22048,
+      "contextHash": 1541634552
+    },
+    {
+      "topicId": "writing:booking-a-sports-court",
+      "skillMask": 22048,
+      "contextHash": 1740506187
+    },
+    {
+      "topicId": "writing:appealing-a-parking-fine",
+      "skillMask": 55120,
+      "contextHash": 2942882966
+    },
+    {
+      "topicId": "writing:supporting-a-grieving-friend",
+      "skillMask": 55136,
+      "contextHash": 603188408
+    },
+    {
+      "topicId": "writing:comparing-energy-providers",
+      "skillMask": 55136,
+      "contextHash": 205651505
+    },
+    {
+      "topicId": "writing:organizing-a-study-group",
+      "skillMask": 55104,
+      "contextHash": 3974003316
+    },
+    {
+      "topicId": "writing:reviewing-a-research-proposal",
+      "skillMask": 55136,
+      "contextHash": 2049760355
+    },
+    {
+      "topicId": "writing:at-a-car-wash",
+      "skillMask": 22050,
+      "contextHash": 3926829539
+    },
+    {
+      "topicId": "writing:buying-stationery",
+      "skillMask": 22016,
+      "contextHash": 778009522
+    },
+    {
+      "topicId": "writing:planting-kitchen-herbs",
+      "skillMask": 22050,
+      "contextHash": 1798296435
+    },
+    {
+      "topicId": "writing:visiting-an-aquarium",
+      "skillMask": 23040,
+      "contextHash": 557245208
+    },
+    {
+      "topicId": "writing:sending-a-greeting-card",
+      "skillMask": 22018,
+      "contextHash": 2131144256
+    },
+    {
+      "topicId": "writing:planning-a-camping-trip",
+      "skillMask": 23040,
+      "contextHash": 4009363188
+    },
+    {
+      "topicId": "writing:choosing-an-insurance-excess",
+      "skillMask": 22016,
+      "contextHash": 154988395
+    },
+    {
+      "topicId": "writing:hosting-an-exchange-student",
+      "skillMask": 22048,
+      "contextHash": 1691775868
+    },
+    {
+      "topicId": "writing:attending-a-first-aid-course",
+      "skillMask": 22048,
+      "contextHash": 3280219249
+    },
+    {
+      "topicId": "writing:selling-a-used-bicycle",
+      "skillMask": 23056,
+      "contextHash": 1144219362
+    },
+    {
+      "topicId": "writing:adopting-a-rescue-cat",
+      "skillMask": 22016,
+      "contextHash": 3070157907
+    },
+    {
+      "topicId": "writing:preparing-a-community-garden",
+      "skillMask": 22048,
+      "contextHash": 779550326
+    },
+    {
+      "topicId": "writing:discussing-elder-care",
+      "skillMask": 55136,
+      "contextHash": 1833606545
+    },
+    {
+      "topicId": "writing:planning-a-zero-waste-event",
+      "skillMask": 56160,
+      "contextHash": 3082452713
+    },
+    {
+      "topicId": "writing:resolving-a-subscription-dispute",
+      "skillMask": 56160,
+      "contextHash": 934678986
+    },
+    {
+      "topicId": "writing:evaluating-charity-impact",
+      "skillMask": 56160,
+      "contextHash": 2654695473
+    },
+    {
+      "topicId": "writing:reading-a-metro-map",
+      "skillMask": 22016,
+      "contextHash": 3314343632
+    },
+    {
+      "topicId": "writing:visiting-a-play-centre",
+      "skillMask": 22016,
+      "contextHash": 127568442
+    },
+    {
+      "topicId": "writing:buying-movie-snacks",
+      "skillMask": 22016,
+      "contextHash": 102336803
+    },
+    {
+      "topicId": "writing:taking-a-ferry",
+      "skillMask": 22016,
+      "contextHash": 1302063899
+    },
+    {
+      "topicId": "writing:arranging-a-pet-sitter",
+      "skillMask": 22016,
+      "contextHash": 1947697451
+    },
+    {
+      "topicId": "writing:planning-a-beach-day",
+      "skillMask": 22048,
+      "contextHash": 2921608687
+    },
+    {
+      "topicId": "writing:joining-a-cooking-workshop",
+      "skillMask": 22048,
+      "contextHash": 898123396
+    },
+    {
+      "topicId": "writing:handling-a-minor-sports-injury",
+      "skillMask": 22016,
+      "contextHash": 4213407860
+    },
+    {
+      "topicId": "writing:planning-an-evacuation-drill",
+      "skillMask": 55136,
+      "contextHash": 2328587970
+    },
+    {
+      "topicId": "writing:contesting-a-bank-charge",
+      "skillMask": 55152,
+      "contextHash": 2064051745
+    },
+    {
+      "topicId": "writing:coordinating-wedding-guests",
+      "skillMask": 55136,
+      "contextHash": 1625397259
+    },
+    {
+      "topicId": "writing:interpreting-lab-results",
+      "skillMask": 55104,
+      "contextHash": 1011406791
+    },
+    {
+      "topicId": "writing:reviewing-a-public-consultation",
+      "skillMask": 55104,
+      "contextHash": 2388123690
+    },
+    {
+      "topicId": "writing:planning-crisis-communication",
+      "skillMask": 56160,
+      "contextHash": 753446339
+    },
+    {
+      "topicId": "writing:sorting-home-recycling",
+      "skillMask": 22018,
+      "contextHash": 2891663703
+    },
+    {
+      "topicId": "writing:cleaning-the-windows",
+      "skillMask": 22048,
+      "contextHash": 3921518316
+    },
+    {
+      "topicId": "writing:at-an-ice-cream-shop",
+      "skillMask": 22016,
+      "contextHash": 3876474605
+    },
+    {
+      "topicId": "writing:using-a-bike-share",
+      "skillMask": 22018,
+      "contextHash": 3572792137
+    },
+    {
+      "topicId": "writing:choosing-breakfast-cereal",
+      "skillMask": 22048,
+      "contextHash": 12073106
+    },
+    {
+      "topicId": "writing:managing-household-food-waste",
+      "skillMask": 22048,
+      "contextHash": 245709821
+    },
+    {
+      "topicId": "writing:booking-a-guided-tour",
+      "skillMask": 22048,
+      "contextHash": 747599391
+    },
+    {
+      "topicId": "writing:caring-for-houseplants",
+      "skillMask": 22048,
+      "contextHash": 2747924866
+    },
+    {
+      "topicId": "writing:preparing-for-a-driving-test",
+      "skillMask": 23040,
+      "contextHash": 1869481130
+    },
+    {
+      "topicId": "writing:joining-a-parent-group",
+      "skillMask": 22048,
+      "contextHash": 3189452618
+    },
+    {
+      "topicId": "writing:arranging-an-airport-pickup",
+      "skillMask": 22048,
+      "contextHash": 1531555769
+    },
+    {
+      "topicId": "writing:discussing-a-rental-deposit",
+      "skillMask": 55152,
+      "contextHash": 1126435035
+    },
+    {
+      "topicId": "writing:supporting-teen-exam-stress",
+      "skillMask": 56160,
+      "contextHash": 2522211705
+    },
+    {
+      "topicId": "writing:managing-club-finances",
+      "skillMask": 56160,
+      "contextHash": 3693149724
+    },
+    {
+      "topicId": "writing:resolving-an-authorship-dispute",
+      "skillMask": 55136,
+      "contextHash": 4195773040
+    },
+    {
+      "topicId": "writing:evaluating-a-climate-claim",
+      "skillMask": 55136,
+      "contextHash": 3183328957
+    },
+    {
+      "topicId": "writing:using-a-photo-booth",
+      "skillMask": 22016,
+      "contextHash": 1635798664
+    },
+    {
+      "topicId": "writing:shopping-at-a-pet-store",
+      "skillMask": 22016,
+      "contextHash": 527527126
+    },
+    {
+      "topicId": "writing:visiting-a-botanical-garden",
+      "skillMask": 22016,
+      "contextHash": 2614698289
+    },
+    {
+      "topicId": "writing:making-a-fruit-smoothie",
+      "skillMask": 22016,
+      "contextHash": 3642164713
+    },
+    {
+      "topicId": "writing:wrapping-a-present",
+      "skillMask": 22016,
+      "contextHash": 816472537
+    },
+    {
+      "topicId": "writing:preparing-for-a-vaccination",
+      "skillMask": 22048,
+      "contextHash": 4124204570
+    },
+    {
+      "topicId": "writing:arranging-a-home-cleaner",
+      "skillMask": 22048,
+      "contextHash": 1337996556
+    },
+    {
+      "topicId": "writing:taking-a-pottery-class",
+      "skillMask": 22016,
+      "contextHash": 3070059420
+    },
+    {
+      "topicId": "writing:buying-secondhand-furniture",
+      "skillMask": 23040,
+      "contextHash": 2434021338
+    },
+    {
+      "topicId": "writing:planning-a-family-reunion",
+      "skillMask": 22016,
+      "contextHash": 2521374405
+    },
+    {
+      "topicId": "writing:coordinating-a-volunteer-rota",
+      "skillMask": 56160,
+      "contextHash": 3077523494
+    },
+    {
+      "topicId": "writing:setting-a-boundary-with-a-friend",
+      "skillMask": 55136,
+      "contextHash": 1707635254
+    },
+    {
+      "topicId": "writing:appealing-an-insurance-decision",
+      "skillMask": 55136,
+      "contextHash": 3559230854
+    },
+    {
+      "topicId": "writing:correcting-online-misinformation",
+      "skillMask": 56160,
+      "contextHash": 2811771667
+    },
+    {
+      "topicId": "writing:evaluating-a-public-health-programme",
+      "skillMask": 56160,
+      "contextHash": 1708234020
+    },
+    {
+      "topicId": "writing:eating-at-a-food-court",
+      "skillMask": 22048,
+      "contextHash": 4151105841
+    },
+    {
+      "topicId": "writing:at-a-shoe-repair-shop",
+      "skillMask": 23074,
+      "contextHash": 2720476029
+    },
+    {
+      "topicId": "writing:joining-a-public-queue",
+      "skillMask": 22048,
+      "contextHash": 411954755
+    },
+    {
+      "topicId": "writing:visiting-a-fishing-pond",
+      "skillMask": 22048,
+      "contextHash": 1317167969
+    },
+    {
+      "topicId": "writing:reporting-a-broken-streetlight",
+      "skillMask": 23040,
+      "contextHash": 119285499
+    },
+    {
+      "topicId": "writing:working-with-a-language-tutor",
+      "skillMask": 22016,
+      "contextHash": 4263385094
+    },
+    {
+      "topicId": "writing:preparing-for-a-mountain-trip",
+      "skillMask": 22048,
+      "contextHash": 694138825
+    },
+    {
+      "topicId": "writing:managing-household-subscriptions",
+      "skillMask": 22048,
+      "contextHash": 3976812571
+    },
+    {
+      "topicId": "writing:planning-a-park-picnic",
+      "skillMask": 22016,
+      "contextHash": 1934540122
+    },
+    {
+      "topicId": "writing:resolving-a-school-bullying-report",
+      "skillMask": 55136,
+      "contextHash": 3948317225
+    },
+    {
+      "topicId": "writing:managing-community-conflict",
+      "skillMask": 56160,
+      "contextHash": 2508217146
+    },
+    {
+      "topicId": "writing:evaluating-a-training-course",
+      "skillMask": 55104,
+      "contextHash": 4188365131
+    },
+    {
+      "topicId": "writing:reviewing-an-environmental-impact",
+      "skillMask": 55104,
+      "contextHash": 125223849
+    },
+    {
+      "topicId": "writing:planning-ethical-research-consent",
+      "skillMask": 55136,
+      "contextHash": 1239838285
+    },
+    {
+      "topicId": "writing:balancing-heritage-and-housing",
+      "skillMask": 55104,
+      "contextHash": 1957607724
+    },
+    {
+      "topicId": "writing:changing-a-pickup-point",
+      "skillMask": 22016,
+      "contextHash": 1322823905
+    },
+    {
+      "topicId": "writing:driver-cannot-find-location",
+      "skillMask": 22048,
+      "contextHash": 1486246254
+    },
+    {
+      "topicId": "writing:flooded-road-detour",
+      "skillMask": 55136,
+      "contextHash": 2851024091
+    },
+    {
+      "topicId": "writing:motorbike-flat-tire",
+      "skillMask": 23040,
+      "contextHash": 1187263167
+    },
+    {
+      "topicId": "writing:booking-an-intercity-bus",
+      "skillMask": 22048,
+      "contextHash": 1668446882
+    },
+    {
+      "topicId": "writing:lost-parking-ticket",
+      "skillMask": 56160,
+      "contextHash": 386294121
+    },
+    {
+      "topicId": "writing:asking-about-a-rental-deposit",
+      "skillMask": 23072,
+      "contextHash": 3193506343
+    },
+    {
+      "topicId": "writing:questioning-a-utility-bill",
+      "skillMask": 22064,
+      "contextHash": 3834315567
+    },
+    {
+      "topicId": "writing:replacing-an-access-card",
+      "skillMask": 23042,
+      "contextHash": 3442465197
+    },
+    {
+      "topicId": "writing:following-up-on-noise",
+      "skillMask": 56160,
+      "contextHash": 15678594
+    },
+    {
+      "topicId": "writing:requesting-building-maintenance",
+      "skillMask": 55136,
+      "contextHash": 1099687656
+    },
+    {
+      "topicId": "writing:negotiating-apartment-damage-responsibility",
+      "skillMask": 56160,
+      "contextHash": 1016504640
+    },
+    {
+      "topicId": "writing:checking-a-qr-payment",
+      "skillMask": 22018,
+      "contextHash": 3714617654
+    },
+    {
+      "topicId": "writing:making-a-bank-transfer",
+      "skillMask": 22018,
+      "contextHash": 1862534850
+    },
+    {
+      "topicId": "writing:correcting-an-account-number",
+      "skillMask": 22064,
+      "contextHash": 2450914041
+    },
+    {
+      "topicId": "writing:tracing-a-pending-transaction",
+      "skillMask": 55136,
+      "contextHash": 515961591
+    },
+    {
+      "topicId": "writing:reporting-an-atm-retained-card",
+      "skillMask": 23088,
+      "contextHash": 1320862079
+    },
+    {
+      "topicId": "writing:resetting-a-forgotten-pin",
+      "skillMask": 23040,
+      "contextHash": 324103124
+    },
+    {
+      "topicId": "writing:opening-a-bank-account",
+      "skillMask": 22016,
+      "contextHash": 3856635627
+    },
+    {
+      "topicId": "writing:exchanging-currency",
+      "skillMask": 22016,
+      "contextHash": 4222630706
+    },
+    {
+      "topicId": "writing:calling-a-delivery-driver",
+      "skillMask": 22016,
+      "contextHash": 359682311
+    },
+    {
+      "topicId": "writing:discussing-a-phone-repair-quote",
+      "skillMask": 56128,
+      "contextHash": 2543498651
+    },
+    {
+      "topicId": "writing:booking-an-admin-appointment",
+      "skillMask": 22016,
+      "contextHash": 2635608557
+    },
+    {
+      "topicId": "writing:calling-parents-after-work",
+      "skillMask": 22066,
+      "contextHash": 3753080476
+    },
+    {
+      "topicId": "writing:planning-a-trip-home",
+      "skillMask": 22048,
+      "contextHash": 547886846
+    },
+    {
+      "topicId": "writing:preparing-for-tet",
+      "skillMask": 22048,
+      "contextHash": 2475716271
+    },
+    {
+      "topicId": "writing:visiting-relatives",
+      "skillMask": 22048,
+      "contextHash": 2263201625
+    },
+    {
+      "topicId": "writing:caring-for-a-sick-child",
+      "skillMask": 55136,
+      "contextHash": 1868849153
+    },
+    {
+      "topicId": "writing:asking-a-pharmacist-for-advice",
+      "skillMask": 22016,
+      "contextHash": 3593990734
+    },
+    {
+      "topicId": "writing:comparing-dental-treatments",
+      "skillMask": 55136,
+      "contextHash": 3306047044
+    },
+    {
+      "topicId": "writing:discussing-treatment-risks",
+      "skillMask": 55136,
+      "contextHash": 3413112628
+    },
+    {
+      "topicId": "writing:ordering-a-local-breakfast",
+      "skillMask": 22016,
+      "contextHash": 1463332785
+    },
+    {
+      "topicId": "writing:splitting-a-restaurant-bill",
+      "skillMask": 22016,
+      "contextHash": 3626421312
+    },
+    {
+      "topicId": "writing:explaining-a-food-allergy",
+      "skillMask": 55136,
+      "contextHash": 2762542286
+    },
+    {
+      "topicId": "writing:negotiating-a-catering-plan",
+      "skillMask": 55136,
+      "contextHash": 4010026264
+    },
+    {
+      "topicId": "writing:buying-cinema-tickets",
+      "skillMask": 22048,
+      "contextHash": 2712215741
+    },
+    {
+      "topicId": "writing:reviewing-a-cultural-event",
+      "skillMask": 55136,
+      "contextHash": 3030842864
+    },
+    {
+      "topicId": "writing:joining-a-local-gym",
+      "skillMask": 22050,
+      "contextHash": 2602227234
+    },
+    {
+      "topicId": "writing:adjusting-a-workout-plan",
+      "skillMask": 22048,
+      "contextHash": 834662319
+    },
+    {
+      "topicId": "writing:discussing-injury-limitations",
+      "skillMask": 55136,
+      "contextHash": 250394014
+    },
+    {
+      "topicId": "writing:arranging-laundry-pickup",
+      "skillMask": 22048,
+      "contextHash": 4289341663
+    },
+    {
+      "topicId": "writing:planning-weekend-errands",
+      "skillMask": 22048,
+      "contextHash": 2554801985
+    },
+    {
+      "topicId": "writing:handling-a-shared-schedule",
+      "skillMask": 22048,
+      "contextHash": 165562394
+    },
+    {
+      "topicId": "writing:enrolling-in-an-evening-class",
+      "skillMask": 22018,
+      "contextHash": 1893019865
+    },
+    {
+      "topicId": "writing:requesting-a-deadline-extension",
+      "skillMask": 56160,
+      "contextHash": 1352944009
+    },
+    {
+      "topicId": "writing:handling-a-delayed-flight",
+      "skillMask": 22048,
+      "contextHash": 3554975452
+    },
+    {
+      "topicId": "writing:negotiating-a-tour-change",
+      "skillMask": 56160,
+      "contextHash": 154961772
+    },
+    {
+      "topicId": "writing:asking-at-a-public-office",
+      "skillMask": 22048,
+      "contextHash": 3738605498
+    },
+    {
+      "topicId": "writing:resolving-an-event-conflict",
+      "skillMask": 56160,
+      "contextHash": 2895590876
+    },
+    {
+      "topicId": "writing:preparing-for-a-routine-checkup",
+      "skillMask": 22050,
+      "contextHash": 2448183375
+    },
+    {
+      "topicId": "writing:collecting-a-prescription",
+      "skillMask": 22048,
+      "contextHash": 3288256002
+    },
+    {
+      "topicId": "writing:rescheduling-a-clinic-appointment",
+      "skillMask": 23072,
+      "contextHash": 983462984
+    },
+    {
+      "topicId": "writing:requesting-a-medical-certificate",
+      "skillMask": 22032,
+      "contextHash": 673122201
+    },
+    {
+      "topicId": "writing:describing-a-migraine-at-a-clinic",
+      "skillMask": 55136,
+      "contextHash": 2722045626
+    },
+    {
+      "topicId": "writing:discussing-medication-side-effects",
+      "skillMask": 55104,
+      "contextHash": 2204642293
+    },
+    {
+      "topicId": "writing:following-up-on-test-results",
+      "skillMask": 55136,
+      "contextHash": 3781836520
+    },
+    {
+      "topicId": "writing:planning-a-return-to-work-after-illness",
+      "skillMask": 55136,
+      "contextHash": 3523509324
+    },
+    {
+      "topicId": "writing:changing-a-transfer-limit",
+      "skillMask": 22048,
+      "contextHash": 494485816
+    },
+    {
+      "topicId": "writing:handling-a-declined-card-payment",
+      "skillMask": 22048,
+      "contextHash": 2357292761
+    },
+    {
+      "topicId": "writing:understanding-bank-fees",
+      "skillMask": 55136,
+      "contextHash": 358245688
+    },
+    {
+      "topicId": "writing:requesting-a-merchant-refund",
+      "skillMask": 56160,
+      "contextHash": 3568803897
+    },
+    {
+      "topicId": "writing:asking-a-friend-to-repay",
+      "skillMask": 55136,
+      "contextHash": 784255257
+    },
+    {
+      "topicId": "writing:correcting-a-wrong-bank-transfer",
+      "skillMask": 56128,
+      "contextHash": 3193238612
+    },
+    {
+      "topicId": "writing:negotiating-a-refund-delay",
+      "skillMask": 56160,
+      "contextHash": 1045194723
+    },
+    {
+      "topicId": "writing:recovering-after-a-missed-class",
+      "skillMask": 22032,
+      "contextHash": 2556934617
+    },
+    {
+      "topicId": "writing:joining-an-online-class",
+      "skillMask": 22048,
+      "contextHash": 3597123190
+    },
+    {
+      "topicId": "writing:clarifying-teacher-feedback",
+      "skillMask": 22048,
+      "contextHash": 1473210630
+    },
+    {
+      "topicId": "writing:coordinating-a-group-assignment",
+      "skillMask": 55136,
+      "contextHash": 1559064704
+    },
+    {
+      "topicId": "writing:discussing-exam-results",
+      "skillMask": 55104,
+      "contextHash": 3762671858
+    },
+    {
+      "topicId": "writing:choosing-between-courses",
+      "skillMask": 55136,
+      "contextHash": 1994028144
+    },
+    {
+      "topicId": "writing:handling-unequal-group-work",
+      "skillMask": 55136,
+      "contextHash": 3444947742
+    },
+    {
+      "topicId": "writing:reviewing-digital-exam-proctoring",
+      "skillMask": 55104,
+      "contextHash": 443188391
+    },
+    {
+      "topicId": "writing:renting-a-motorbike-abroad",
+      "skillMask": 22048,
+      "contextHash": 842462879
+    },
+    {
+      "topicId": "writing:correcting-a-delivery-address",
+      "skillMask": 23072,
+      "contextHash": 923730751
+    },
+    {
+      "topicId": "writing:returning-a-parcel",
+      "skillMask": 22050,
+      "contextHash": 3049033135
+    },
+    {
+      "topicId": "writing:changing-a-hotel-reservation",
+      "skillMask": 22048,
+      "contextHash": 3074023687
+    },
+    {
+      "topicId": "writing:answering-immigration-questions",
+      "skillMask": 22050,
+      "contextHash": 92201927
+    },
+    {
+      "topicId": "writing:sending-an-international-package",
+      "skillMask": 22048,
+      "contextHash": 2232469510
+    },
+    {
+      "topicId": "writing:registering-a-mobile-sim",
+      "skillMask": 22050,
+      "contextHash": 1820189375
+    },
+    {
+      "topicId": "writing:handling-a-room-not-ready",
+      "skillMask": 55136,
+      "contextHash": 241503334
+    },
+    {
+      "topicId": "writing:requesting-a-late-checkout",
+      "skillMask": 56160,
+      "contextHash": 2885972224
+    },
+    {
+      "topicId": "writing:reporting-lost-luggage",
+      "skillMask": 56176,
+      "contextHash": 4201633648
+    },
+    {
+      "topicId": "writing:cancelling-a-repair-appointment",
+      "skillMask": 56160,
+      "contextHash": 41009948
+    },
+    {
+      "topicId": "writing:correcting-a-bad-haircut",
+      "skillMask": 56160,
+      "contextHash": 1743603736
+    },
+    {
+      "topicId": "writing:resolving-a-hotel-billing-dispute",
+      "skillMask": 56160,
+      "contextHash": 2454509796
+    },
+    {
+      "topicId": "writing:reporting-damaged-baggage",
+      "skillMask": 23072,
+      "contextHash": 212544943
+    },
+    {
+      "topicId": "writing:escalating-an-internet-provider-complaint",
+      "skillMask": 56160,
+      "contextHash": 2087179834
+    },
+    {
+      "topicId": "writing:helping-parents-use-video-calls",
+      "skillMask": 22048,
+      "contextHash": 3599401359
+    },
+    {
+      "topicId": "writing:checking-in-with-building-security",
+      "skillMask": 22050,
+      "contextHash": 2544919756
+    },
+    {
+      "topicId": "writing:returning-a-borrowed-household-item",
+      "skillMask": 22064,
+      "contextHash": 2938797173
+    },
+    {
+      "topicId": "writing:planning-tet-travel",
+      "skillMask": 22048,
+      "contextHash": 2032814996
+    },
+    {
+      "topicId": "writing:organizing-a-family-celebration",
+      "skillMask": 22048,
+      "contextHash": 1524213059
+    },
+    {
+      "topicId": "writing:reporting-a-broken-elevator",
+      "skillMask": 23072,
+      "contextHash": 1827831848
+    },
+    {
+      "topicId": "writing:helping-a-new-neighbor-settle-in",
+      "skillMask": 22050,
+      "contextHash": 2786313709
+    },
+    {
+      "topicId": "writing:sharing-family-care-responsibilities",
+      "skillMask": 55136,
+      "contextHash": 2951419583
+    },
+    {
+      "topicId": "writing:discussing-household-expenses",
+      "skillMask": 55136,
+      "contextHash": 49028240
+    },
+    {
+      "topicId": "writing:resolving-a-parking-space-dispute",
+      "skillMask": 56160,
+      "contextHash": 3523411074
+    },
+    {
+      "topicId": "writing:explaining-local-waste-rules",
+      "skillMask": 55136,
+      "contextHash": 3521813282
+    },
+    {
+      "topicId": "writing:coordinating-support-after-a-storm",
+      "skillMask": 55136,
+      "contextHash": 1396676424
+    },
+    {
+      "topicId": "writing:negotiating-family-care-boundaries",
+      "skillMask": 55136,
+      "contextHash": 2461375174
+    },
+    {
+      "topicId": "writing:handling-a-disagreement-about-childcare",
+      "skillMask": 56128,
+      "contextHash": 3920532490
+    },
+    {
+      "topicId": "writing:morning-standup:morning-standup-c1",
+      "skillMask": 26160,
+      "contextHash": 1924746247
+    },
+    {
+      "topicId": "writing:morning-standup:morning-standup-c2",
+      "skillMask": 27152,
+      "contextHash": 2157794964
+    },
+    {
+      "topicId": "writing:morning-standup:morning-standup-c3",
+      "skillMask": 27184,
+      "contextHash": 3352618243
+    },
+    {
+      "topicId": "writing:reporting-a-bug:reporting-a-bug-c1",
+      "skillMask": 60256,
+      "contextHash": 1477059471
+    },
+    {
+      "topicId": "writing:reporting-a-bug:reporting-a-bug-c2",
+      "skillMask": 60224,
+      "contextHash": 3419168231
+    },
+    {
+      "topicId": "writing:reporting-a-bug:reporting-a-bug-c3",
+      "skillMask": 60224,
+      "contextHash": 4214662713
+    },
+    {
+      "topicId": "writing:reporting-a-bug:reporting-a-bug-c4",
+      "skillMask": 60256,
+      "contextHash": 2178888886
+    },
+    {
+      "topicId": "writing:asking-for-help-at-work:asking-for-help-at-work-c1",
+      "skillMask": 26144,
+      "contextHash": 3149453318
+    },
+    {
+      "topicId": "writing:asking-for-help-at-work:asking-for-help-at-work-c2",
+      "skillMask": 27168,
+      "contextHash": 2578918932
+    },
+    {
+      "topicId": "writing:asking-for-help-at-work:asking-for-help-at-work-c3",
+      "skillMask": 26144,
+      "contextHash": 70865008
+    },
+    {
+      "topicId": "writing:deadline-discussion:deadline-discussion-c1",
+      "skillMask": 59232,
+      "contextHash": 2982103028
+    },
+    {
+      "topicId": "writing:deadline-discussion:deadline-discussion-c2",
+      "skillMask": 60256,
+      "contextHash": 2466366458
+    },
+    {
+      "topicId": "writing:deadline-discussion:deadline-discussion-c3",
+      "skillMask": 59232,
+      "contextHash": 1887780496
+    },
+    {
+      "topicId": "writing:asking-for-leave:asking-for-leave-c1",
+      "skillMask": 59200,
+      "contextHash": 1588810175
+    },
+    {
+      "topicId": "writing:asking-for-leave:asking-for-leave-c2",
+      "skillMask": 59232,
+      "contextHash": 61858245
+    },
+    {
+      "topicId": "writing:asking-for-leave:asking-for-leave-c3",
+      "skillMask": 59232,
+      "contextHash": 487840991
+    },
+    {
+      "topicId": "writing:being-late-for-work:being-late-for-work-c1",
+      "skillMask": 60256,
+      "contextHash": 529647940
+    },
+    {
+      "topicId": "writing:being-late-for-work:being-late-for-work-c2",
+      "skillMask": 60256,
+      "contextHash": 303109267
+    },
+    {
+      "topicId": "writing:being-late-for-work:being-late-for-work-c3",
+      "skillMask": 60256,
+      "contextHash": 2219056143
+    },
+    {
+      "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c1",
+      "skillMask": 59232,
+      "contextHash": 554416677
+    },
+    {
+      "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c2",
+      "skillMask": 59232,
+      "contextHash": 4061636949
+    },
+    {
+      "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c3",
+      "skillMask": 60224,
+      "contextHash": 552426350
+    },
+    {
+      "topicId": "writing:talking-with-a-manager:talking-with-a-manager-c4",
+      "skillMask": 59232,
+      "contextHash": 1553010556
+    },
+    {
+      "topicId": "writing:wifi-problem:wifi-problem-c1",
+      "skillMask": 27136,
+      "contextHash": 3552840652
+    },
+    {
+      "topicId": "writing:wifi-problem:wifi-problem-c2",
+      "skillMask": 27168,
+      "contextHash": 33456112
+    },
+    {
+      "topicId": "writing:wifi-problem:wifi-problem-c3",
+      "skillMask": 27136,
+      "contextHash": 3295332236
+    },
+    {
+      "topicId": "writing:laptop-problem:laptop-problem-c1",
+      "skillMask": 60256,
+      "contextHash": 1011782900
+    },
+    {
+      "topicId": "writing:laptop-problem:laptop-problem-c2",
+      "skillMask": 60224,
+      "contextHash": 590744234
+    },
+    {
+      "topicId": "writing:laptop-problem:laptop-problem-c3",
+      "skillMask": 60256,
+      "contextHash": 411999069
+    },
+    {
+      "topicId": "writing:online-meeting:online-meeting-c1",
+      "skillMask": 59232,
+      "contextHash": 599087060
+    },
+    {
+      "topicId": "writing:online-meeting:online-meeting-c2",
+      "skillMask": 59232,
+      "contextHash": 772715028
+    },
+    {
+      "topicId": "writing:online-meeting:online-meeting-c3",
+      "skillMask": 60256,
+      "contextHash": 1164776433
+    },
+    {
+      "topicId": "writing:online-meeting:online-meeting-c4",
+      "skillMask": 59232,
+      "contextHash": 1188723082
+    },
+    {
+      "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c1",
+      "skillMask": 60240,
+      "contextHash": 3388396066
+    },
+    {
+      "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c2",
+      "skillMask": 59248,
+      "contextHash": 2853812061
+    },
+    {
+      "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c3",
+      "skillMask": 59248,
+      "contextHash": 1330139687
+    },
+    {
+      "topicId": "writing:preparing-for-a-job-interview:preparing-for-a-job-interview-c4",
+      "skillMask": 60272,
+      "contextHash": 1370554715
+    },
+    {
+      "topicId": "writing:handling-workplace-conflict:handling-workplace-conflict-c1",
+      "skillMask": 60256,
+      "contextHash": 1037181713
+    },
+    {
+      "topicId": "writing:handling-workplace-conflict:handling-workplace-conflict-c2",
+      "skillMask": 60256,
+      "contextHash": 1486279947
+    },
+    {
+      "topicId": "writing:handling-workplace-conflict:handling-workplace-conflict-c3",
+      "skillMask": 60256,
+      "contextHash": 2477459916
+    },
+    {
+      "topicId": "writing:building-a-remote-work-routine:building-a-remote-work-routine-c1",
+      "skillMask": 59232,
+      "contextHash": 3569437334
+    },
+    {
+      "topicId": "writing:building-a-remote-work-routine:building-a-remote-work-routine-c2",
+      "skillMask": 59232,
+      "contextHash": 2054629241
+    },
+    {
+      "topicId": "writing:building-a-remote-work-routine:building-a-remote-work-routine-c3",
+      "skillMask": 59232,
+      "contextHash": 601642994
+    },
+    {
+      "topicId": "writing:giving-constructive-feedback:giving-constructive-feedback-c1",
+      "skillMask": 60224,
+      "contextHash": 1903055500
+    },
+    {
+      "topicId": "writing:giving-constructive-feedback:giving-constructive-feedback-c2",
+      "skillMask": 59232,
+      "contextHash": 3211351859
+    },
+    {
+      "topicId": "writing:giving-constructive-feedback:giving-constructive-feedback-c3",
+      "skillMask": 60256,
+      "contextHash": 1260702901
+    },
+    {
+      "topicId": "writing:using-a-coworking-space:using-a-coworking-space-c1",
+      "skillMask": 26144,
+      "contextHash": 3650461003
+    },
+    {
+      "topicId": "writing:using-a-coworking-space:using-a-coworking-space-c2",
+      "skillMask": 26144,
+      "contextHash": 3857578658
+    },
+    {
+      "topicId": "writing:using-a-coworking-space:using-a-coworking-space-c3",
+      "skillMask": 26112,
+      "contextHash": 2281476302
+    },
+    {
+      "topicId": "writing:staying-safe-online:staying-safe-online-c1",
+      "skillMask": 59232,
+      "contextHash": 880680909
+    },
+    {
+      "topicId": "writing:staying-safe-online:staying-safe-online-c2",
+      "skillMask": 60224,
+      "contextHash": 3955045857
+    },
+    {
+      "topicId": "writing:staying-safe-online:staying-safe-online-c3",
+      "skillMask": 59232,
+      "contextHash": 1489125144
+    },
+    {
+      "topicId": "writing:staying-safe-online:staying-safe-online-c4",
+      "skillMask": 59232,
+      "contextHash": 2377749839
+    },
+    {
+      "topicId": "writing:having-a-performance-review:having-a-performance-review-c1",
+      "skillMask": 59232,
+      "contextHash": 303155709
+    },
+    {
+      "topicId": "writing:having-a-performance-review:having-a-performance-review-c2",
+      "skillMask": 59232,
+      "contextHash": 2137497411
+    },
+    {
+      "topicId": "writing:having-a-performance-review:having-a-performance-review-c3",
+      "skillMask": 59232,
+      "contextHash": 1910868100
+    },
+    {
+      "topicId": "writing:choosing-a-mobile-plan:choosing-a-mobile-plan-c1",
+      "skillMask": 26112,
+      "contextHash": 776070674
+    },
+    {
+      "topicId": "writing:choosing-a-mobile-plan:choosing-a-mobile-plan-c2",
+      "skillMask": 26112,
+      "contextHash": 2983183154
+    },
+    {
+      "topicId": "writing:choosing-a-mobile-plan:choosing-a-mobile-plan-c3",
+      "skillMask": 27168,
+      "contextHash": 1273578352
+    },
+    {
+      "topicId": "writing:negotiating-project-scope:negotiating-project-scope-c1",
+      "skillMask": 59232,
+      "contextHash": 1221861181
+    },
+    {
+      "topicId": "writing:negotiating-project-scope:negotiating-project-scope-c2",
+      "skillMask": 60256,
+      "contextHash": 844220943
+    },
+    {
+      "topicId": "writing:negotiating-project-scope:negotiating-project-scope-c3",
+      "skillMask": 59232,
+      "contextHash": 1252875259
+    },
+    {
+      "topicId": "writing:mentoring-a-junior-colleague:mentoring-a-junior-colleague-c1",
+      "skillMask": 59232,
+      "contextHash": 3030650442
+    },
+    {
+      "topicId": "writing:mentoring-a-junior-colleague:mentoring-a-junior-colleague-c2",
+      "skillMask": 59200,
+      "contextHash": 2289061313
+    },
+    {
+      "topicId": "writing:mentoring-a-junior-colleague:mentoring-a-junior-colleague-c3",
+      "skillMask": 59232,
+      "contextHash": 418625021
+    },
+    {
+      "topicId": "writing:mediating-a-team-disagreement:mediating-a-team-disagreement-c1",
+      "skillMask": 60256,
+      "contextHash": 1730907281
+    },
+    {
+      "topicId": "writing:mediating-a-team-disagreement:mediating-a-team-disagreement-c2",
+      "skillMask": 60224,
+      "contextHash": 2562072372
+    },
+    {
+      "topicId": "writing:mediating-a-team-disagreement:mediating-a-team-disagreement-c3",
+      "skillMask": 60256,
+      "contextHash": 3798168796
+    },
+    {
+      "topicId": "writing:negotiating-a-vendor-contract:negotiating-a-vendor-contract-c1",
+      "skillMask": 59232,
+      "contextHash": 1886357196
+    },
+    {
+      "topicId": "writing:negotiating-a-vendor-contract:negotiating-a-vendor-contract-c2",
+      "skillMask": 60256,
+      "contextHash": 114056852
+    },
+    {
+      "topicId": "writing:negotiating-a-vendor-contract:negotiating-a-vendor-contract-c3",
+      "skillMask": 60224,
+      "contextHash": 2020523005
+    },
+    {
+      "topicId": "writing:setting-up-a-home-router:setting-up-a-home-router-c1",
+      "skillMask": 26112,
+      "contextHash": 3037318696
+    },
+    {
+      "topicId": "writing:setting-up-a-home-router:setting-up-a-home-router-c2",
+      "skillMask": 26112,
+      "contextHash": 291372697
+    },
+    {
+      "topicId": "writing:setting-up-a-home-router:setting-up-a-home-router-c3",
+      "skillMask": 26144,
+      "contextHash": 2442593119
+    },
+    {
+      "topicId": "writing:planning-a-product-launch:planning-a-product-launch-c1",
+      "skillMask": 59232,
+      "contextHash": 2014241476
+    },
+    {
+      "topicId": "writing:planning-a-product-launch:planning-a-product-launch-c2",
+      "skillMask": 59232,
+      "contextHash": 575324758
+    },
+    {
+      "topicId": "writing:planning-a-product-launch:planning-a-product-launch-c3",
+      "skillMask": 59200,
+      "contextHash": 4068034497
+    },
+    {
+      "topicId": "writing:discussing-salary-expectations:discussing-salary-expectations-c1",
+      "skillMask": 59200,
+      "contextHash": 3346590122
+    },
+    {
+      "topicId": "writing:discussing-salary-expectations:discussing-salary-expectations-c2",
+      "skillMask": 59200,
+      "contextHash": 1582138243
+    },
+    {
+      "topicId": "writing:discussing-salary-expectations:discussing-salary-expectations-c3",
+      "skillMask": 59232,
+      "contextHash": 3187554326
+    },
+    {
+      "topicId": "writing:responding-to-a-data-breach:responding-to-a-data-breach-c1",
+      "skillMask": 59232,
+      "contextHash": 829988084
+    },
+    {
+      "topicId": "writing:responding-to-a-data-breach:responding-to-a-data-breach-c2",
+      "skillMask": 60224,
+      "contextHash": 71878021
+    },
+    {
+      "topicId": "writing:responding-to-a-data-breach:responding-to-a-data-breach-c3",
+      "skillMask": 59232,
+      "contextHash": 1484741555
+    },
+    {
+      "topicId": "writing:debating-remote-work-policy:debating-remote-work-policy-c1",
+      "skillMask": 59200,
+      "contextHash": 3639796588
+    },
+    {
+      "topicId": "writing:debating-remote-work-policy:debating-remote-work-policy-c2",
+      "skillMask": 60256,
+      "contextHash": 2237690664
+    },
+    {
+      "topicId": "writing:debating-remote-work-policy:debating-remote-work-policy-c3",
+      "skillMask": 59232,
+      "contextHash": 376232562
+    },
+    {
+      "topicId": "writing:negotiating-flexible-hours:negotiating-flexible-hours-c1",
+      "skillMask": 59232,
+      "contextHash": 2930871456
+    },
+    {
+      "topicId": "writing:negotiating-flexible-hours:negotiating-flexible-hours-c2",
+      "skillMask": 60256,
+      "contextHash": 1050509600
+    },
+    {
+      "topicId": "writing:negotiating-flexible-hours:negotiating-flexible-hours-c3",
+      "skillMask": 59232,
+      "contextHash": 4081749135
+    },
+    {
+      "topicId": "writing:recovering-a-compromised-account:recovering-a-compromised-account-c1",
+      "skillMask": 59232,
+      "contextHash": 1385050298
+    },
+    {
+      "topicId": "writing:recovering-a-compromised-account:recovering-a-compromised-account-c2",
+      "skillMask": 59200,
+      "contextHash": 760663848
+    },
+    {
+      "topicId": "writing:recovering-a-compromised-account:recovering-a-compromised-account-c3",
+      "skillMask": 59232,
+      "contextHash": 1539113414
+    },
+    {
+      "topicId": "writing:managing-organizational-change:managing-organizational-change-c1",
+      "skillMask": 60256,
+      "contextHash": 3851438005
+    },
+    {
+      "topicId": "writing:managing-organizational-change:managing-organizational-change-c2",
+      "skillMask": 60256,
+      "contextHash": 2574023537
+    },
+    {
+      "topicId": "writing:managing-organizational-change:managing-organizational-change-c3",
+      "skillMask": 60256,
+      "contextHash": 2560312951
+    },
+    {
+      "topicId": "writing:discussing-ai-ethics:discussing-ai-ethics-c1",
+      "skillMask": 59232,
+      "contextHash": 3496565844
+    },
+    {
+      "topicId": "writing:discussing-ai-ethics:discussing-ai-ethics-c2",
+      "skillMask": 59200,
+      "contextHash": 147231816
+    },
+    {
+      "topicId": "writing:discussing-ai-ethics:discussing-ai-ethics-c3",
+      "skillMask": 59232,
+      "contextHash": 2922919222
+    },
+    {
+      "topicId": "writing:using-a-printer:using-a-printer-c1",
+      "skillMask": 26144,
+      "contextHash": 1075863676
+    },
+    {
+      "topicId": "writing:using-a-printer:using-a-printer-c2",
+      "skillMask": 26112,
+      "contextHash": 1034906153
+    },
+    {
+      "topicId": "writing:using-a-printer:using-a-printer-c3",
+      "skillMask": 26112,
+      "contextHash": 1276549305
+    },
+    {
+      "topicId": "writing:filing-expense-receipts:filing-expense-receipts-c1",
+      "skillMask": 26128,
+      "contextHash": 3370464768
+    },
+    {
+      "topicId": "writing:filing-expense-receipts:filing-expense-receipts-c2",
+      "skillMask": 26128,
+      "contextHash": 2692643745
+    },
+    {
+      "topicId": "writing:filing-expense-receipts:filing-expense-receipts-c3",
+      "skillMask": 27184,
+      "contextHash": 3279387422
+    },
+    {
+      "topicId": "writing:choosing-a-laptop-accessory:choosing-a-laptop-accessory-c1",
+      "skillMask": 26144,
+      "contextHash": 3334293098
+    },
+    {
+      "topicId": "writing:choosing-a-laptop-accessory:choosing-a-laptop-accessory-c2",
+      "skillMask": 26112,
+      "contextHash": 4022799308
+    },
+    {
+      "topicId": "writing:choosing-a-laptop-accessory:choosing-a-laptop-accessory-c3",
+      "skillMask": 26144,
+      "contextHash": 2900212174
+    },
+    {
+      "topicId": "writing:facilitating-a-retrospective:facilitating-a-retrospective-c1",
+      "skillMask": 59248,
+      "contextHash": 393058959
+    },
+    {
+      "topicId": "writing:facilitating-a-retrospective:facilitating-a-retrospective-c2",
+      "skillMask": 60272,
+      "contextHash": 2370743474
+    },
+    {
+      "topicId": "writing:facilitating-a-retrospective:facilitating-a-retrospective-c3",
+      "skillMask": 60272,
+      "contextHash": 3726011744
+    },
+    {
+      "topicId": "writing:discussing-workplace-accessibility:discussing-workplace-accessibility-c1",
+      "skillMask": 59200,
+      "contextHash": 2193666311
+    },
+    {
+      "topicId": "writing:discussing-workplace-accessibility:discussing-workplace-accessibility-c2",
+      "skillMask": 60224,
+      "contextHash": 127056209
+    },
+    {
+      "topicId": "writing:discussing-workplace-accessibility:discussing-workplace-accessibility-c3",
+      "skillMask": 59232,
+      "contextHash": 298133833
+    },
+    {
+      "topicId": "writing:assessing-algorithmic-bias:assessing-algorithmic-bias-c1",
+      "skillMask": 60224,
+      "contextHash": 2304741169
+    },
+    {
+      "topicId": "writing:assessing-algorithmic-bias:assessing-algorithmic-bias-c2",
+      "skillMask": 59232,
+      "contextHash": 3133402952
+    },
+    {
+      "topicId": "writing:assessing-algorithmic-bias:assessing-algorithmic-bias-c3",
+      "skillMask": 60256,
+      "contextHash": 70289989
+    },
+    {
+      "topicId": "writing:selecting-an-ergonomic-chair:selecting-an-ergonomic-chair-c1",
+      "skillMask": 26144,
+      "contextHash": 1750078425
+    },
+    {
+      "topicId": "writing:selecting-an-ergonomic-chair:selecting-an-ergonomic-chair-c2",
+      "skillMask": 26144,
+      "contextHash": 1644542081
+    },
+    {
+      "topicId": "writing:selecting-an-ergonomic-chair:selecting-an-ergonomic-chair-c3",
+      "skillMask": 26144,
+      "contextHash": 3718384901
+    },
+    {
+      "topicId": "writing:negotiating-a-freelance-brief:negotiating-a-freelance-brief-c1",
+      "skillMask": 59200,
+      "contextHash": 2174012100
+    },
+    {
+      "topicId": "writing:negotiating-a-freelance-brief:negotiating-a-freelance-brief-c2",
+      "skillMask": 60256,
+      "contextHash": 3923226988
+    },
+    {
+      "topicId": "writing:negotiating-a-freelance-brief:negotiating-a-freelance-brief-c3",
+      "skillMask": 59232,
+      "contextHash": 4078512949
+    },
+    {
+      "topicId": "writing:planning-a-career-change:planning-a-career-change-c1",
+      "skillMask": 60256,
+      "contextHash": 3254933720
+    },
+    {
+      "topicId": "writing:planning-a-career-change:planning-a-career-change-c2",
+      "skillMask": 60256,
+      "contextHash": 2695168714
+    },
+    {
+      "topicId": "writing:planning-a-career-change:planning-a-career-change-c3",
+      "skillMask": 60256,
+      "contextHash": 4000134784
+    },
+    {
+      "topicId": "writing:designing-inclusive-hiring:designing-inclusive-hiring-c1",
+      "skillMask": 59232,
+      "contextHash": 1140437907
+    },
+    {
+      "topicId": "writing:designing-inclusive-hiring:designing-inclusive-hiring-c2",
+      "skillMask": 60256,
+      "contextHash": 1726933105
+    },
+    {
+      "topicId": "writing:designing-inclusive-hiring:designing-inclusive-hiring-c3",
+      "skillMask": 59232,
+      "contextHash": 397787050
+    },
+    {
+      "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c1",
+      "skillMask": 26112,
+      "contextHash": 2638757331
+    },
+    {
+      "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c2",
+      "skillMask": 26112,
+      "contextHash": 2166644105
+    },
+    {
+      "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c3",
+      "skillMask": 26144,
+      "contextHash": 2028423324
+    },
+    {
+      "topicId": "writing:choosing-cloud-storage:choosing-cloud-storage-c4",
+      "skillMask": 26144,
+      "contextHash": 3781689041
+    },
+    {
+      "topicId": "writing:planning-a-customer-survey:planning-a-customer-survey-c1",
+      "skillMask": 59232,
+      "contextHash": 2460436457
+    },
+    {
+      "topicId": "writing:planning-a-customer-survey:planning-a-customer-survey-c2",
+      "skillMask": 59232,
+      "contextHash": 2961689350
+    },
+    {
+      "topicId": "writing:planning-a-customer-survey:planning-a-customer-survey-c3",
+      "skillMask": 59200,
+      "contextHash": 3466539970
+    },
+    {
+      "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c1",
+      "skillMask": 59232,
+      "contextHash": 27661099
+    },
+    {
+      "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c2",
+      "skillMask": 59232,
+      "contextHash": 2926001911
+    },
+    {
+      "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c3",
+      "skillMask": 59232,
+      "contextHash": 2082868929
+    },
+    {
+      "topicId": "writing:onboarding-a-remote-employee:onboarding-a-remote-employee-c4",
+      "skillMask": 59200,
+      "contextHash": 542440194
+    },
+    {
+      "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c1",
+      "skillMask": 59200,
+      "contextHash": 3647981975
+    },
+    {
+      "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c2",
+      "skillMask": 59200,
+      "contextHash": 3516395789
+    },
+    {
+      "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c3",
+      "skillMask": 59232,
+      "contextHash": 3426581632
+    },
+    {
+      "topicId": "writing:assessing-a-privacy-policy:assessing-a-privacy-policy-c4",
+      "skillMask": 59232,
+      "contextHash": 1616396621
+    },
+    {
+      "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c1",
+      "skillMask": 59232,
+      "contextHash": 1409850258
+    },
+    {
+      "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c2",
+      "skillMask": 59200,
+      "contextHash": 615389128
+    },
+    {
+      "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c3",
+      "skillMask": 59232,
+      "contextHash": 850670579
+    },
+    {
+      "topicId": "writing:negotiating-a-partnership-agreement:negotiating-a-partnership-agreement-c4",
+      "skillMask": 59232,
+      "contextHash": 651109513
+    },
+    {
+      "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c1",
+      "skillMask": 26144,
+      "contextHash": 227335211
+    },
+    {
+      "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c2",
+      "skillMask": 26144,
+      "contextHash": 2876633888
+    },
+    {
+      "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c3",
+      "skillMask": 26144,
+      "contextHash": 1682931464
+    },
+    {
+      "topicId": "writing:checking-a-weather-app:checking-a-weather-app-c4",
+      "skillMask": 26144,
+      "contextHash": 2342487000
+    },
+    {
+      "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c1",
+      "skillMask": 59232,
+      "contextHash": 2519898145
+    },
+    {
+      "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c2",
+      "skillMask": 59232,
+      "contextHash": 1580068363
+    },
+    {
+      "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c3",
+      "skillMask": 60224,
+      "contextHash": 2551893783
+    },
+    {
+      "topicId": "writing:planning-small-business-cashflow:planning-small-business-cashflow-c4",
+      "skillMask": 59232,
+      "contextHash": 1008365806
+    },
+    {
+      "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c1",
+      "skillMask": 59232,
+      "contextHash": 2046282114
+    },
+    {
+      "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c2",
+      "skillMask": 59200,
+      "contextHash": 778010936
+    },
+    {
+      "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c3",
+      "skillMask": 59232,
+      "contextHash": 545284741
+    },
+    {
+      "topicId": "writing:negotiating-event-sponsorship:negotiating-event-sponsorship-c4",
+      "skillMask": 60256,
+      "contextHash": 4050780102
+    },
+    {
+      "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c1",
+      "skillMask": 60256,
+      "contextHash": 841767935
+    },
+    {
+      "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c2",
+      "skillMask": 59200,
+      "contextHash": 3107890566
+    },
+    {
+      "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c3",
+      "skillMask": 59200,
+      "contextHash": 1651577296
+    },
+    {
+      "topicId": "writing:preparing-for-a-panel-interview:preparing-for-a-panel-interview-c4",
+      "skillMask": 60256,
+      "contextHash": 3158148726
+    },
+    {
+      "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c1",
+      "skillMask": 59232,
+      "contextHash": 759600512
+    },
+    {
+      "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c2",
+      "skillMask": 59232,
+      "contextHash": 2281741516
+    },
+    {
+      "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c3",
+      "skillMask": 60224,
+      "contextHash": 4176612189
+    },
+    {
+      "topicId": "writing:governing-workplace-surveillance:governing-workplace-surveillance-c4",
+      "skillMask": 59200,
+      "contextHash": 3107167130
+    },
+    {
+      "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c1",
+      "skillMask": 27170,
+      "contextHash": 3468850457
+    },
+    {
+      "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c2",
+      "skillMask": 26146,
+      "contextHash": 2182101235
+    },
+    {
+      "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c3",
+      "skillMask": 26114,
+      "contextHash": 2622242115
+    },
+    {
+      "topicId": "writing:clarifying-sprint-requirements:clarifying-sprint-requirements-c4",
+      "skillMask": 26146,
+      "contextHash": 464374892
+    },
+    {
+      "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c1",
+      "skillMask": 60224,
+      "contextHash": 3656326634
+    },
+    {
+      "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c2",
+      "skillMask": 59200,
+      "contextHash": 792748342
+    },
+    {
+      "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c3",
+      "skillMask": 59232,
+      "contextHash": 1958427371
+    },
+    {
+      "topicId": "writing:preparing-for-refinement:preparing-for-refinement-c4",
+      "skillMask": 59232,
+      "contextHash": 1477269859
+    },
+    {
+      "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c1",
+      "skillMask": 60256,
+      "contextHash": 3329917874
+    },
+    {
+      "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c2",
+      "skillMask": 60256,
+      "contextHash": 1269210592
+    },
+    {
+      "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c3",
+      "skillMask": 59232,
+      "contextHash": 2661278981
+    },
+    {
+      "topicId": "writing:giving-code-review-feedback:giving-code-review-feedback-c4",
+      "skillMask": 60224,
+      "contextHash": 602769223
+    },
+    {
+      "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c1",
+      "skillMask": 60256,
+      "contextHash": 3586586127
+    },
+    {
+      "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c2",
+      "skillMask": 60256,
+      "contextHash": 3324527822
+    },
+    {
+      "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c3",
+      "skillMask": 60256,
+      "contextHash": 1626468179
+    },
+    {
+      "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c4",
+      "skillMask": 60256,
+      "contextHash": 1730256745
+    },
+    {
+      "topicId": "writing:handling-a-production-incident:handling-a-production-incident-c5",
+      "skillMask": 60256,
+      "contextHash": 2735190346
+    },
+    {
+      "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c1",
+      "skillMask": 60256,
+      "contextHash": 1161383623
+    },
+    {
+      "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c2",
+      "skillMask": 60256,
+      "contextHash": 3820878318
+    },
+    {
+      "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c3",
+      "skillMask": 60256,
+      "contextHash": 3064733033
+    },
+    {
+      "topicId": "writing:explaining-a-release-delay:explaining-a-release-delay-c4",
+      "skillMask": 60256,
+      "contextHash": 4211364536
+    },
+    {
+      "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c1",
+      "skillMask": 59232,
+      "contextHash": 3756983985
+    },
+    {
+      "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c2",
+      "skillMask": 59232,
+      "contextHash": 3564074088
+    },
+    {
+      "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c3",
+      "skillMask": 59232,
+      "contextHash": 2723104672
+    },
+    {
+      "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c4",
+      "skillMask": 59232,
+      "contextHash": 524571654
+    },
+    {
+      "topicId": "writing:discussing-a-performance-review:discussing-a-performance-review-c5",
+      "skillMask": 59232,
+      "contextHash": 1993427857
+    },
+    {
+      "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c1",
+      "skillMask": 59232,
+      "contextHash": 2923268944
+    },
+    {
+      "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c2",
+      "skillMask": 60256,
+      "contextHash": 478243445
+    },
+    {
+      "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c3",
+      "skillMask": 59232,
+      "contextHash": 1890730994
+    },
+    {
+      "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c4",
+      "skillMask": 59232,
+      "contextHash": 3257760253
+    },
+    {
+      "topicId": "writing:planning-a-resignation-handover:planning-a-resignation-handover-c5",
+      "skillMask": 59232,
+      "contextHash": 2592868495
+    },
+    {
+      "topicId": "writing:recovering-an-online-account:recovering-an-online-account-c1",
+      "skillMask": 27168,
+      "contextHash": 1933711722
+    },
+    {
+      "topicId": "writing:recovering-an-online-account:recovering-an-online-account-c2",
+      "skillMask": 26144,
+      "contextHash": 2395108873
+    }
+  ]
+}

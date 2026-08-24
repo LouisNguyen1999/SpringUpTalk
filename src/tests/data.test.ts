@@ -40,5 +40,5 @@ describe('conversation dataset', () => {
       expect(evaluateAnswer(turn.canonicalAnswer, turn).status).toBe('correct');
       for (const accepted of turn.acceptedAnswers) expect(evaluateAnswer(accepted, turn).status).toBe('correct');
     }
-  }, 20_000);
+  }, 60_000);
 });

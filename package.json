@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:content && npm run vocabulary:validate && npm run typecheck && vite build",
+    "build": "npm run validate:content && npm run vocabulary:validate && npm run writing:validate && npm run writing:path:validate && npm run writing:quality:validate && npm run typecheck && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -22,7 +22,22 @@
     "content:index": "node --import tsx scripts/generate-content-index.ts",
     "vocabulary:generate": "node --import tsx scripts/generate-vocabulary-data.ts",
     "vocabulary:validate": "node --import tsx scripts/validate-vocabulary.ts",
-    "vocabulary:report": "node --import tsx scripts/vocabulary-report.ts"
+    "vocabulary:report": "node --import tsx scripts/vocabulary-report.ts",
+    "writing:generate": "node --import tsx scripts/generate-writing-data.ts",
+    "writing:path:generate": "node --import tsx scripts/generate-writing-path.ts",
+    "writing:path:validate": "node --import tsx scripts/validate-writing-path.ts",
+    "writing:path:report": "node --import tsx scripts/writing-path-report.ts",
+    "writing:quality:generate": "node --import tsx scripts/generate-writing-quality.ts",
+    "writing:quality:validate": "node --import tsx scripts/validate-writing-quality.ts",
+    "writing:validate": "node --import tsx scripts/validate-writing.ts",
+    "writing:report": "node --import tsx scripts/writing-report.ts",
+    "writing:golden": "node --import tsx scripts/writing-golden.ts",
+    "writing:feedback:golden": "node --import tsx scripts/writing-feedback-golden.ts",
+    "writing:audit": "node --import tsx scripts/writing-product-audit.ts",
+    "writing:stress": "node --import tsx scripts/writing-persistence-stress.ts",
+    "writing:benchmark": "node --import tsx scripts/writing-benchmark.ts",
+    "daily:benchmark": "node --import tsx scripts/daily-learning-benchmark.ts",
+    "daily:stress": "node --import tsx scripts/daily-learning-stress.ts"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

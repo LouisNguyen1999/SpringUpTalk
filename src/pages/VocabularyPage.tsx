@@ -1,6 +1,6 @@
 import { BookOpen, Clock3, Play, Plus, Search, Star, Target, TrendingUp } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { EmptyState } from '../components/common/EmptyState';
 import { vocabularyRepository, vocabularyIndex } from '../data/vocabulary/vocabulary-repository';
 import { useProgressStore } from '../store/progress-store';
@@ -52,9 +52,10 @@ function VocabularyRow({
 }
 
 export default function VocabularyPage() {
+  const [searchParams] = useSearchParams();
   const { vocabulary, customVocabulary } = useProgressStore();
   const [now] = useState(Date.now);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(() => searchParams.get('search') ?? '');
   const [filter, setFilter] = useState<Mastery | 'favorite' | 'all'>('all');
   const progressById = useMemo(
     () => new Map(vocabulary.map((item) => [item.id, item])),

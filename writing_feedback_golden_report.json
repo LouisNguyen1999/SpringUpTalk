@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-19T15:31:30.902Z",
+  "topics": 500,
+  "scenariosPerTopic": 14,
+  "totalScenarios": 7000,
+  "passed": 7000,
+  "failed": 0,
+  "accuracy": 100,
+  "runtimeMs": 98422.6,
+  "byScenario": {
+    "canonical-correct": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "alternative-correct": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "acceptable-meaning": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "almost-correct-grammar": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "missing-idea": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "extra-meaning": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "wrong-tense": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "wrong-subject": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "wrong-word-order": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "wrong-vocabulary": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "wrong-collocation": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "spelling-only": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "punctuation-only": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    },
+    "completely-wrong": {
+      "total": 500,
+      "passed": 500,
+      "accuracy": 100
+    }
+  },
+  "failures": []
+}

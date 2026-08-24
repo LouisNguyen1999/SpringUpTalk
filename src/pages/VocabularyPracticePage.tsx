@@ -144,6 +144,7 @@ export default function VocabularyPracticePage() {
     disabledVocabularyPracticeIds,
     vocabulary,
     addVocabulary,
+    completeDailyLearningItem,
     recordVocabularyPractice,
   } = useProgressStore();
   const [loaded, setLoaded] = useState<{
@@ -152,7 +153,9 @@ export default function VocabularyPracticePage() {
     items: VocabularyPracticeItem[];
   }>({ id: '', items: [] });
   const [mode, setMode] = useState<Mode>((params.get('mode') as Mode) || 'quick');
-  const [started, setStarted] = useState(false);
+  const dailyItemId = params.get('dailyItem');
+  const dailyMode = params.get('daily') === '1' && Boolean(dailyItemId);
+  const [started, setStarted] = useState(dailyMode);
   const [position, setPosition] = useState(0);
   const [answer, setAnswer] = useState('');
   const [attempt, setAttempt] = useState(1);
@@ -191,21 +194,30 @@ export default function VocabularyPracticePage() {
     id,
     requestedSense,
   ]);
+  useEffect(() => {
+    if (dailyMode && loaded.id === id && loaded.entry) {
+      addVocabulary(id, loaded.entry.sourceTopicIds[0]);
+    }
+  }, [addVocabulary, dailyMode, id, loaded.entry, loaded.id]);
   const loading = loaded.id !== id;
   const entry = loading ? undefined : loaded.entry;
   const items = loaded.items;
   const session = useMemo(
     () =>
-      mode === 'quick'
+      dailyMode
+        ? items.slice(0, 1)
+        : mode === 'quick'
         ? items.slice(0, 5)
         : mode === 'standard'
           ? [...items, ...items].slice(0, 10)
           : items,
-    [items, mode],
+    [dailyMode, items, mode],
   );
   const current = session[position % Math.max(1, session.length)];
   const targetTotal =
-    mode === 'quick'
+    dailyMode
+      ? Math.min(1, session.length)
+      : mode === 'quick'
       ? Math.min(5, session.length)
       : mode === 'standard'
         ? Math.min(10, session.length)
@@ -336,8 +348,8 @@ export default function VocabularyPracticePage() {
           >
             Ôn lại ngay
           </button>
-          <Link className="btn btn-primary" to="/vocabulary">
-            Quay lại Vocabulary
+          <Link className="btn btn-primary" to={dailyMode ? '/daily' : '/vocabulary'}>
+            {dailyMode ? 'Tiếp tục kế hoạch hôm nay' : 'Quay lại Vocabulary'}
           </Link>
         </div>
       </div>
@@ -369,6 +381,14 @@ export default function VocabularyPracticePage() {
     setShownAnswer(false);
   };
   const next = () => {
+    if (dailyItemId && position + 1 >= session.length) {
+      const latest = useProgressStore.getState().vocabulary.find((item) => item.id === id);
+      completeDailyLearningItem(dailyItemId, {
+        firstTryCorrect: stats.attempts > 0 && stats.firstTry === stats.attempts,
+        vocabularyMastered: latest?.mastery === 'mastered',
+        weaknessTypes: evaluation?.result.mistakes.map((mistake) => mistake.type) ?? [],
+      });
+    }
     setPosition((value) => value + 1);
     setAnswer('');
     setAttempt(1);

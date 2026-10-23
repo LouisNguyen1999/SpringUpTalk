@@ -1,4 +1,4 @@
-import { BookHeart, FilePenLine, Home, Library, Settings, TriangleAlert } from 'lucide-react';
+import { BookHeart, Code2, FilePenLine, Home, Library, Settings, TriangleAlert } from 'lucide-react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { useProgressStore } from '../../store/progress-store';
 
@@ -8,6 +8,7 @@ const nav = [
   { to: '/mistakes', label: 'Lỗi sai', icon: TriangleAlert },
   { to: '/vocabulary', label: 'Luyện từ', icon: BookHeart },
   { to: '/writing', label: 'Viết', icon: FilePenLine },
+  { to: '/it-english', label: 'IT English', icon: Code2 },
   { to: '/settings', label: 'Cài đặt', icon: Settings },
 ];
 

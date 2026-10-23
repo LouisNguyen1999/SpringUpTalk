@@ -45,7 +45,7 @@ describe('writing persistence, drafts and review', () => {
     expect(migrated.writingSkillProgress).toEqual({});
   });
 
-  it('migrates V12 to V13 without losing drafts, favorites or path state', () => {
+  it('migrates V12 to the current version without losing drafts, favorites or path state', () => {
     const migrated = migrateProgress({
       ...defaultProgress,
       version: 12,
@@ -54,7 +54,7 @@ describe('writing persistence, drafts and review', () => {
       writingCurrentUnitId: 'writing-unit-04',
       favorites: ['topic-a'],
     }, 12);
-    expect(migrated).toMatchObject({ version: 13, writingDrafts: { 'writing:test': 'Saved draft' }, writingCurrentUnitId: 'writing-unit-04', favorites: ['topic-a'], writingSkillProgress: {} });
+    expect(migrated).toMatchObject({ version: CURRENT_PROGRESS_VERSION, writingDrafts: { 'writing:test': 'Saved draft' }, writingCurrentUnitId: 'writing-unit-04', favorites: ['topic-a'], writingSkillProgress: {}, itEnglishProgress: {} });
   });
 
   it('autosaves and clears a draft by topic ID', () => {

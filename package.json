@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:content && npm run vocabulary:validate && npm run writing:validate && npm run writing:path:validate && npm run writing:quality:validate && npm run typecheck && vite build",
+    "build": "npm run validate:content && npm run it-english:validate && npm run vocabulary:validate && npm run writing:validate && npm run writing:path:validate && npm run writing:quality:validate && npm run typecheck && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -14,6 +14,7 @@
     "test:e2e:pwa": "playwright test e2e/offline.spec.ts --config=playwright.pwa.config.ts",
     "test:watch": "vitest",
     "validate:content": "node --import tsx scripts/validate-content.ts",
+    "it-english:validate": "node --import tsx scripts/validate-it-english.ts",
     "content:report": "node --import tsx scripts/content-report.ts",
     "content:manifest": "node --import tsx scripts/generate-content-manifest.ts",
     "content:lint": "node --import tsx scripts/content-lint.ts",

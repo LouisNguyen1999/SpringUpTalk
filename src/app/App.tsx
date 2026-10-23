@@ -16,6 +16,8 @@ const WritingPage = lazy(() => import('../pages/WritingPage'));
 const WritingPracticePage = lazy(() => import('../pages/WritingPracticePage'));
 const WritingUnitPage = lazy(() => import('../pages/WritingUnitPage'));
 const DailyLearningPage = lazy(() => import('../pages/DailyLearningPage'));
+const ITEnglishPage = lazy(() => import('../pages/ITEnglishPage'));
+const ITEnglishTopicPage = lazy(() => import('../pages/ITEnglishTopicPage'));
 
 function PageLoader() {
   return <div className="page-loader" role="status">Đang mở bài học…</div>;
@@ -36,6 +38,8 @@ export function App() {
           <Route path="writing/path/:unitId" element={<WritingUnitPage />} />
           <Route path="writing/:writingId" element={<WritingPracticePage />} />
           <Route path="daily" element={<DailyLearningPage />} />
+          <Route path="it-english" element={<ITEnglishPage />} />
+          <Route path="it-english/:topicId" element={<ITEnglishTopicPage />} />
           <Route path="mistakes" element={<MistakesPage />} />
           <Route path="settings" element={<SettingsPage />} />
         </Route>

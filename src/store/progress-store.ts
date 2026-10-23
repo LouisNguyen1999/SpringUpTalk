@@ -7,6 +7,10 @@ import type {
   DailyLearningSession,
   Difficulty,
   EvaluationResult,
+  ITEnglishAttemptResult,
+  ITEnglishMode,
+  ITEnglishProgress,
+  ITEnglishSentenceProgress,
   LearningRole,
   UserProgress,
   UserSettings,
@@ -24,9 +28,11 @@ import { isConversationCompleted, isTopicCompleted } from '../engine/progress';
 import { dailyItemKey, dailySessionCounts, isDailySessionComplete } from '../engine/daily-learning/session';
 import { localDateKey } from '../utils/local-date';
 import { masteryResultForEvaluation, updateWritingSkillMastery } from '../engine/writing-mastery';
+import { canAttemptSentence, updateSentenceProgress } from '../engine/it-english/progression';
+import { itEnglishTopics } from '../data/it-english/curriculum';
 
 const TODAY = () => localDateKey();
-export const CURRENT_PROGRESS_VERSION = 13;
+export const CURRENT_PROGRESS_VERSION = 14;
 export const CONVERSATION_MASTERY_BONUS = 10;
 
 export const defaultSettings: UserSettings = {
@@ -57,6 +63,7 @@ export const defaultProgress: UserProgress = {
   writingPathPreference: 'all',
   writingCurrentUnitId: undefined,
   writingSkillProgress: {},
+  itEnglishProgress: {},
   achievements: [],
   favorites: [],
   dailyGoal: 20,
@@ -244,6 +251,7 @@ export function migrateProgress(value: unknown, version: number): UserProgress {
     );
   }
   base.writingSkillProgress = base.writingSkillProgress ?? {};
+  base.itEnglishProgress = base.itEnglishProgress ?? {};
   return { ...base, version: CURRENT_PROGRESS_VERSION };
 }
 
@@ -279,6 +287,7 @@ export interface RoleCompletionOutcome {
 }
 
 interface ProgressActions {
+  recordITEnglishAttempt: (topicId: string, sentenceId: string, mode: ITEnglishMode, result: ITEnglishAttemptResult) => void;
   recordAnswer: (payload: AnswerPayload) => void;
   completeConversationRole: (payload: CompleteRolePayload) => RoleCompletionOutcome;
   setDailyGoal: (goal: number) => void;
@@ -357,6 +366,19 @@ export const useProgressStore = create<ProgressStore>()(
   persist(
     (set, get) => ({
       ...defaultProgress,
+      recordITEnglishAttempt: (topicId, sentenceId, mode, result) =>
+        set((state) => {
+          if (!canAttemptSentence(itEnglishTopics, state.itEnglishProgress, topicId, sentenceId)) return state;
+          const topicProgress: ITEnglishProgress = state.itEnglishProgress[topicId] ?? { sentences: {} };
+          const previous: ITEnglishSentenceProgress | undefined = topicProgress.sentences[sentenceId];
+          const sentence = updateSentenceProgress(previous, mode, result, new Date().toISOString(), 3);
+          return {
+            itEnglishProgress: {
+              ...state.itEnglishProgress,
+              [topicId]: { sentences: { ...topicProgress.sentences, [sentenceId]: sentence } },
+            },
+          };
+        }),
       recordAnswer: (payload) =>
         set((state) => {
           const daily = dailyState(state);

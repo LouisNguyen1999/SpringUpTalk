@@ -818,6 +818,7 @@ export interface UserProgress {
   writingPathPreference: WritingPathPreference;
   writingCurrentUnitId?: string;
   writingSkillProgress: Partial<Record<WritingMasterySkill, WritingSkillProgress>>;
+  itEnglishProgress: Record<string, ITEnglishProgress>;
   achievements: string[];
   favorites: string[];
   dailyGoal: number;
@@ -825,6 +826,32 @@ export interface UserProgress {
   dailyLearningSession?: DailyLearningSession;
   dailyLearningHistory: DailyLearningHistoryEntry[];
   settings: UserSettings;
+}
+
+export type ITEnglishMode = 'speaking' | 'writing';
+
+export interface ITEnglishAttemptResult {
+  passed: boolean;
+  similarity: number;
+  coverage: number;
+  feedback: string;
+  corrections: string[];
+}
+
+export interface ITEnglishSentenceProgress {
+  passed: boolean;
+  revealedAfterLimit?: boolean;
+  attemptCount: number;
+  latestMode: ITEnglishMode;
+  latestResult: string;
+  latestSimilarity: number;
+  bestSimilarity: number;
+  updatedAt: string;
+  completedAt?: string;
+}
+
+export interface ITEnglishProgress {
+  sentences: Record<string, ITEnglishSentenceProgress>;
 }
 
 export interface UserSettings {
